@@ -39,7 +39,7 @@ function ResumeSection({ children, title }) {
     return <div className='mt-4'>
         <h2 className='uppercase font-heading font-bold text-lg'>{title}</h2>
         <div className="divider brightness-200 mt-0 mb-4" />
-        <div className='ml-4'>
+        <div className='ml-0 sm:ml-4'>
             {children}
         </div>
     </div>
@@ -73,9 +73,9 @@ function ResumeEntry({ children, label, sublabel, time }) {
                         <img src={Triangle} className='rotate-90 w-4 h-4' />
                     </label> : <img src={Circle} className='rotate-90 w-4 h-4 mx-2' />}
                     <p>
-                        <span className='font-bold'>{label}</span>
-                        <span className='mx-2'>|</span>
-                        <span>{sublabel}</span>
+                        <span className='font-bold block sm:inline'>{label}</span>
+                        <span className='mx-2 hidden sm:inline'>|</span>
+                        <span className=' block sm:inline'>{sublabel}</span>
                     </p>
                 </div>
                 <span>{time}</span>
