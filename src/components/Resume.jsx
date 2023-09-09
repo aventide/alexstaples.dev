@@ -9,16 +9,21 @@ export default function Resume() {
     return <div className=''>
         <h1 className='font-heading font-bold mb-4 inline-block'>RESUME</h1>
         <ResumeSection title="professional history">
-           <div className='mb-8'>
-            <ResumeEntry label="Wasabi Technologies" sublabel="Senior Software Engineer" time="2020 - Present" />
+            <div className='mb-8'>
+                <ResumeEntry label="Wasabi Technologies" sublabel="Senior Software Engineer" time="2020 - Present" />
                 <ResumeEntry label="Motif Software" sublabel="Senior Software Engineer" time="2019 - 2020" />
-                <ResumeEntry label="TandemSeven, Inc." sublabel="Senior Front End Developer" time="2018 - 2019" />
+                <ResumeEntry label="TandemSeven, Inc." sublabel="Senior Front End Developer" time="2018 - 2019">
+                    <p>Front end engineer for digital customer experience consulting firm. Worked with clients based in Boston and Chicago on web development for their eCommerce platforms. Projects centered on the React ecosystem and required special emphasis on internationalization and accessibility. Additionally, conducted an internal research pertaining to vector graphics and the Elm language.</p>
+                    <br />
+                    <p><span className='font-bold'>Clients: </span>Redbox, United Airlines</p>
+                    <p><span className='font-bold'>Key Technologies: </span>Javascript, React, Custom CSS Utilities, Browser Geolocation API, Bing Maps, Elm</p>
+                </ResumeEntry>
                 <ResumeEntry label="CA Technologies" sublabel="Associate Software Engineer" time="2015 - 2018">
                     <p>Supporting role for development of CA Performance Management - a network infrastructure analysis and management product. Focused on the construction of internal tooling, including a visual API query builder, as well as a vendor certification search tool. Also wrote a suite of network metrics calculation tests, and began the conversion of existing tools to React and Electron. Assisted the sustaining team with resolving issues reported by customers.</p>
                     <br />
                     <p><span className='font-bold'>Key Technologies: </span>Java, Python, Javascript, React, Sencha Ext JS, OData, HP Vertica, RHEL</p>
                 </ResumeEntry>
-           </div>
+            </div>
         </ResumeSection>
         <ResumeSection title="technical expertise">
             <div className='grid grid-cols sm:grid-cols-2 md:grid-cols-3 gap-4'>
@@ -61,13 +66,13 @@ function SkillsList({ title, skills }) {
 
 function ResumeEntry({ children, label, sublabel, time }) {
 
-    const {getCollapseProps, getToggleProps, isExpanded} = useCollapse({
+    const { getCollapseProps, getToggleProps, isExpanded } = useCollapse({
         duration: 200
     });
 
     return (
         <div className='mb-4'>
-            <div className={`flex justify-between select-none ${children ? 'cursor-pointer' : 'cursor-default'}`} {...getToggleProps({disabled: !children})}>
+            <div className={`flex justify-between select-none ${children ? 'cursor-pointer' : 'cursor-default'}`} {...getToggleProps({ disabled: !children })}>
                 <div className='flex items-center'>
                     {children ? <label className={`cursor-pointer transition-all duration-200 ease-in-out mx-2 ${isExpanded ? 'rotate-90' : 'rotate-0'}`}>
                         <img src={Triangle} className='rotate-90 w-4 h-4' />
