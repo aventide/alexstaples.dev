@@ -1,19 +1,28 @@
 import { useCollapse } from 'react-collapsed';
 
 import Triangle from '../assets/triangle.svg';
+import TriangleFilled from '../assets/triangle-filled.svg';
 import Circle from '../assets/circle.svg';
 
 // feather icons https://feathericons.com/?query=cir
 
 export default function Resume() {
     return <div className=''>
-        <h1 className='font-heading font-bold mb-4 inline-block'>RESUME</h1>
+        <div className='flex items-center cursor-pointer'>
+            <img src={TriangleFilled} className='rotate-[-90deg] w-4 h-4 mr-2' />
+            <span className='font-heading font-bold inline-block text-lg'>HOME</span>
+        </div>
+        <h1 className='font-heading font-bold my-4 inline-block'>RESUME</h1>
         <ResumeSection title="professional history">
             <div className='mb-8'>
-                <ResumeEntry label="Wasabi Technologies" sublabel="Senior Software Engineer" time="2020 - Present" />
-                <ResumeEntry label="Motif Software" sublabel="Senior Software Engineer" time="2019 - 2020" />
+                <ResumeEntry label="Wasabi Technologies" sublabel="Senior Software Engineer" time="2020 - Present">
+                    <p>Senior engineer for the applications team at a cloud storage startup. Creates React-powered web tools for internal use by our operations teams, designing core architectural components in company codebases. Key contributor to the development of the customer-facing Wasabi Console application. Supervises the daily creation and deployment of service images for testing, working closely with the infrastructure team.</p>
+                    <br />
+                    <p><span className='font-bold'>Key Technologies: </span>React, Node, Material-UI, Highcharts, Containers, Custom CICD Workflows, GitHub Actions</p>
+                </ResumeEntry>
+                {/* <ResumeEntry label="Motif Software" sublabel="Senior Software Engineer" time="2019 - 2020" /> */}
                 <ResumeEntry label="TandemSeven, Inc." sublabel="Senior Front End Developer" time="2018 - 2019">
-                    <p>Front end engineer for digital customer experience consulting firm. Worked with clients based in Boston and Chicago on web development for their eCommerce platforms. Projects centered on the React ecosystem and required special emphasis on internationalization and accessibility. Additionally, conducted an internal research pertaining to vector graphics and the Elm language.</p>
+                    <p>Front end engineer for digital customer experience consulting firm. Worked with clients based in Boston and Chicago on web development for their eCommerce platforms. Projects centered on the React ecosystem and required special emphasis on internationalization and accessibility. Additionally, conducted internal research pertaining to vector graphics and the Elm language.</p>
                     <br />
                     <p><span className='font-bold'>Clients: </span>Redbox, United Airlines</p>
                     <p><span className='font-bold'>Key Technologies: </span>Javascript, React, Custom CSS Utilities, Browser Geolocation API, Bing Maps, Elm</p>
@@ -76,7 +85,7 @@ function ResumeEntry({ children, label, sublabel, time }) {
                 <div className='flex items-center'>
                     {children ? <label className={`cursor-pointer transition-all duration-200 ease-in-out mx-2 ${isExpanded ? 'rotate-90' : 'rotate-0'}`}>
                         <img src={Triangle} className='rotate-90 w-4 h-4' />
-                    </label> : <img src={Circle} className='rotate-90 w-4 h-4 mx-2' />}
+                    </label> : null}
                     <p>
                         <span className='font-bold block sm:inline'>{label}</span>
                         <span className='mx-2 hidden sm:inline'>|</span>
@@ -86,7 +95,7 @@ function ResumeEntry({ children, label, sublabel, time }) {
                 <span>{time}</span>
             </div>
             <div className={'ml-8 max-w-3xl text-sm'} {...getCollapseProps()}>
-                <div className='mt-4'>{children}</div>
+                <div className='mt-4 pb-4'>{children}</div>
             </div>
         </div>
     )
