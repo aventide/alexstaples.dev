@@ -11,7 +11,18 @@ export default function Resume() {
             <img src={TriangleFilled} className='rotate-[-90deg] w-4 h-4 mr-2' />
             <span className='font-heading font-bold inline-block text-lg'>HOME</span>
         </div>
-        <h1 className='font-heading font-bold my-4 inline-block'>RESUME</h1>
+        <div className='mb-12 flex items-center flex-col'>
+            <div>
+                <h1 className='font-heading font-bold mt-4 inline-block'>Alex Staples</h1>
+                <div className=''>
+                    <span>Northborough, MA</span>
+                    {/* <span className='mx-2 hidden sm:inline'>|</span>
+            <span className='block sm:inline'>ajstaples@gmail.com</span> */}
+                    <span className='mx-2'>|</span>
+                    <span className=''>ajstaples@gmail.com</span>
+                </div>
+            </div>
+        </div>
         <ResumeSection title="professional history">
             <div className='mb-8'>
                 <ResumeEntry label="Wasabi Technologies" sublabel="Senior Software Engineer" time="2020 - Present">
@@ -34,7 +45,7 @@ export default function Resume() {
                     </ul>
                     <br />
                     <p><span className='font-bold'>Clients: </span>Hologic, Samsung, Orbita, Lew's Fishing</p>
-                    <p><span className='font-bold'>Key Technologies: </span>Javascript, React, Custom CSS Utilities, Browser Geolocation API, Bing Maps, Elm</p>
+                    <p><span className='font-bold'>Key Technologies: </span>Javascript, React, CSS Modules, SVG, .NET Core, EpiServer</p>
                 </ResumeEntry>
                 <ResumeEntry label="TandemSeven, Inc." sublabel="Senior Front End Developer" time="2018 - 2019">
                     {/* <p>Front end engineer for digital customer experience consulting firm. Worked with clients based in Boston and Chicago on web development for their eCommerce platforms. Projects centered on the React ecosystem and required special emphasis on internationalization and accessibility. Additionally, conducted internal research pertaining to vector graphics and the Elm language.</p> */}
