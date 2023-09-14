@@ -41,5 +41,7 @@ h1 {
   :root {
     color: #213547;
     background-color: #ffffff;
+    --color-bg: #ffffff;
+    --color-fg: #213547;
   }
 }
