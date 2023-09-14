@@ -1,18 +1,23 @@
 import { useCollapse } from 'react-collapsed';
 
-import Triangle from '../assets/triangle.svg';
-import TriangleFilled from '../assets/triangle-filled.svg';
+import LightDarkModeSwitch from './LightDarkModeSwitch';
+
+import {ReactComponent as TriangleIcon} from '../assets/triangle.svg';
+import {ReactComponent as TriangleFilledIcon } from '../assets/triangle-filled.svg';
 
 // feather icons https://feathericons.com/?query=cir
 
 export default function Resume() {
     return <div className=''>
-        <div className='flex items-center cursor-pointer'>
-            <img src={TriangleFilled} className='rotate-[-90deg] w-4 h-4 mr-2' />
-            <span className='font-heading font-bold inline-block text-lg'>HOME</span>
+        <div className='flex justify-between'>
+            <div className='flex items-center cursor-pointer'>
+                <TriangleFilledIcon className='rotate-[-90deg] w-4 h-4 mr-2 fill-black dark:fill-white' />
+                <span className='font-heading font-bold inline-block text-lg'>HOME</span>
+            </div>
+            {/* <LightDarkModeSwitch /> */}
         </div>
         <div className='mb-12 flex items-center flex-col'>
-            <div>
+            <div className=''>
                 <h1 className='font-heading font-bold mt-4 inline-block'>Alex Staples</h1>
                 <div className=''>
                     <span>Northborough, MA</span>
@@ -102,7 +107,7 @@ function SkillsList({ title, skills }) {
         <span className='font-bold'>{title}</span>
         <ul className='mt-4'>
             {skills && skills.map(skill =>
-                <li className='badge mr-2 text-white border-white'>
+                <li className='badge mr-2 border-black dark:text-white dark:border-white'>
                     {skill}
                 </li>
             )}
@@ -122,7 +127,7 @@ function ResumeEntry({ children, label, sublabel, time }) {
             <div className={`flex justify-between select-none ${children ? 'cursor-pointer' : 'cursor-default'}`} {...getToggleProps({ disabled: !children })}>
                 <div className='flex items-center'>
                     {children ? <label className={`cursor-pointer transition-all duration-200 ease-in-out mx-2 ${isExpanded ? 'rotate-90' : 'rotate-0'}`}>
-                        <img src={Triangle} className='rotate-90 w-4 h-4' />
+                        <TriangleIcon className='rotate-90 w-4 h-4 stroke-black dark:stroke-white' />
                     </label> : null}
                     <p>
                         <span className='font-bold block sm:inline'>{label}</span>
