@@ -4,6 +4,8 @@ import LightDarkModeSwitch from './LightDarkModeSwitch';
 
 import {ReactComponent as TriangleIcon} from '../assets/triangle.svg';
 import {ReactComponent as TriangleFilledIcon } from '../assets/triangle-filled.svg';
+import {ReactComponent as GithubIcon } from '../assets/github.svg';
+import {ReactComponent as UserIcon } from '../assets/user.svg';
 
 // feather icons https://feathericons.com/?query=cir
 
@@ -29,7 +31,6 @@ export default function Resume() {
             </div>
         </div>
         <ResumeSection title="professional history">
-            <div className='mb-8'>
                 <ResumeEntry label="Wasabi Technologies" sublabel="Senior Software Engineer" time="2020 - Present">
                     {/* <p>Senior engineer for the applications team at a cloud storage startup. Creates React-powered web tools for internal use by our operations teams, designing core architectural components in company codebases. Key contributor to the development of the customer-facing Wasabi Console application. Supervises the daily creation and deployment of service images for testing, working closely with the infrastructure team.</p> */}
                     <ul className='list-disc'>
@@ -75,7 +76,6 @@ export default function Resume() {
                     <br />
                     <p><span className='font-bold'>Key Technologies: </span>Java, Python, Javascript, React, Sencha Ext JS, OData, HP Vertica, RHEL</p>
                 </ResumeEntry>
-            </div>
         </ResumeSection>
         <ResumeSection title="technical expertise">
             <div className='grid grid-cols sm:grid-cols-2 md:grid-cols-3 gap-4'>
@@ -86,6 +86,20 @@ export default function Resume() {
                 <SkillsList title='Programming Languages' skills={['Javascript', 'Elm', 'C', 'C#', 'Python']} />
             </div>
         </ResumeSection>
+        <ResumeSection title="portfolio">
+            <div>
+                <GithubIcon className='inline font-bold w-4 h-4 mr-2 stroke-black dark:stroke-white' />
+                <span className='font-bold inline'>Github</span>
+                <span className='mx-2'>|</span>
+                <a className='cursor-pointer' href='https://github.com/aventide' target="_blank" rel="noopener noreferrer">github.com/aventide</a>
+            </div>
+            <div>
+                <UserIcon className='inline font-bold w-4 h-4 mr-2 stroke-black dark:stroke-white' />
+                <span className='font-bold inline'>Site</span>
+                <span className='mx-2'>|</span>
+                <a className='cursor-pointer' href='https://alexstaples.dev' target="_blank" rel="noopener noreferrer">alexstaples.dev</a>
+            </div>
+        </ResumeSection>
         <ResumeSection title="education">
             <ResumeEntry label="University of Massachusetts Lowell" sublabel="B.S. in Information Technology" time="2015" />
         </ResumeSection>
@@ -93,7 +107,7 @@ export default function Resume() {
 }
 
 function ResumeSection({ children, title }) {
-    return <div className='mt-4'>
+    return <div className='mt-4 mb-8'>
         <h2 className='uppercase font-heading font-bold text-lg'>{title}</h2>
         <div className="divider brightness-200 mt-0 mb-4" />
         <div className='ml-0 sm:ml-4'>
