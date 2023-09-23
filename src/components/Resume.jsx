@@ -85,13 +85,13 @@ export default function Resume() {
             </div>
         </ResumeSection>
         <ResumeSection title="portfolio">
-            <div>
+            <div className='mb-2'>
                 <GithubIcon className='inline font-bold w-4 h-4 mr-2 stroke-black dark:stroke-white' />
                 <span className='font-bold inline'>Github</span>
                 <span className='mx-2'>|</span>
                 <a className='cursor-pointer' href='https://github.com/aventide' target="_blank" rel="noopener noreferrer">github.com/aventide</a>
             </div>
-            <div>
+            <div className='mb-2'>
                 <UserIcon className='inline font-bold w-4 h-4 mr-2 stroke-black dark:stroke-white' />
                 <span className='font-bold inline'>Site</span>
                 <span className='mx-2'>|</span>
