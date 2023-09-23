@@ -18,15 +18,13 @@ export default function Resume() {
             </div>
             {/* <LightDarkModeSwitch /> */}
         </div>
-        <div className='mb-12 flex items-center flex-col'>
-            <div className=''>
+        <div className='mb-12 flex items-center flex-col text-center'>
+            <div>
                 <h1 className='font-heading font-bold mt-4 inline-block'>Alex Staples</h1>
-                <div className=''>
+                <div>
                     <span>Northborough, MA</span>
-                    {/* <span className='mx-2 hidden sm:inline'>|</span>
-            <span className='block sm:inline'>ajstaples@gmail.com</span> */}
                     <span className='mx-2'>|</span>
-                    <span className=''>ajstaples@gmail.com</span>
+                    <span>ajstaples@gmail.com</span>
                 </div>
             </div>
         </div>
