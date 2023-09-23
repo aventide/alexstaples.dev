@@ -1,11 +1,11 @@
 import { useCollapse } from 'react-collapsed';
 
-import LightDarkModeSwitch from './LightDarkModeSwitch';
-
 import { ReactComponent as TriangleIcon } from '../assets/triangle.svg';
 import { ReactComponent as TriangleFilledIcon } from '../assets/triangle-filled.svg';
 import { ReactComponent as GithubIcon } from '../assets/github.svg';
 import { ReactComponent as UserIcon } from '../assets/user.svg';
+
+import LightDarkModeSwitch from './LightDarkModeSwitch';
 
 // feather icons https://feathericons.com/?query=cir
 
@@ -24,7 +24,7 @@ export default function Resume() {
                 <div>
                     <span>Northborough, MA</span>
                     <span className='mx-2'>|</span>
-                    <span>ajstaples@gmail.com</span>
+                    <a className='cursor-pointer' href="mailto:ajstaples@gmail.com">ajstaples@gmail.com</a>
                 </div>
             </div>
         </div>
@@ -89,7 +89,7 @@ export default function Resume() {
                 <GithubIcon className='inline font-bold w-4 h-4 mr-2 stroke-black dark:stroke-white' />
                 <span className='font-bold inline'>Github</span>
                 <span className='mx-2'>|</span>
-                <a className='cursor-pointer' href='https://github.com/aventide' target="_blank" rel="noopener noreferrer">github.com/aventide</a>
+                <a className='cursor-pointer' href='https://github.com/aventide' target="_blank" rel="noopener noreferrer">aventide</a>
             </div>
             <div className='mb-2'>
                 <UserIcon className='inline font-bold w-4 h-4 mr-2 stroke-black dark:stroke-white' />
