@@ -4,6 +4,7 @@ import { ReactComponent as TriangleIcon } from '../assets/triangle.svg';
 import { ReactComponent as TriangleFilledIcon } from '../assets/triangle-filled.svg';
 import { ReactComponent as GithubIcon } from '../assets/github.svg';
 import { ReactComponent as UserIcon } from '../assets/user.svg';
+import { ReactComponent as DownloadIcon } from '../assets/download.svg';
 
 import LightDarkModeSwitch from './LightDarkModeSwitch';
 
@@ -18,15 +19,21 @@ export default function Resume() {
             </div>
             {/* <LightDarkModeSwitch /> */}
         </div>
-        <div className='mb-12 flex items-center flex-col text-center'>
+        <div className='mb-4 flex items-center flex-col text-center'>
             <div>
                 <h1 className='font-heading font-bold mt-4 inline-block'>Alex Staples</h1>
                 <div>
                     <span>Northborough, MA</span>
                     <span className='mx-2'>|</span>
-                    <a className='cursor-pointer' href="mailto:ajstaples@gmail.com">ajstaples@gmail.com</a>
+                    <StyledLink href="mailto:ajstaples@gmail.com">ajstaples@gmail.com</StyledLink>
                 </div>
             </div>
+        </div>
+        <div className='mb-8 sm:mb-4 flex justify-center'>
+            <button className='badge border-indigo-600 text-indigo-600 hover:border-indigo-400 hover:text-indigo-400 dark:border-indigo-400 dark:text-indigo-400 dark:hover:border-indigo-300 dark:hover:text-indigo-300 px-4 py-4'>
+                <DownloadIcon className='w-4 h-4 mr-2' />
+                <span className='font-bold'>Download PDF</span>
+            </button>
         </div>
         <ResumeSection title="professional history">
             <ResumeEntry label="Wasabi Technologies" sublabel="Senior Software Engineer" time="2020 - Present">
@@ -89,13 +96,13 @@ export default function Resume() {
                 <GithubIcon className='inline font-bold w-4 h-4 mr-2 stroke-black dark:stroke-white' />
                 <span className='font-bold inline'>Github</span>
                 <span className='mx-2'>|</span>
-                <a className='cursor-pointer' href='https://github.com/aventide' target="_blank" rel="noopener noreferrer">aventide</a>
+                <StyledLink href='https://github.com/aventide' target="_blank" rel="noopener noreferrer">aventide</StyledLink>
             </div>
             <div className='mb-2'>
                 <UserIcon className='inline font-bold w-4 h-4 mr-2 stroke-black dark:stroke-white' />
                 <span className='font-bold inline'>Site</span>
                 <span className='mx-2'>|</span>
-                <a className='cursor-pointer' href='https://alexstaples.dev' target="_blank" rel="noopener noreferrer">alexstaples.dev</a>
+                <StyledLink href='https://alexstaples.dev' target="_blank" rel="noopener noreferrer">alexstaples.dev</StyledLink>
             </div>
         </ResumeSection>
         <ResumeSection title="education">
@@ -156,4 +163,11 @@ function ResumeEntry({ children, label, sublabel, time }) {
             </div>
         </div>
     )
+}
+
+function StyledLink({ children, ...rest }) {
+    return <a className='cursor-pointer border-indigo-600 text-indigo-600 hover:border-indigo-400 hover:text-indigo-400 dark:border-indigo-400 dark:text-indigo-400 dark:hover:border-indigo-300 dark:hover:text-indigo-300' {...rest}>
+        {children}
+    </a>
+
 }
