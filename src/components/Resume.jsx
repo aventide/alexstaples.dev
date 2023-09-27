@@ -2,6 +2,7 @@ import { useCollapse } from 'react-collapsed';
 
 import { ReactComponent as TriangleIcon } from '../assets/triangle.svg';
 import { ReactComponent as TriangleFilledIcon } from '../assets/triangle-filled.svg';
+import { ReactComponent as CircleIcon } from '../assets/circle.svg';
 import { ReactComponent as GithubIcon } from '../assets/github.svg';
 import { ReactComponent as UserIcon } from '../assets/user.svg';
 import { ReactComponent as DownloadIcon } from '../assets/download.svg';
@@ -12,13 +13,7 @@ import LightDarkModeSwitch from './LightDarkModeSwitch';
 
 export default function Resume() {
     return <div className=''>
-        <div className='flex justify-between'>
-            <div className='flex items-center cursor-pointer'>
-                <TriangleFilledIcon className='rotate-[-90deg] w-4 h-4 mr-2 fill-black dark:fill-white' />
-                <span className='font-heading font-bold inline-block text-lg'>HOME</span>
-            </div>
-            {/* <LightDarkModeSwitch /> */}
-        </div>
+        <NavBreadcrumbs />
         <div className='mb-4 flex items-center flex-col text-center'>
             <div>
                 <h1 className='font-heading font-bold mt-4 inline-block'>Alex Staples</h1>
@@ -170,4 +165,16 @@ function StyledLink({ children, ...rest }) {
         {children}
     </a>
 
+}
+
+function NavBreadcrumbs() {
+    return <div className='flex justify-between'>
+        <div className='flex items-center cursor-pointer'>
+            <TriangleFilledIcon className='rotate-[-90deg] w-4 h-4 mr-2 fill-black dark:fill-white' />
+            <span className='font-heading font-bold inline-block text-lg'>HOME</span>
+            <CircleIcon className='w-2 h-2 mx-2 fill-black dark:fill-white' />
+            <span className='font-heading font-bold inline-block text-lg'>RESUME</span>
+        </div>
+        {/* <LightDarkModeSwitch /> */}
+    </div>
 }
