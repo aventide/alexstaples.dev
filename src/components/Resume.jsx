@@ -7,6 +7,7 @@ import { ReactComponent as GithubIcon } from '../assets/github.svg';
 import { ReactComponent as UserIcon } from '../assets/user.svg';
 import { ReactComponent as GradCapIcon } from '../assets/graduation-cap.svg';
 import { ReactComponent as DownloadIcon } from '../assets/download.svg';
+import { useState } from 'react';
 
 // feather icons https://feathericons.com/
 // graduation cap fromhttps://iconoir.com/
@@ -31,7 +32,7 @@ export default function Resume() {
             </button>
         </div>
         <ResumeSection title="professional history">
-            <ResumeEntry label="Wasabi Technologies" sublabel="Senior Software Engineer" time="2020 - Present">
+            <ResumeEntry label="Wasabi Technologies" sublabel="Senior Software Engineer" time="2020 - Present" open>
                 {/* <p>Senior engineer for the applications team at a cloud storage startup. Creates React-powered web tools for internal use by our operations teams, designing core architectural components in company codebases. Key contributor to the development of the customer-facing Wasabi Console application. Supervises the daily creation and deployment of service images for testing, working closely with the infrastructure team.</p> */}
                 <ul className='list-disc'>
                     <li>Senior engineer for the applications team at a cloud storage startup</li>
@@ -135,15 +136,19 @@ function SkillsList({ title, skills }) {
 }
 
 
-function ResumeEntry({ children, label, sublabel, time }) {
+function ResumeEntry({ children, label, sublabel, time, open = false }) {
 
-    const { getCollapseProps, getToggleProps, isExpanded } = useCollapse({
-        duration: 200
+    const [isExpanded, setExpanded] = useState(open);
+    const { getCollapseProps, getToggleProps } = useCollapse({
+        duration: 200,
+        isExpanded
     });
 
     return (
         <div className='mb-4'>
-            <div className={`flex justify-between select-none ${children ? 'cursor-pointer' : 'cursor-default'}`} {...getToggleProps({ disabled: !children })}>
+            <div className={`flex justify-between select-none ${children ? 'cursor-pointer' : 'cursor-default'}`} {...getToggleProps({
+                disabled: !children, onClick: () => setExpanded((prevExpanded) => !prevExpanded),
+            })}>
                 <div className='sm:flex'>
                     <span className='font-bold flex sm:inline-flex items-center'>
                         {children ? (
@@ -175,15 +180,15 @@ function StyledLink({ children, ...rest }) {
 }
 
 function StyledNavLink({ active, children, ...rest }) {
-    return <span className={`font-heading font-bold inline-block text-lg cursor-pointer ${!active ? highlightClasses : 'hover:opacity-70'}`} {...rest}>
+    return <span className={`text-sm md:text-lg font-heading font-bold inline-block cursor-pointer ${active ? 'underline decoration-2 underline-offset-4' : 'hover:opacity-70'}`} {...rest}>
         {children}
     </span>
 }
 
 function NavBreadcrumbs() {
-    return <div className='flex justify-between'>
+    return <div className='flex justify-between mb-4'>
         <div className='flex items-center cursor-pointer'>
-            <TriangleFilledIcon className='rotate-[-90deg] w-4 h-4 mr-2 fill-black dark:fill-white' />
+            {/* <TriangleFilledIcon className='rotate-[-90deg] w-4 h-4 mr-2 fill-black dark:fill-white' /> */}
             <StyledNavLink>HOME</StyledNavLink>
             <CircleIcon className='w-2 h-2 mx-2 fill-black dark:fill-white' />
             <StyledNavLink active>RESUME</StyledNavLink>
