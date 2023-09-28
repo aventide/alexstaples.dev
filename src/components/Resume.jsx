@@ -5,11 +5,11 @@ import { ReactComponent as TriangleFilledIcon } from '../assets/triangle-filled.
 import { ReactComponent as CircleIcon } from '../assets/circle.svg';
 import { ReactComponent as GithubIcon } from '../assets/github.svg';
 import { ReactComponent as UserIcon } from '../assets/user.svg';
+import { ReactComponent as GradCapIcon } from '../assets/graduation-cap.svg';
 import { ReactComponent as DownloadIcon } from '../assets/download.svg';
 
-import LightDarkModeSwitch from './LightDarkModeSwitch';
-
-// feather icons https://feathericons.com/?query=cir
+// feather icons https://feathericons.com/
+// graduation cap fromhttps://iconoir.com/
 
 export default function Resume() {
     return <div className=''>
@@ -25,7 +25,7 @@ export default function Resume() {
             </div>
         </div>
         <div className='mb-8 sm:mb-4 flex justify-center'>
-            <button className='badge border-indigo-600 text-indigo-600 hover:border-indigo-400 hover:text-indigo-400 dark:border-indigo-400 dark:text-indigo-400 dark:hover:border-indigo-300 dark:hover:text-indigo-300 px-4 py-4'>
+            <button className={`badge ${highlightBadgeClasses} ${highlightClasses} px-4 py-4`}>
                 <DownloadIcon className='w-4 h-4 mr-2' />
                 <span className='font-bold'>Download PDF</span>
             </button>
@@ -101,7 +101,12 @@ export default function Resume() {
             </div>
         </ResumeSection>
         <ResumeSection title="education">
-            <ResumeEntry label="University of Massachusetts Lowell" sublabel="B.S. in Information Technology" time="2015" />
+            <ResumeEntry label={
+                <>
+                    <GradCapIcon className='inline font-bold w-4 h-4 mr-2 stroke-black dark:stroke-white' />
+                    <span>University of Massachusetts Lowell</span>
+                </>
+            } sublabel="B.S. in Information Technology" time="2015" />
         </ResumeSection>
     </div>
 }
@@ -121,7 +126,7 @@ function SkillsList({ title, skills }) {
         <span className='font-bold'>{title}</span>
         <ul className='mt-4'>
             {skills && skills.map(skill =>
-                <li className='badge mr-2 border-black dark:text-white dark:border-white'>
+                <li className='badge mr-2 border-black dark:text-white dark:border-white' key={skill}>
                     {skill}
                 </li>
             )}
@@ -142,39 +147,46 @@ function ResumeEntry({ children, label, sublabel, time }) {
                 <div className='sm:flex'>
                     <span className='font-bold flex sm:inline-flex items-center'>
                         {children ? (
-                            <label className={`cursor-pointer transition-all duration-200 ease-in-out mx-2 ${isExpanded ? 'rotate-90' : 'rotate-0'}`}>
+                            <label className={`cursor-pointer transition-all duration-200 ease-in-out mr-2 ${isExpanded ? 'rotate-90' : 'rotate-0'}`}>
                                 <TriangleIcon className='rotate-90 w-4 h-4 stroke-black dark:stroke-white' />
                             </label>
                         ) : null}
                         {label}
                     </span>
                     <span className='mx-2 hidden sm:inline'>|</span>
-                    <span className={`inline-block ${children ? 'ml-8' : 'ml:0'} sm:ml-0`}>{sublabel}</span>
+                    <span className={`inline-block ml-6 sm:ml-0`}>{sublabel}</span>
                 </div>
                 <span>{time}</span>
             </div>
-            <div className={'ml-8 max-w-3xl text-sm'} {...getCollapseProps()}>
+            <div className={'ml-6 max-w-3xl text-sm'} {...getCollapseProps()}>
                 <div className='mt-4 pb-4'>{children}</div>
             </div>
         </div>
     )
 }
 
+const highlightClasses = "text-indigo-600 hover:text-indigo-400 dark:text-indigo-400 dark:hover:text-indigo-300";
+const highlightBadgeClasses = "border-indigo-600 hover:border-indigo-400 dark:border-indigo-400 dark:hover:border-indigo-300";
+
 function StyledLink({ children, ...rest }) {
-    return <a className='cursor-pointer border-indigo-600 text-indigo-600 hover:border-indigo-400 hover:text-indigo-400 dark:border-indigo-400 dark:text-indigo-400 dark:hover:border-indigo-300 dark:hover:text-indigo-300' {...rest}>
+    return <a className={`cursor-pointer ${highlightClasses}`} {...rest}>
         {children}
     </a>
+}
 
+function StyledNavLink({ active, children, ...rest }) {
+    return <span className={`font-heading font-bold inline-block text-lg cursor-pointer ${!active ? highlightClasses : 'hover:opacity-70'}`} {...rest}>
+        {children}
+    </span>
 }
 
 function NavBreadcrumbs() {
     return <div className='flex justify-between'>
         <div className='flex items-center cursor-pointer'>
             <TriangleFilledIcon className='rotate-[-90deg] w-4 h-4 mr-2 fill-black dark:fill-white' />
-            <span className='font-heading font-bold inline-block text-lg'>HOME</span>
+            <StyledNavLink>HOME</StyledNavLink>
             <CircleIcon className='w-2 h-2 mx-2 fill-black dark:fill-white' />
-            <span className='font-heading font-bold inline-block text-lg'>RESUME</span>
+            <StyledNavLink active>RESUME</StyledNavLink>
         </div>
-        {/* <LightDarkModeSwitch /> */}
     </div>
 }
