@@ -1,7 +1,6 @@
 import { useCollapse } from 'react-collapsed';
 
 import { ReactComponent as TriangleIcon } from '../assets/triangle.svg';
-import { ReactComponent as TriangleFilledIcon } from '../assets/triangle-filled.svg';
 import { ReactComponent as CircleIcon } from '../assets/circle.svg';
 import { ReactComponent as GithubIcon } from '../assets/github.svg';
 import { ReactComponent as UserIcon } from '../assets/user.svg';
@@ -38,7 +37,7 @@ export default function Resume() {
                     <li>Senior engineer for the applications team at a cloud storage startup</li>
                     <li>Creates React-powered web tools for internal use by our operations teams, designing core architectural components in company codebases</li>
                     <li>Key contributor to the development of the customer-facing Wasabi Console application</li>
-                    <li>Supervises the daily creation and deployment of service images for testing, working closely with the infrastructure team</li>
+                    <li>Supervises the daily creation and deployment of service artifacts, serving as a liaison with the infrastructure teams</li>
                 </ul>
                 <br />
                 <p><span className='font-bold'>Key Technologies: </span>React, Node, Material-UI, Highcharts, Containers, Custom CICD Workflows, GitHub Actions</p>
@@ -188,7 +187,6 @@ function StyledNavLink({ active, children, ...rest }) {
 function NavBreadcrumbs() {
     return <div className='flex justify-between mb-4'>
         <div className='flex items-center cursor-pointer'>
-            {/* <TriangleFilledIcon className='rotate-[-90deg] w-4 h-4 mr-2 fill-black dark:fill-white' /> */}
             <StyledNavLink>HOME</StyledNavLink>
             <CircleIcon className='w-2 h-2 mx-2 fill-black dark:fill-white' />
             <StyledNavLink active>RESUME</StyledNavLink>
