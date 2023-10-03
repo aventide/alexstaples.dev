@@ -1,12 +1,14 @@
+import { useState } from 'react';
 import { useCollapse } from 'react-collapsed';
 
-import { ReactComponent as TriangleIcon } from '../assets/triangle.svg';
-import { ReactComponent as CircleIcon } from '../assets/circle.svg';
-import { ReactComponent as GithubIcon } from '../assets/github.svg';
-import { ReactComponent as UserIcon } from '../assets/user.svg';
-import { ReactComponent as GradCapIcon } from '../assets/graduation-cap.svg';
-import { ReactComponent as DownloadIcon } from '../assets/download.svg';
-import { useState } from 'react';
+import { ReactComponent as TriangleIcon } from '../assets/icons/triangle.svg';
+import { ReactComponent as CircleIcon } from '../assets/icons/circle.svg';
+import { ReactComponent as GithubIcon } from '../assets/icons/github.svg';
+import { ReactComponent as UserIcon } from '../assets/icons/user.svg';
+import { ReactComponent as GradCapIcon } from '../assets/icons/graduation-cap.svg';
+import { ReactComponent as DownloadIcon } from '../assets/icons/download.svg';
+
+import text from '../assets/text/resume.json';
 
 // feather icons https://feathericons.com/
 // graduation cap fromhttps://iconoir.com/
@@ -16,43 +18,23 @@ export default function Resume() {
         <NavBreadcrumbs />
         <div className='mb-4 flex items-center flex-col text-center'>
             <div>
-                <h1 className='font-heading font-bold mt-4 inline-block'>Alex Staples</h1>
+                <h1 className='font-heading font-bold mt-4 inline-block'>{text.author}</h1>
                 <div>
-                    <span>Northborough, MA</span>
+                    <span>{text.address}</span>
                     <span className='mx-2'>|</span>
-                    <StyledLink href="mailto:ajstaples@gmail.com">ajstaples@gmail.com</StyledLink>
+                    <StyledLink href={`mailto:${text.email}`}>{text.email}</StyledLink>
                 </div>
             </div>
         </div>
         <div className='mb-8 sm:mb-4 flex justify-center'>
             <button className={`badge ${highlightBadgeClasses} ${highlightClasses} px-4 py-4`}>
                 <DownloadIcon className='w-4 h-4 mr-2' />
-                <span className='font-bold'>Download PDF</span>
+                <span className='font-bold'>{text.downloadPDF}</span>
             </button>
         </div>
-        <ResumeSection title="professional history">
-            <ResumeEntry label="Wasabi Technologies" sublabel="Senior Software Engineer" time="2020 - Present" open>
-                {/* <p>Senior engineer for the applications team at a cloud storage startup. Creates React-powered web tools for internal use by our operations teams, designing core architectural components in company codebases. Key contributor to the development of the customer-facing Wasabi Console application. Supervises the daily creation and deployment of service images for testing, working closely with the infrastructure team.</p> */}
-                <ul className='list-disc'>
-                    <li>Senior engineer for the applications team at a cloud storage startup</li>
-                    <li>Creates React-powered web tools for internal use by our operations teams, designing core architectural components in company codebases</li>
-                    <li>Key contributor to the development of the customer-facing Wasabi Console application</li>
-                    <li>Supervises the daily creation and deployment of service artifacts, serving as a liaison with the infrastructure teams</li>
-                </ul>
-                <br />
-                <p><span className='font-bold'>Key Technologies: </span>React, Node, Material-UI, Highcharts, Containers, Custom CICD Workflows, GitHub Actions</p>
-            </ResumeEntry>
-            <ResumeEntry label="Motif Software" sublabel="Senior Software Engineer" time="2019 - 2020" >
-                <ul className='list-disc'>
-                    <li>Front end developer as a contractor working with Motif Software</li>
-                    <li>Developed major features for React applications for a variety of clients</li>
-                    <li>Interacted with .NET framework for backend, EpiServer, and AI chatbots</li>
-                    <li>Wrote extensive technical documentation for digital cytology software</li>
-                </ul>
-                <br />
-                <p><span className='font-bold'>Clients: </span>Hologic, Samsung, Orbita, Lew's Fishing</p>
-                <p><span className='font-bold'>Key Technologies: </span>Javascript, React, CSS Modules, SVG, .NET Core, EpiServer</p>
-            </ResumeEntry>
+        <ResumeSection title={text.professionalHistory}>
+            <Job company="wasabi" open />
+            <Job company="motifSoftware" />
             <ResumeEntry label="TandemSeven, Inc." sublabel="Senior Front End Developer" time="2018 - 2019">
                 {/* <p>Front end engineer for digital customer experience consulting firm. Worked with clients based in Boston and Chicago on web development for their eCommerce platforms. Projects centered on the React ecosystem and required special emphasis on internationalization and accessibility. Additionally, conducted internal research pertaining to vector graphics and the Elm language.</p> */}
                 <ul className='list-disc'>
@@ -167,6 +149,29 @@ function ResumeEntry({ children, label, sublabel, time, open = false }) {
             </div>
         </div>
     )
+}
+
+function Job({ company, ...rest }) {
+    const companyKey = text.jobs[company];
+    const { label, sublabel, time, bullets, clients, tech } = companyKey;
+    return <ResumeEntry label={label} sublabel={sublabel} time={time} {...rest}>
+        <ul className='list-disc'>
+            {bullets.map(bullet => <li>{bullet}</li>)}
+        </ul>
+        <br />
+        {
+            clients ? (
+                <p>
+            <span className='font-bold'>{text.clients}: </span>
+            {clients}
+            </p>
+            ) : null
+        }
+        <p>
+            <span className='font-bold'>{text.keyTechnologies}: </span>
+            {tech}
+        </p>
+    </ResumeEntry>
 }
 
 const highlightClasses = "text-indigo-600 hover:text-indigo-400 dark:text-indigo-400 dark:hover:text-indigo-300";

@@ -1,0 +1,38 @@
+{
+    "author": "Alex Staples",
+    "address": "Northborough, MA",
+    "email": "ajstaples@gmail.com",
+    "downloadPDF": "Download PDF",
+    "clients": "Clients",
+    "keyTechnologies": "Key Technologies",
+    "professionalHistory": "professional history",
+    "jobs": {
+        "wasabi": {
+            "label": "Wasabi Technologies",
+            "sublabel": "Senior Software Engineer",
+            "time": "2020 - Present",
+            "longform": "Senior engineer for the applications team at a cloud storage startup. Creates React-powered web tools for internal use by our operations teams, designing core architectural components in company codebases. Key contributor to the development of the customer-facing Wasabi Console application. Supervises the daily creation and deployment of service images for testing, working closely with the infrastructure team.",
+            "bullets": [
+                "Senior engineer for the applications team at a cloud storage startup",
+                "Creates React-powered web tools for internal use by our operations teams, designing core architectural components in company codebases",
+                "Key contributor to the development of the customer-facing Wasabi Console application",
+                "Supervises the daily creation and deployment of service artifacts, serving as a liaison with the infrastructure teams"
+            ],
+            "tech": "React, Node, Material-UI, Highcharts, Containers, Custom CICD Workflows, GitHub Actions"
+        },
+        "motifSoftware": {
+            "label": "Motif Software",
+            "sublabel": "Senior Software Engineer",
+            "time": "2019 - 2020",
+            "longform": "Senior engineer for the applications team at a cloud storage startup. Creates React-powered web tools for internal use by our operations teams, designing core architectural components in company codebases. Key contributor to the development of the customer-facing Wasabi Console application. Supervises the daily creation and deployment of service images for testing, working closely with the infrastructure team.",
+            "bullets": [
+                "Front end developer as a contractor working with Motif Software",
+                "Developed major features for React applications for a variety of clients",
+                "Interacted with .NET framework for backend, EpiServer, and AI chatbots",
+                "Wrote extensive technical documentation for digital cytology software"
+            ],
+            "clients": "Hologic, Samsung, Orbita, Lew's Fishing",
+            "tech": "Javascript, React, CSS Modules, SVG, .NET Core, EpiServer"
+        }
+    }
+}
