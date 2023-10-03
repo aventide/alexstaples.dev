@@ -1,9 +1,9 @@
 import React from 'react';
-import GenpactLogo from '../assets/genpact-logo.png';
-import WasabiLogo from '../assets/wasabi-logo.png';
-import RedboxLogo from '../assets/redbox-logo.png';
-import UnitedLogo from '../assets/united-logo.png';
-import HologicLogo from '../assets/hologic-logo.png';
+import GenpactLogo from '../assets/logos/genpact-logo.png';
+import WasabiLogo from '../assets/logos/wasabi-logo.png';
+import RedboxLogo from '../assets/logos/redbox-logo.png';
+import UnitedLogo from '../assets/logos/united-logo.png';
+import HologicLogo from '../assets/logos/hologic-logo.png';
 
 export default function CompanyLogos() {
     return (
