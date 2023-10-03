@@ -24,7 +24,6 @@
             "label": "Motif Software",
             "sublabel": "Senior Software Engineer",
             "time": "2019 - 2020",
-            "longform": "Senior engineer for the applications team at a cloud storage startup. Creates React-powered web tools for internal use by our operations teams, designing core architectural components in company codebases. Key contributor to the development of the customer-facing Wasabi Console application. Supervises the daily creation and deployment of service images for testing, working closely with the infrastructure team.",
             "bullets": [
                 "Front end developer as a contractor working with Motif Software",
                 "Developed major features for React applications for a variety of clients",
@@ -33,6 +32,33 @@
             ],
             "clients": "Hologic, Samsung, Orbita, Lew's Fishing",
             "tech": "Javascript, React, CSS Modules, SVG, .NET Core, EpiServer"
+        },
+        "tandemSeven": {
+            "label": "TandemSeven, Inc.",
+            "sublabel": "Senior Front End Developer",
+            "time": "2018 - 2019",
+            "longform": "Front end engineer for digital customer experience consulting firm. Worked with clients based in Boston and Chicago on web development for their eCommerce platforms. Projects centered on the React ecosystem and required special emphasis on internationalization and accessibility. Additionally, conducted internal research pertaining to vector graphics and the Elm language.",
+            "bullets": [
+                "Front end engineer for digital customer experience consulting firm",
+                "Worked with clients based in Boston and Chicago on web development for their eCommerce platforms",
+                "Projects centered on the React ecosystem and required special emphasis on internationalization and accessibility",
+                "Conducted internal research pertaining to vector graphics and the Elm language"
+            ],
+            "clients": "Redbox, United Airlines",
+            "tech": "Javascript, React, Custom CSS Utilities, Browser Geolocation API, Bing Maps API, Elm"
+        },
+        "ca": {
+            "label": "CA Technologies",
+            "sublabel": "Associate Software Engineer",
+            "time": "2015 - 2018",
+            "longform": "Supporting role for development of CA Performance Management - a network infrastructure analysis and management product. Focused on the construction of internal tooling, including a visual API query builder, as well as a vendor certification search tool. Also wrote a suite of network metrics calculation tests, and began the conversion of existing tools to React and Electron. Assisted the sustaining team with resolving issues reported by customers.",
+            "bullets": [
+                "Developer for CA Performance Management - a network infrastructure analysis and management product",
+                "Constructed internal tooling, including a visual API query builder, and a vendor certification search tool",
+                "Wrote test suite for verifying network metrics calculations",
+                "Assisted the sustaining team with resolving issues reported by customers"
+            ],
+            "tech": "Java, Python, Javascript, React, Sencha Ext JS, OData, HP Vertica, RHEL"
         }
     }
 }
