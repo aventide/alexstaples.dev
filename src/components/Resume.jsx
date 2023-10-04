@@ -32,7 +32,7 @@ export default function Resume() {
                 <span className='font-bold'>{text.downloadPDF}</span>
             </button>
         </div>
-        <ResumeSection title={text.professionalHistory}>
+        <ResumeSection title="professional history">
             <Job company="wasabi" open />
             <Job company="motifSoftware" />
             <Job company="tandemSeven" />
@@ -40,11 +40,9 @@ export default function Resume() {
         </ResumeSection>
         <ResumeSection title="technical expertise">
             <div className='grid grid-cols sm:grid-cols-2 md:grid-cols-3 gap-4'>
-                <SkillsList title='Web' skills={['React Ecosystem', 'Node', 'Canvas', 'CSS', 'AWS S3', 'Networking', 'TC39']} />
-                <SkillsList title='Libraries' skills={['React', 'Redux', 'React Router', 'Material UI', 'Tailwind', 'Highcharts', 'Jest']} />
-                <SkillsList title='Concepts' skills={['Agile', 'DevOps', 'Microservices', 'Accessibility', 'Linux Administration', 'Open Source']} />
-                <SkillsList title='Tools' skills={['GPT-4', 'Webpack', 'Git', 'Docker', 'Kubernetes', 'ESLint']} />
-                <SkillsList title='Programming Languages' skills={['Javascript', 'Elm', 'C', 'C#', 'Python']} />
+                {Object.keys(text.skills).map(skillSection => 
+                    <SkillsList title={skillSection} skills={text.skills[skillSection]} />    
+                )}
             </div>
         </ResumeSection>
         <ResumeSection title="portfolio">
@@ -52,13 +50,13 @@ export default function Resume() {
                 <GithubIcon className='inline font-bold w-4 h-4 mr-2 stroke-black dark:stroke-white' />
                 <span className='font-bold inline'>Github</span>
                 <span className='mx-2'>|</span>
-                <StyledLink href='https://github.com/aventide' target="_blank" rel="noopener noreferrer">aventide</StyledLink>
+                <StyledLink href={text.portfolioLinks.github} target="_blank" rel="noopener noreferrer">aventide</StyledLink>
             </div>
             <div className='mb-2'>
                 <UserIcon className='inline font-bold w-4 h-4 mr-2 stroke-black dark:stroke-white' />
                 <span className='font-bold inline'>Site</span>
                 <span className='mx-2'>|</span>
-                <StyledLink href='https://alexstaples.dev' target="_blank" rel="noopener noreferrer">alexstaples.dev</StyledLink>
+                <StyledLink href={text.portfolioLinks.site} target="_blank" rel="noopener noreferrer">alexstaples.dev</StyledLink>
             </div>
         </ResumeSection>
         <ResumeSection title="education">

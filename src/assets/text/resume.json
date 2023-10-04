@@ -5,7 +5,6 @@
     "downloadPDF": "Download PDF",
     "clients": "Clients",
     "keyTechnologies": "Key Technologies",
-    "professionalHistory": "professional history",
     "jobs": {
         "wasabi": {
             "label": "Wasabi Technologies",
@@ -60,5 +59,52 @@
             ],
             "tech": "Java, Python, Javascript, React, Sencha Ext JS, OData, HP Vertica, RHEL"
         }
+    },
+    "skills": {
+        "Web": [
+            "React Ecosystem",
+            "Node",
+            "Canvas",
+            "CSS",
+            "AWS S3",
+            "Networking",
+            "TC39"
+        ],
+        "Libraries": [
+            "React",
+            "Redux",
+            "React Router",
+            "Material UI",
+            "Tailwind",
+            "Highcharts",
+            "Jest"
+        ],
+        "Concepts": [
+            "Agile",
+            "DevOps",
+            "Microservices",
+            "Accessibility",
+            "Linux Administration",
+            "Open Source"
+        ],
+        "Tools": [
+            "GPT-4",
+            "Webpack",
+            "Git",
+            "Docker",
+            "Kubernetes",
+            "ESLint"
+        ],
+        "Programming Languages": [
+            "Javascript",
+            "Elm",
+            "C",
+            "C#",
+            "Python"
+        ]
+    },
+    "portfolioLinks": {
+        "github": "https://github.com/aventide",
+        "site": "https://alexstaples.dev"
     }
 }
