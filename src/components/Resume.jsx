@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import { useCollapse } from 'react-collapsed';
+import { PDFDownloadLink } from '@react-pdf/renderer';
 
 import { ReactComponent as TriangleIcon } from '../assets/icons/triangle.svg';
 import { ReactComponent as CircleIcon } from '../assets/icons/circle.svg';
@@ -7,11 +8,11 @@ import { ReactComponent as GithubIcon } from '../assets/icons/github.svg';
 import { ReactComponent as UserIcon } from '../assets/icons/user.svg';
 import { ReactComponent as GradCapIcon } from '../assets/icons/graduation-cap.svg';
 import { ReactComponent as DownloadIcon } from '../assets/icons/download.svg';
-
 import { ReactComponent as MenuIcon } from '../assets/icons/menu.svg';
 import { ReactComponent as ASIcon } from '../assets/icons/taecon.svg';
-
 import text from '../assets/text/resume.json';
+
+import PDFResume from './PDFResume';
 
 // feather icons https://feathericons.com/
 // graduation cap fromhttps://iconoir.com/
@@ -30,10 +31,12 @@ export default function Resume() {
             </div>
         </div>
         <div className='mb-8 sm:mb-4 flex justify-center'>
-            <button className={`badge ${highlightBadgeClasses} ${highlightClasses} px-4 py-4`}>
-                <DownloadIcon className='w-4 h-4 mr-2' />
-                <span className='font-bold'>{text.downloadPDF}</span>
-            </button>
+            <PDFDownloadLink document={<PDFResume />} fileName="resume.pdf">
+                {({ blob, url, loading, error }) => (loading ? 'Loading document...' : <button className={`badge ${highlightBadgeClasses} ${highlightClasses} px-4 py-4`}>
+                    <DownloadIcon className='w-4 h-4 mr-2' />
+                    <span className='font-bold'>{text.downloadPDF}</span>
+                </button>)}
+            </PDFDownloadLink>
         </div>
         <ResumeSection title="professional history">
             <Job company="wasabi" open />
