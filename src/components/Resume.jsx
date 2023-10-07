@@ -8,6 +8,9 @@ import { ReactComponent as UserIcon } from '../assets/icons/user.svg';
 import { ReactComponent as GradCapIcon } from '../assets/icons/graduation-cap.svg';
 import { ReactComponent as DownloadIcon } from '../assets/icons/download.svg';
 
+import { ReactComponent as MenuIcon } from '../assets/icons/menu.svg';
+import { ReactComponent as ASIcon } from '../assets/icons/taecon.svg';
+
 import text from '../assets/text/resume.json';
 
 // feather icons https://feathericons.com/
@@ -15,8 +18,8 @@ import text from '../assets/text/resume.json';
 
 export default function Resume() {
     return <div className=''>
-        <NavBreadcrumbs />
-        <div className='mb-4 flex items-center flex-col text-center'>
+        <NavHeader />
+        <div className='mt-8 mb-4 flex items-center flex-col text-center'>
             <div>
                 <h1 className='font-heading font-bold mt-4 inline-block'>{text.author}</h1>
                 <div>
@@ -40,8 +43,8 @@ export default function Resume() {
         </ResumeSection>
         <ResumeSection title="technical expertise">
             <div className='grid grid-cols sm:grid-cols-2 md:grid-cols-3 gap-4'>
-                {Object.keys(text.skills).map(skillSection => 
-                    <SkillsList title={skillSection} skills={text.skills[skillSection]} />    
+                {Object.keys(text.skills).map(skillSection =>
+                    <SkillsList title={skillSection} skills={text.skills[skillSection]} />
                 )}
             </div>
         </ResumeSection>
@@ -133,12 +136,12 @@ function Job({ company, ...rest }) {
     const { label, sublabel, time, bullets, clients, tech } = companyKey;
     return <ResumeEntry label={label} sublabel={sublabel} time={time} {...rest}>
         <ul className='list-disc'>
-            {bullets.map(bullet => <li>{bullet}</li>)}
+            {bullets.map(bullet => <li className='mb-0'>{bullet}</li>)}
         </ul>
         <br />
         {
             clients ? (
-                <p>
+                <p className='mb-0'>
                     <span className='font-bold'>{text.clients}: </span>
                     {clients}
                 </p>
@@ -166,12 +169,21 @@ function StyledNavLink({ active, children, ...rest }) {
     </span>
 }
 
-function NavBreadcrumbs() {
-    return <div className='flex justify-between mb-4'>
-        <div className='flex items-center cursor-pointer'>
+function NavHeader() {
+    return <div className='flex justify-between'>
+        <div className='items-center cursor-pointer hidden md:flex'>
             <StyledNavLink>HOME</StyledNavLink>
             <CircleIcon className='w-2 h-2 mx-2 fill-black dark:fill-white' />
             <StyledNavLink active>RESUME</StyledNavLink>
         </div>
+        <div className='flex-1 flex justify-between md:hidden'>
+            <button className=''>
+                <ASIcon className='w-8 h-8' />
+            </button>
+            <button className='flex justify-end'>
+                <MenuIcon className='w-8 h-8' />
+            </button>
+        </div>
+        <ASIcon className='hidden md:inline w-8 h-8' />
     </div>
 }
