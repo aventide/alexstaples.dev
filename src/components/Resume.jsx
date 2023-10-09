@@ -38,7 +38,7 @@ export default function Resume() {
                 </button>)}
             </PDFDownloadLink>
         </div>
-        <ResumeSection title="professional history">
+        <ResumeSection title="professional experience">
             <Job company="wasabi" open />
             <Job company="motifSoftware" />
             <Job company="tandemSeven" />
