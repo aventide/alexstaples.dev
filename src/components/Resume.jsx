@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import { useCollapse } from 'react-collapsed';
-import { PDFDownloadLink } from '@react-pdf/renderer';
+import { PDFDownloadLink, PDFViewer } from '@react-pdf/renderer';
 
 import { ReactComponent as TriangleIcon } from '../assets/icons/triangle.svg';
 import { ReactComponent as CircleIcon } from '../assets/icons/circle.svg';
@@ -30,7 +30,7 @@ export default function Resume() {
                 </div>
             </div>
         </div>
-        <div className='mb-8 sm:mb-4 flex justify-center'>
+        <div className='mb-8 mb-16 sm:mb-8 md:mb-4 flex justify-center'>
             <PDFDownloadLink document={<PDFResume />} fileName="resume.pdf">
                 {({ blob, url, loading, error }) => (loading ? 'Loading document...' : <button className={`badge ${highlightBadgeClasses} ${highlightClasses} px-4 py-4`}>
                     <DownloadIcon className='w-4 h-4 mr-2' />
@@ -74,6 +74,10 @@ export default function Resume() {
             } sublabel="B.S. in Information Technology" time="2015" />
         </ResumeSection>
     </div>
+
+// return <PDFViewer>
+// <PDFResume />
+// </PDFViewer>
 }
 
 function ResumeSection({ children, title }) {
