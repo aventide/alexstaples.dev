@@ -8,7 +8,7 @@ export default {
     extend: {},
     fontFamily: {
       'body': ['Lato', 'sans-serif'],
-      'heading': ['Gotham', 'sans-serif'],
+      'heading': ['Figtree', 'sans-serif'],
     },
   },
   plugins: [require("daisyui")],
