@@ -69,13 +69,13 @@ export default function Resume() {
             <ResumeEntry label={
                 <>
                     <GradCapIcon className='inline font-bold w-4 h-4 mr-2 stroke-black dark:stroke-white' />
-                    <span>University of Massachusetts Lowell</span>
+                    <span>{text.college}</span>
                 </>
-            } sublabel="B.S. in Information Technology" time="2015" />
+            } sublabel={text.degree} time={text.graduationYear} />
         </ResumeSection>
-        {/* <PDFViewer>
+        <PDFViewer>
 <           PDFResume />
-        </PDFViewer> */}
+        </PDFViewer>
     </div>
 }
 
