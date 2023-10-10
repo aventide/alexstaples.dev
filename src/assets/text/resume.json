@@ -59,7 +59,7 @@
             "bullets": [
                 "Developer for CA Performance Management - a network infrastructure analysis and management product",
                 "Constructed internal tooling, including a visual API query builder, and a vendor certification search tool",
-                "Wrote test suite for verifying network metrics calculations",
+                "Wrote extensive test suite for verifying network metrics calculations",
                 "Assisted the sustaining team with resolving issues reported by customers"
             ],
             "tech": "Java, Python, Javascript, React, Sencha Ext JS, OData, HP Vertica, RHEL"
