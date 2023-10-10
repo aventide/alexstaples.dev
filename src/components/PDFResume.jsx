@@ -42,7 +42,6 @@ const styles = StyleSheet.create({
     title: {
         fontWeight: 'bold',
         fontSize: '28pt',
-        textTransform: 'uppercase',
         fontFamily: 'Figtree'
     },
     subTitle: {
