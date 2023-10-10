@@ -73,11 +73,10 @@ export default function Resume() {
                 </>
             } sublabel="B.S. in Information Technology" time="2015" />
         </ResumeSection>
+        {/* <PDFViewer>
+<           PDFResume />
+        </PDFViewer> */}
     </div>
-
-// return <PDFViewer>
-// <PDFResume />
-// </PDFViewer>
 }
 
 function ResumeSection({ children, title }) {

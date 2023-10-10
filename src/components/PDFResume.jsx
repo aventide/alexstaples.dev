@@ -10,8 +10,11 @@ import PhoneIcon from '../assets/icons/resume/phone.png';
 import MailIcon from '../assets/icons/resume/mail.png';
 import LocationIcon from '../assets/icons/resume/map-pin.png';
 
+// disable hyphenation wrapping
+Font.registerHyphenationCallback(word => [word]);
 Font.register({ family: 'Figtree', src: FigtreeBoldFont });
 Font.register({ family: 'Lato', src: LatoRegularFont });
+
 
 const tw = createTw({
     theme: {
@@ -76,10 +79,13 @@ function Header() {
 }
 
 function ResumeSection({ title, children }) {
-    return <View style={{ paddingTop: "12pt" }}>
-        <Text style={{ fontFamily: "Figtree", textTransform: "uppercase", fontSize: "12pt" }}>{title}</Text>
-        <View style={{ height: "1pt", backgroundColor: "black", marginVertical: "2pt" }}></View>
-        <View style={{marginTop: '4pt'}}>{children}</View>
+    return <View style={{ paddingTop: "12pt", flexDirection: "row" }}>
+        <View style={{ marginHorizontal: "16pt" }}>
+            <Text style={{ fontFamily: "Figtree", textTransform: "uppercase", fontSize: "12pt" }}>{title}</Text>
+            <View style={{ height: "1.5pt", backgroundColor: "black", marginVertical: "2pt" }}></View>
+            <View style={{ marginTop: '4pt' }}>{children}</View>
+        </View>
+        <View></View>
     </View>
 }
 
@@ -96,23 +102,27 @@ function Job({ company, ...rest }) {
 
     return (
         <ResumeEntry label={label} sublabel={sublabel} time={time} {...rest}>
-            <View style={{ marginLeft: '10pt', marginBottom: '10pt' }}>
+            <View style={{ flexDirection: "column" }}>
                 {bullets.map((bullet, index) => (
-                    <Text style={{fontSize: '10pt', fontFamily: 'Lato'}} key={index}>{`• ${bullet}`}</Text>
+                    <View style={{ flexDirection: "row", fontSize: "9pt" }}>
+                        <Text style={{ marginHorizontal: 4, fontSize: "9pt" }}>•</Text>
+                        <Text style={{ fontSize: '9pt', fontFamily: 'Lato', marginBottom: '2pt' }} key={index}>{bullet}</Text>
+                    </View>
                 ))}
             </View>
 
-            {clients && (
+            {/* {clients && (
                 <Text>
-                    <Text style={{ fontSize: '10pt', fontFamily: 'Figtree'  }}>{text.clients}: </Text>
-                    <Text style={{ fontSize: '10pt', fontFamily: 'Lato' }}>{clients}</Text>
+                    <Text style={{ fontSize: '9pt', fontFamily: 'Figtree' }}>{text.clients}: </Text>
+                    <Text style={{ fontSize: '9pt', fontFamily: 'Lato' }}>{clients}</Text>
                 </Text>
             )}
 
             <Text>
-                <Text style={{ fontSize: '10pt', fontFamily: 'Figtree' }}>{text.keyTechnologies}: </Text>
-                <Text style={{ fontSize: '10pt', fontFamily: 'Lato' }}>{tech}</Text>
-            </Text>
+                <Text style={{ fontSize: '9pt', fontFamily: 'Figtree' }}>{text.keyTechnologies}: </Text>
+                <Text style={{ fontSize: '9pt', fontFamily: 'Lato' }}>{tech}</Text>
+            </Text> */}
+
         </ResumeEntry>
     );
 }
@@ -146,7 +156,7 @@ function ResumeEntry({ children, label, sublabel, time }) {
             fontFamily: 'Lato'
         },
         childrenContainer: {
-            marginLeft: 10,
+            marginLeft: 4,
         },
     });
 
@@ -155,7 +165,7 @@ function ResumeEntry({ children, label, sublabel, time }) {
             <View style={resumeEntryStyles.headerContainer}>
                 <View style={resumeEntryStyles.labelContainer}>
                     <Text style={resumeEntryStyles.labelText}>{label}</Text>
-                    <Text style={{fontFamily: "Figtree", fontSize: '10pt'}}>|</Text>
+                    <Text style={{ fontFamily: "Figtree", fontSize: '10pt' }}>|</Text>
                     <Text style={resumeEntryStyles.subLabelText}>{sublabel}</Text>
                 </View>
                 <Text style={resumeEntryStyles.timeText}>{time}</Text>
@@ -172,12 +182,19 @@ export default function PDFResume() {
                 <View style={{ margin: "12pt" }}>
                     <View style={tw("h-4 bg-red-500")}></View>
                     <Header />
-                    <ResumeSection title="professional experience">
-                        <Job company="wasabi" open />
-                        <Job company="motifSoftware" />
-                        <Job company="tandemSeven" />
-                        <Job company="ca" />
-                    </ResumeSection>
+                    <View style={{flexDirection: "row"}}>
+                        <View style={{ width: '70%' }}>
+                            <ResumeSection title="professional experience">
+                                <Job company="wasabi" open />
+                                <Job company="motifSoftware" />
+                                <Job company="tandemSeven" />
+                                <Job company="ca" />
+                            </ResumeSection>
+                        </View>
+                        <View style={{ width: '30%' }}>\
+                            <ResumeSection title="Skills"></ResumeSection>
+                        </View>
+                    </View>
                 </View>
             </Page>
         </Document>
