@@ -73,9 +73,9 @@ export default function Resume() {
                 </>
             } sublabel={text.degree} time={text.graduationYear} />
         </ResumeSection>
-        <PDFViewer>
+        {/* <PDFViewer>
 <           PDFResume />
-        </PDFViewer>
+        </PDFViewer> */}
     </div>
 }
 
