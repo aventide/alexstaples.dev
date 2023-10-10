@@ -1,6 +1,5 @@
 import React from "react";
 import { Document, Page, Text, View, Font, StyleSheet, Image } from "@react-pdf/renderer";
-import { createTw } from "react-pdf-tailwind";
 
 import FigtreeBoldFont from '../assets/fonts/Figtree-Bold.ttf';
 import LatoRegularFont from '../assets/fonts/Lato-Regular.ttf';
@@ -14,17 +13,6 @@ import LocationIcon from '../assets/icons/resume/map-pin.png';
 Font.registerHyphenationCallback(word => [word]);
 Font.register({ family: 'Figtree', src: FigtreeBoldFont });
 Font.register({ family: 'Lato', src: LatoRegularFont });
-
-
-const tw = createTw({
-    theme: {
-        extend: {},
-        fontFamily: {
-            body: ['Lato', 'sans-serif'],
-            heading: ['Figtree', 'sans-serif'],
-        },
-    },
-});
 
 const styles = StyleSheet.create({
     accentStripe: {
@@ -180,7 +168,7 @@ export default function PDFResume() {
         <Document>
             <Page size="A4">
                 <View style={{ margin: "12pt" }}>
-                    <View style={tw("h-4 bg-red-500")}></View>
+                    <View style={{ height: "12pt", backgroundColor: "#EF4444"}}></View>
                     <Header />
                     <View style={{flexDirection: "row"}}>
                         <View style={{ width: '70%' }}>
