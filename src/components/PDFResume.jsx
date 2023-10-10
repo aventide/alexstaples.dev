@@ -70,7 +70,7 @@ function ResumeSection({ title, children }) {
     return <View style={{ paddingTop: "12pt", flexDirection: "row" }}>
         <View style={{ marginHorizontal: "16pt" }}>
             <Text style={{ fontFamily: "Figtree", textTransform: "uppercase", fontSize: "12pt" }}>{title}</Text>
-            <View style={{ height: "1.5pt", backgroundColor: "black", marginVertical: "2pt" }}></View>
+            <View style={{ height: "1.5pt", backgroundColor: "black", marginTop: "2pt", marginBottom: "4pt" }}></View>
             <View style={{ marginTop: '4pt' }}>{children}</View>
         </View>
         <View></View>
@@ -163,14 +163,25 @@ function ResumeEntry({ children, label, sublabel, time }) {
     );
 }
 
+function SkillCategory({ title, skillList }) {
+    return <View style={{ marginBottom: '12pt' }}>
+        <Text style={{
+            fontSize: '10pt', fontFamily: 'Figtree', marginRight: '4pt', marginBottom: '4pt'
+        }}>{title}</Text>
+        <Text style={{
+            fontSize: '9pt', fontFamily: 'Lato', marginRight: '4pt',
+        }}>{skillList.join(", ")}</Text>
+    </View>
+}
+
 export default function PDFResume() {
     return (
         <Document>
             <Page size="A4">
                 <View style={{ margin: "12pt" }}>
-                    <View style={{ height: "12pt", backgroundColor: "#EF4444"}}></View>
+                    <View style={{ height: "12pt", backgroundColor: "#EF4444" }}></View>
                     <Header />
-                    <View style={{flexDirection: "row"}}>
+                    <View style={{ flexDirection: "row" }}>
                         <View style={{ width: '70%' }}>
                             <ResumeSection title="professional experience">
                                 <Job company="wasabi" open />
@@ -180,7 +191,17 @@ export default function PDFResume() {
                             </ResumeSection>
                         </View>
                         <View style={{ width: '30%' }}>\
-                            <ResumeSection title="Skills"></ResumeSection>
+                            <ResumeSection title="Skills">
+                                <SkillCategory title="Web" skillList={text.skills.Web} />
+                                <SkillCategory title="Libraries" skillList={text.skills.Libraries} />
+                                <SkillCategory title="Tools" skillList={text.skills.Tools} />
+                                <SkillCategory title="Concepts" skillList={text.skills.Concepts} />
+                                <SkillCategory title="Programming Languages" skillList={text.skills["Programming Languages"]} />
+                            </ResumeSection>
+                            <ResumeSection title="Education">
+                                <Text style={{ fontSize: '9pt', fontFamily: 'Figtree', marginRight: '4pt', marginBottom: '4pt' }}>{text.college}</Text>
+                                <Text style={{ fontSize: '9pt', fontFamily: 'Lato' }}>{text.degree}</Text>
+                            </ResumeSection>
                         </View>
                     </View>
                 </View>
