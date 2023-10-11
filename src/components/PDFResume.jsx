@@ -15,9 +15,6 @@ Font.register({ family: 'Figtree', src: FigtreeBoldFont });
 Font.register({ family: 'Lato', src: LatoRegularFont });
 
 const styles = StyleSheet.create({
-    accentStripe: {
-
-    },
     header: {
         backgroundColor: '#eeeeee',
         paddingTop: '12pt',
@@ -66,8 +63,8 @@ function Header() {
 }
 
 function ResumeSection({ title, children }) {
-    return <View style={{ paddingTop: "12pt", flexDirection: "row" }}>
-        <View style={{ marginHorizontal: "16pt" }}>
+    return <View style={{ paddingTop: "12pt", flexDirection: "row", }}>
+        <View style={{ marginHorizontal: "16pt", width: "100%" }}>
             <Text style={{ fontFamily: "Figtree", textTransform: "uppercase", fontSize: "12pt" }}>{title}</Text>
             <View style={{ height: "1.5pt", backgroundColor: "black", marginTop: "2pt", marginBottom: "4pt" }}></View>
             <View style={{ marginTop: '4pt' }}>{children}</View>
@@ -93,7 +90,7 @@ function Job({ company, ...rest }) {
                 {bullets.map((bullet, index) => (
                     <View style={{ flexDirection: "row", fontSize: "9pt" }}>
                         <Text style={{ marginHorizontal: 4, fontSize: "9pt" }}>•</Text>
-                        <Text style={{ fontSize: '9pt', fontFamily: 'Lato', marginBottom: '2pt' }} key={index}>{bullet}</Text>
+                        <Text style={{ fontSize: '9pt', fontFamily: 'Lato', marginBottom: '2pt', maxWidth: '97%' }} key={index}>{bullet}</Text>
                     </View>
                 ))}
             </View>
@@ -197,8 +194,8 @@ export default function PDFResume() {
                                 <SkillCategory title="Concepts" skillList={text.skills.Concepts} />
                                 <SkillCategory title="Programming Languages" skillList={text.skills["Programming Languages"]} />
                             </ResumeSection>
-                            <ResumeSection title="Education">
-                                <Text style={{ fontSize: '9pt', fontFamily: 'Figtree', marginRight: '4pt', marginBottom: '4pt' }}>{text.college}</Text>
+                           <ResumeSection title="Education">
+                                <Text style={{ fontSize: '9pt', fontFamily: 'Figtree', marginBottom: '4pt'}}>{text.college}</Text>
                                 <Text style={{ fontSize: '9pt', fontFamily: 'Lato' }}>{text.degree}</Text>
                             </ResumeSection>
                         </View>
