@@ -34,7 +34,7 @@ const styles = StyleSheet.create({
     headerDetail: {
         fontSize: '10pt',
         marginVertical: '1pt',
-        fontFamily: 'Figtree'
+        fontFamily: 'Lato'
     },
     title: {
         fontWeight: 'bold',
@@ -50,8 +50,8 @@ const styles = StyleSheet.create({
 function Header() {
     return <View style={styles.header}>
         <View style={styles.headerLeftSide}>
-            <Text style={styles.title}>{text.author}</Text>
-            <Text style={styles.subTitle}>{text.tagline}</Text>
+            <Text style={styles.title}>{text.title}</Text>
+            <Text style={styles.subTitle}>{text.subtitle}</Text>
         </View>
         <View style={styles.headerRightSide}>
             <HeaderDetail icon={LocationIcon} text={text.address} />

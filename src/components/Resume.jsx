@@ -22,7 +22,7 @@ export default function Resume() {
         <NavHeader />
         <div className='mt-8 mb-4 flex items-center flex-col text-center'>
             <div>
-                <h1 className='font-heading font-bold mt-4 inline-block'>{text.author}</h1>
+                <h1 className='font-heading font-bold mt-4 inline-block'>{text.title}</h1>
                 <div>
                     <span>{text.address}</span>
                     <span className='mx-2'>|</span>
