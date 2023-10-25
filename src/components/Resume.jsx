@@ -43,6 +43,7 @@ export default function Resume() {
             <Job company="motifSoftware" />
             <Job company="tandemSeven" />
             <Job company="ca" />
+            <Job company="kemmcare" />
         </ResumeSection>
         <ResumeSection title="technical expertise">
             <div className='grid grid-cols sm:grid-cols-2 md:grid-cols-3 gap-4'>
@@ -56,13 +57,13 @@ export default function Resume() {
                 <GithubIcon className='inline font-bold w-4 h-4 mr-2 stroke-black dark:stroke-white' />
                 <span className='font-bold inline'>Github</span>
                 <span className='mx-2'>|</span>
-                <StyledLink href={text.portfolioLinks.github} target="_blank" rel="noopener noreferrer">aventide</StyledLink>
+                <StyledLink href={text.portfolio.github.link} target="_blank" rel="noopener noreferrer">{text.portfolio.github.title}</StyledLink>
             </div>
             <div className='mb-2'>
                 <UserIcon className='inline font-bold w-4 h-4 mr-2 stroke-black dark:stroke-white' />
                 <span className='font-bold inline'>Site</span>
                 <span className='mx-2'>|</span>
-                <StyledLink href={text.portfolioLinks.site} target="_blank" rel="noopener noreferrer">alexstaples.dev</StyledLink>
+                <StyledLink href={text.portfolio.site.link} target="_blank" rel="noopener noreferrer">{text.portfolio.site.title}</StyledLink>
             </div>
         </ResumeSection>
         <ResumeSection title="education">
@@ -73,9 +74,6 @@ export default function Resume() {
                 </>
             } sublabel={text.degree} time={text.graduationYear} />
         </ResumeSection>
-        {/* <PDFViewer>
-<           PDFResume />
-        </PDFViewer> */}
     </div>
 }
 
