@@ -63,6 +63,19 @@
                 "Assisted the sustaining team with resolving issues reported by customers"
             ],
             "tech": "Java, Python, Javascript, React, Sencha Ext JS, OData, HP Vertica, RHEL"
+        },
+        "kemmcare": {
+            "label": "KEMM Care Medical Staffing",
+            "sublabel": "Contract Full Stack Developer",
+            "time": "2014 - 2020",
+            "longform": "",
+            "bullets": [
+                "Full stack contractor for a medical staffing firm, in a lead role of revamping and managing their main website and IT infrastructure",
+                "Developed a JQuery based web front end that interacted with a NodeJS web server and a MySQL database, along with creating a basic custom ORM",
+                "Managed a subcontract with a designer to help create new company branding and an entirely new single page app concept",
+                "Procured and managed company hardware and software, including employee laptops, web domains, software licenses, virtual infrastructure and Google Workspace"
+            ],
+            "tech": "Javascript, JQuery, NodeJS, Express, MySQL, Debian, Google Workspace"
         }
     },
     "skills": {
@@ -108,8 +121,14 @@
             "Python"
         ]
     },
-    "portfolioLinks": {
-        "github": "https://github.com/aventide",
-        "site": "https://alexstaples.dev"
+    "portfolio": {
+        "github": {
+            "title": "aventide",
+            "link": "https://github.com/aventide"
+        },
+        "site": {
+            "title": "alexstaples.dev",
+            "link": "https://alexstaples.dev"
+        }
     }
 }

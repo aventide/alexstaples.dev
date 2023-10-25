@@ -173,7 +173,7 @@ function SkillCategory({ title, skillList }) {
 export default function PDFResume() {
     return (
         <Document>
-            <Page size="A4">
+            <Page size="LETTER">
                 <View style={{ margin: "12pt" }}>
                     <View style={{ height: "12pt", backgroundColor: "#EF4444" }}></View>
                     <Header />
@@ -184,6 +184,7 @@ export default function PDFResume() {
                                 <Job company="motifSoftware" />
                                 <Job company="tandemSeven" />
                                 <Job company="ca" />
+                                <Job company="kemmcare" />
                             </ResumeSection>
                         </View>
                         <View style={{ width: '30%' }}>\
@@ -194,12 +195,25 @@ export default function PDFResume() {
                                 <SkillCategory title="Concepts" skillList={text.skills.Concepts} />
                                 <SkillCategory title="Programming Languages" skillList={text.skills["Programming Languages"]} />
                             </ResumeSection>
-                           <ResumeSection title="Education">
-                                <Text style={{ fontSize: '9pt', fontFamily: 'Figtree', marginBottom: '4pt'}}>{text.college}</Text>
-                                <Text style={{ fontSize: '9pt', fontFamily: 'Lato' }}>{text.degree}</Text>
+                            <ResumeSection title="Portfolio">
+                                    <View style={{marginBottom: '8pt'}}>
+                                        <Text style={{ fontSize: '9pt', fontFamily: 'Figtree', marginBottom: '4pt' }}>Github</Text>
+                                        <Text style={{ fontSize: '9pt', fontFamily: 'Lato' }}>{text.portfolio.github.title}</Text>
+                                    </View>
+                                    <View style={{marginBottom: '8pt'}}>
+                                        <Text style={{ fontSize: '9pt', fontFamily: 'Figtree', marginBottom: '4pt' }}>Website</Text>
+                                        <Text style={{ fontSize: '9pt', fontFamily: 'Lato' }}>{text.portfolio.site.title}</Text>
+                                    </View>
+                            </ResumeSection>
+                            <ResumeSection title="Education">
+                                <View style={{ marginBottom: '4pt' }}>
+                                    <Text style={{ fontSize: '9pt', fontFamily: 'Figtree', marginBottom: '4pt' }}>{text.college}</Text>
+                                    <Text style={{ fontSize: '9pt', fontFamily: 'Lato' }}>{text.degree}</Text>
+                                </View>
                             </ResumeSection>
                         </View>
                     </View>
+                    <View style={{ marginTop: '96pt', height: "12pt", backgroundColor: "#EF4444" }}></View>
                 </View>
             </Page>
         </Document>
