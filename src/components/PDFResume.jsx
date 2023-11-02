@@ -14,9 +14,12 @@ Font.registerHyphenationCallback(word => [word]);
 Font.register({ family: 'Figtree', src: FigtreeBoldFont });
 Font.register({ family: 'Lato', src: LatoRegularFont });
 
+const headingFontSize = '10pt';
+const bodyFontSize = '9pt';
+
 const styles = StyleSheet.create({
     header: {
-        backgroundColor: '#eeeeee',
+        backgroundColor: '#f8f8f8',
         paddingTop: '12pt',
         paddingBottom: '24pt',
         paddingHorizontal: '12pt',
@@ -24,26 +27,28 @@ const styles = StyleSheet.create({
         display: 'flex'
     },
     headerLeftSide: {
-        flex: 1
+        flex: 2
     },
     headerRightSide: {
         flex: 1,
         alignItems: 'flex-end',
-        justifyContent: 'center'
+        justifyContent: 'flex-start',
+        paddingTop: '8pt'
     },
     headerDetail: {
-        fontSize: '10pt',
+        fontSize: headingFontSize,
         marginVertical: '1pt',
         fontFamily: 'Lato'
     },
     title: {
         fontWeight: 'bold',
-        fontSize: '28pt',
+        fontSize: '32pt',
         fontFamily: 'Figtree'
     },
     subTitle: {
         fontFamily: 'Lato',
-        fontSize: '12pt'
+        fontSize: '10pt',
+        marginTop: "8pt"
     }
 })
 
@@ -51,7 +56,7 @@ function Header() {
     return <View style={styles.header}>
         <View style={styles.headerLeftSide}>
             <Text style={styles.title}>{text.title}</Text>
-            <Text style={styles.subTitle}>{text.subtitle}</Text>
+            <Text style={styles.subTitle}>{text.summary}</Text>
         </View>
         <View style={styles.headerRightSide}>
             <HeaderDetail icon={LocationIcon} text={text.address} />
@@ -75,7 +80,7 @@ function ResumeSection({ title, children }) {
 
 function HeaderDetail({ text, icon }) {
     return <View style={{ flexDirection: "row", alignItems: "center" }}>
-        <Image src={icon} style={{ height: '10pt', marginRight: "6pt" }} />
+        <Image src={icon} style={{ height: headingFontSize, marginRight: "6pt" }} />
         <Text style={styles.headerDetail}>{text}</Text>
     </View>
 }
@@ -88,23 +93,23 @@ function Job({ company, ...rest }) {
         <ResumeEntry label={label} sublabel={sublabel} time={time} {...rest}>
             <View style={{ flexDirection: "column" }}>
                 {bullets.map((bullet, index) => (
-                    <View style={{ flexDirection: "row", fontSize: "9pt" }}>
-                        <Text style={{ marginHorizontal: 4, fontSize: "9pt" }}>•</Text>
-                        <Text style={{ fontSize: '9pt', fontFamily: 'Lato', marginBottom: '2pt', maxWidth: '97%' }} key={index}>{bullet}</Text>
+                    <View style={{ flexDirection: "row", fontSize: bodyFontSize }}>
+                        <Text style={{ marginHorizontal: 4, fontSize: bodyFontSize }}>•</Text>
+                        <Text style={{ fontSize: bodyFontSize, fontFamily: 'Lato', marginBottom: '3pt', maxWidth: '97%' }} key={index}>{bullet}</Text>
                     </View>
                 ))}
             </View>
 
             {/* {clients && (
                 <Text>
-                    <Text style={{ fontSize: '9pt', fontFamily: 'Figtree' }}>{text.clients}: </Text>
-                    <Text style={{ fontSize: '9pt', fontFamily: 'Lato' }}>{clients}</Text>
+                    <Text style={{ fontSize: bodyFontSize, fontFamily: 'Figtree' }}>{text.clients}: </Text>
+                    <Text style={{ fontSize: bodyFontSize, fontFamily: 'Lato' }}>{clients}</Text>
                 </Text>
             )}
 
             <Text>
-                <Text style={{ fontSize: '9pt', fontFamily: 'Figtree' }}>{text.keyTechnologies}: </Text>
-                <Text style={{ fontSize: '9pt', fontFamily: 'Lato' }}>{tech}</Text>
+                <Text style={{ fontSize: bodyFontSize, fontFamily: 'Figtree' }}>{text.keyTechnologies}: </Text>
+                <Text style={{ fontSize: bodyFontSize, fontFamily: 'Lato' }}>{tech}</Text>
             </Text> */}
 
         </ResumeEntry>
@@ -126,17 +131,17 @@ function ResumeEntry({ children, label, sublabel, time }) {
             flexDirection: 'row',
         },
         labelText: {
-            fontSize: '10pt',
+            fontSize: headingFontSize,
             fontFamily: 'Figtree',
             marginRight: '4pt',
         },
         subLabelText: {
-            fontSize: '10pt',
+            fontSize: headingFontSize,
             marginLeft: '4pt',
             fontFamily: 'Lato'
         },
         timeText: {
-            fontSize: '10pt',
+            fontSize: headingFontSize,
             fontFamily: 'Lato'
         },
         childrenContainer: {
@@ -149,7 +154,7 @@ function ResumeEntry({ children, label, sublabel, time }) {
             <View style={resumeEntryStyles.headerContainer}>
                 <View style={resumeEntryStyles.labelContainer}>
                     <Text style={resumeEntryStyles.labelText}>{label}</Text>
-                    <Text style={{ fontFamily: "Figtree", fontSize: '10pt' }}>|</Text>
+                    <Text style={{ fontFamily: "Figtree", fontSize: headingFontSize }}>|</Text>
                     <Text style={resumeEntryStyles.subLabelText}>{sublabel}</Text>
                 </View>
                 <Text style={resumeEntryStyles.timeText}>{time}</Text>
@@ -162,10 +167,10 @@ function ResumeEntry({ children, label, sublabel, time }) {
 function SkillCategory({ title, skillList }) {
     return <View style={{ marginBottom: '12pt' }}>
         <Text style={{
-            fontSize: '10pt', fontFamily: 'Figtree', marginRight: '4pt', marginBottom: '4pt'
+            fontSize: headingFontSize, fontFamily: 'Figtree', marginRight: '4pt', marginBottom: '4pt'
         }}>{title}</Text>
         <Text style={{
-            fontSize: '9pt', fontFamily: 'Lato', marginRight: '4pt',
+            fontSize: bodyFontSize, fontFamily: 'Lato', marginRight: '4pt',
         }}>{skillList.join(", ")}</Text>
     </View>
 }
@@ -196,24 +201,42 @@ export default function PDFResume() {
                                 <SkillCategory title="Programming Languages" skillList={text.skills["Programming Languages"]} />
                             </ResumeSection>
                             <ResumeSection title="Portfolio">
-                                    <View style={{marginBottom: '8pt'}}>
-                                        <Text style={{ fontSize: '9pt', fontFamily: 'Figtree', marginBottom: '4pt' }}>Github</Text>
-                                        <Text style={{ fontSize: '9pt', fontFamily: 'Lato' }}>{text.portfolio.github.title}</Text>
-                                    </View>
-                                    <View style={{marginBottom: '8pt'}}>
-                                        <Text style={{ fontSize: '9pt', fontFamily: 'Figtree', marginBottom: '4pt' }}>Website</Text>
-                                        <Text style={{ fontSize: '9pt', fontFamily: 'Lato' }}>{text.portfolio.site.title}</Text>
-                                    </View>
+                                <View style={{ flexDirection: 'row', marginBottom: '8pt' }}>
+                                    <Text style={{
+                                        fontSize: headingFontSize,
+                                        fontFamily: 'Figtree',
+                                        marginRight: '4pt',
+                                    }}>Github</Text>
+                                    <Text style={{ fontFamily: "Figtree", fontSize: headingFontSize }}>|</Text>
+                                    <Text style={{
+                                        fontSize: headingFontSize,
+                                        marginLeft: '4pt',
+                                        fontFamily: 'Lato'
+                                    }}>{text.portfolio.github.title}</Text>
+                                </View>
+                                <View style={{ flexDirection: 'row', marginBottom: '8pt' }}>
+                                    <Text style={{
+                                        fontSize: headingFontSize,
+                                        fontFamily: 'Figtree',
+                                        marginRight: '4pt',
+                                    }}>Website</Text>
+                                    <Text style={{ fontFamily: "Figtree", fontSize: headingFontSize }}>|</Text>
+                                    <Text style={{
+                                        fontSize: headingFontSize,
+                                        marginLeft: '4pt',
+                                        fontFamily: 'Lato'
+                                    }}>{text.portfolio.site.title}</Text>
+                                </View>
                             </ResumeSection>
                             <ResumeSection title="Education">
                                 <View style={{ marginBottom: '4pt' }}>
-                                    <Text style={{ fontSize: '9pt', fontFamily: 'Figtree', marginBottom: '4pt' }}>{text.college}</Text>
-                                    <Text style={{ fontSize: '9pt', fontFamily: 'Lato' }}>{text.degree}</Text>
+                                    <Text style={{ fontSize: bodyFontSize, fontFamily: 'Figtree', marginBottom: '4pt' }}>{text.college}</Text>
+                                    <Text style={{ fontSize: bodyFontSize, fontFamily: 'Lato' }}>{text.degree}</Text>
                                 </View>
                             </ResumeSection>
                         </View>
                     </View>
-                    <View style={{ marginTop: '96pt', height: "12pt", backgroundColor: "#EF4444" }}></View>
+                    <View style={{ marginTop: '82pt', height: "12pt", backgroundColor: "#EF4444" }}></View>
                 </View>
             </Page>
         </Document>
