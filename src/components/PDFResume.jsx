@@ -19,7 +19,6 @@ const bodyFontSize = '9pt';
 
 const styles = StyleSheet.create({
     header: {
-        backgroundColor: '#f8f8f8',
         paddingTop: '12pt',
         paddingBottom: '24pt',
         paddingHorizontal: '12pt',
@@ -180,7 +179,7 @@ export default function PDFResume() {
         <Document>
             <Page size="LETTER">
                 <View style={{ margin: "12pt" }}>
-                    <View style={{ height: "12pt", backgroundColor: "#EF4444" }}></View>
+                    <View style={{ height: "12pt", backgroundColor: "#000000" }}></View>
                     <Header />
                     <View style={{ flexDirection: "row" }}>
                         <View style={{ width: '70%' }}>
@@ -236,7 +235,7 @@ export default function PDFResume() {
                             </ResumeSection>
                         </View>
                     </View>
-                    <View style={{ marginTop: '82pt', height: "12pt", backgroundColor: "#EF4444" }}></View>
+                    <View style={{ marginTop: '82pt', height: "12pt", backgroundColor: "#000000" }}></View>
                 </View>
             </Page>
         </Document>
