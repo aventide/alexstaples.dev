@@ -17,41 +17,36 @@ Font.register({ family: 'Lato', src: LatoRegularFont });
 const headingFontSize = '10pt';
 const bodyFontSize = '9pt';
 
-const styles = StyleSheet.create({
-    header: {
-        paddingTop: '12pt',
-        paddingBottom: '24pt',
-        paddingHorizontal: '12pt',
-        flexDirection: 'row',
-        display: 'flex'
-    },
-    headerLeftSide: {
-        flex: 2
-    },
-    headerRightSide: {
-        flex: 1,
-        alignItems: 'flex-end',
-        justifyContent: 'flex-start',
-        paddingTop: '8pt'
-    },
-    headerDetail: {
-        fontSize: headingFontSize,
-        marginVertical: '1pt',
-        fontFamily: 'Lato'
-    },
-    title: {
-        fontWeight: 'bold',
-        fontSize: '32pt',
-        fontFamily: 'Figtree'
-    },
-    subTitle: {
-        fontFamily: 'Lato',
-        fontSize: '10pt',
-        marginTop: "8pt"
-    }
-})
-
 function Header() {
+    const styles = StyleSheet.create({
+        header: {
+            paddingTop: '12pt',
+            paddingBottom: '32pt',
+            paddingHorizontal: '12pt',
+            flexDirection: 'row',
+            display: 'flex'
+        },
+        headerLeftSide: {
+            flex: 2
+        },
+        headerRightSide: {
+            flex: 1,
+            alignItems: 'flex-end',
+            justifyContent: 'flex-start',
+            paddingTop: '8pt'
+        },
+        title: {
+            fontWeight: 'bold',
+            fontSize: '32pt',
+            fontFamily: 'Figtree'
+        },
+        subTitle: {
+            fontFamily: 'Lato',
+            fontSize: '10pt',
+            marginTop: "8pt"
+        }
+    })
+
     return <View style={styles.header}>
         <View style={styles.headerLeftSide}>
             <Text style={styles.title}>{text.title}</Text>
@@ -80,13 +75,17 @@ function ResumeSection({ title, children }) {
 function HeaderDetail({ text, icon }) {
     return <View style={{ flexDirection: "row", alignItems: "center" }}>
         <Image src={icon} style={{ height: headingFontSize, marginRight: "6pt" }} />
-        <Text style={styles.headerDetail}>{text}</Text>
+        <Text style={{
+            fontSize: headingFontSize,
+            marginVertical: '1pt',
+            fontFamily: 'Lato'
+        }}>{text}</Text>
     </View>
 }
 
 function Job({ company, ...rest }) {
     const companyKey = text.jobs[company];
-    const { label, sublabel, time, bullets, clients, tech } = companyKey;
+    const { label, sublabel, time, bullets } = companyKey;
 
     return (
         <ResumeEntry label={label} sublabel={sublabel} time={time} {...rest}>
@@ -98,19 +97,6 @@ function Job({ company, ...rest }) {
                     </View>
                 ))}
             </View>
-
-            {/* {clients && (
-                <Text>
-                    <Text style={{ fontSize: bodyFontSize, fontFamily: 'Figtree' }}>{text.clients}: </Text>
-                    <Text style={{ fontSize: bodyFontSize, fontFamily: 'Lato' }}>{clients}</Text>
-                </Text>
-            )}
-
-            <Text>
-                <Text style={{ fontSize: bodyFontSize, fontFamily: 'Figtree' }}>{text.keyTechnologies}: </Text>
-                <Text style={{ fontSize: bodyFontSize, fontFamily: 'Lato' }}>{tech}</Text>
-            </Text> */}
-
         </ResumeEntry>
     );
 }
@@ -179,7 +165,7 @@ export default function PDFResume() {
         <Document>
             <Page size="LETTER">
                 <View style={{ margin: "12pt" }}>
-                    <View style={{ height: "12pt", backgroundColor: "#000000" }}></View>
+                    <View style={{ height: "12pt", backgroundColor: "#A82623" }}></View>
                     <Header />
                     <View style={{ flexDirection: "row" }}>
                         <View style={{ width: '70%' }}>
@@ -235,7 +221,7 @@ export default function PDFResume() {
                             </ResumeSection>
                         </View>
                     </View>
-                    <View style={{ marginTop: '82pt', height: "12pt", backgroundColor: "#000000" }}></View>
+                    <View style={{ marginTop: '74pt', height: "12pt", backgroundColor: "#A82623" }}></View>
                 </View>
             </Page>
         </Document>
