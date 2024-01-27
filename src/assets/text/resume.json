@@ -19,11 +19,14 @@
             "longform": "Senior engineer for the applications team at a cloud storage startup. Creates React-powered web tools for internal use by our operations teams, designing core architectural components in company codebases. Key contributor to the development of the customer-facing Wasabi Console application. Supervises the daily creation and deployment of service images for testing, working closely with the infrastructure team.",
             "bullets": [
                 "Senior engineer for the applications team at a rapidly-growing cloud storage company",
-                "Creates React-powered web tools for internal use by our operations teams, designing core architectural components in company codebases",
-                "Key contributor to the development of the customer-facing Wasabi Console application",
-                "Supervises the daily creation and deployment of service artifacts, serving as a liaison with the infrastructure team"
+                "Designs and develops core architecture and features for tools that are used internally by the operations and support teams",
+                "Plans and delivers new features for the customer-facing Wasabi Console application",
+                "Supervises the daily creation and deployment of service artifacts for QA, serving as a liaison with the infrastructure team"
             ],
-            "tech": "React, Node, Material-UI, Highcharts, Containers, Custom CICD Workflows, GitHub Actions"
+            "optionalBullets": [
+                "Provides mentorship for junior developers and interviews prospective engineering candidates"
+            ],
+            "tech": "React, Redux, Node, Material-UI, Highcharts, Docker, Ansible, GitHub Actions"
         },
         "motifSoftware": {
             "label": "Motif Software",
