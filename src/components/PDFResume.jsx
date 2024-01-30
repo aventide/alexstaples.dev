@@ -221,7 +221,7 @@ export default function PDFResume() {
                             </ResumeSection>
                         </View>
                     </View>
-                    <View style={{ marginTop: '70pt', height: "12pt", backgroundColor: "#A82623" }}></View>
+                    <View style={{ marginTop: '42pt', height: "12pt", backgroundColor: "#A82623" }}></View>
                 </View>
             </Page>
         </Document>

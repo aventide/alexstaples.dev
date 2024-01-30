@@ -18,10 +18,12 @@
             "time": "2020 - Present",
             "longform": "Senior engineer for the applications team at a cloud storage startup. Creates React-powered web tools for internal use by our operations teams, designing core architectural components in company codebases. Key contributor to the development of the customer-facing Wasabi Console application. Supervises the daily creation and deployment of service images for testing, working closely with the infrastructure team.",
             "bullets": [
-                "Senior engineer for the applications team at a rapidly-growing cloud storage company",
+                "Senior front end engineer for the applications team at a rapidly-growing cloud storage company",
                 "Designs and develops core architecture and features for tools that are used internally by the operations and support teams",
                 "Plans and delivers new features for the customer-facing Wasabi Console application",
-                "Supervises the daily creation and deployment of service artifacts for QA, serving as a liaison with the infrastructure team"
+                "Supervises the daily creation and deployment of service artifacts for QA, serving as a liaison with the infrastructure team",
+                "Provides mentorship to junior engineers and guides them through development processes upon joining the company",
+                "Interviews candidates for newly-opened front end engineering roles"
             ],
             "optionalBullets": [
                 "Provides mentorship for junior developers and interviews prospective engineering candidates"
