@@ -1,15 +1,13 @@
 import { useState } from 'react';
 import { useCollapse } from 'react-collapsed';
-import { PDFDownloadLink, PDFViewer } from '@react-pdf/renderer';
+import { PDFDownloadLink } from '@react-pdf/renderer';
 
 import { ReactComponent as TriangleIcon } from '../assets/icons/triangle.svg';
-import { ReactComponent as CircleIcon } from '../assets/icons/circle.svg';
 import { ReactComponent as GithubIcon } from '../assets/icons/github.svg';
 import { ReactComponent as UserIcon } from '../assets/icons/user.svg';
 import { ReactComponent as GradCapIcon } from '../assets/icons/graduation-cap.svg';
 import { ReactComponent as DownloadIcon } from '../assets/icons/download.svg';
-import { ReactComponent as MenuIcon } from '../assets/icons/menu.svg';
-import { ReactComponent as ASIcon } from '../assets/icons/taecon.svg';
+
 import text from '../assets/text/resume.json';
 
 import PDFResume from './PDFResume';
@@ -19,7 +17,6 @@ import PDFResume from './PDFResume';
 
 export default function Resume() {
     return <div className=''>
-        <NavHeader />
         <div className='mt-8 mb-4 flex items-center flex-col text-center'>
             <div>
                 <h1 className='font-heading font-bold mt-4 inline-block'>{text.title}</h1>
@@ -100,7 +97,6 @@ function SkillsList({ title, skills }) {
     </div>
 }
 
-
 function ResumeEntry({ children, label, sublabel, time, open = false }) {
 
     const [isExpanded, setExpanded] = useState(open);
@@ -165,29 +161,4 @@ function StyledLink({ children, ...rest }) {
     return <a className={`cursor-pointer ${highlightClasses}`} {...rest}>
         {children}
     </a>
-}
-
-function StyledNavLink({ active, children, ...rest }) {
-    return <span className={`text-sm md:text-lg font-heading font-bold inline-block cursor-pointer ${active ? 'underline decoration-2 underline-offset-4' : 'hover:opacity-70'}`} {...rest}>
-        {children}
-    </span>
-}
-
-function NavHeader() {
-    return <div className='flex justify-between'>
-        <div className='items-center cursor-pointer hidden md:flex'>
-            <StyledNavLink>HOME</StyledNavLink>
-            <CircleIcon className='w-2 h-2 mx-2 fill-black dark:fill-white' />
-            <StyledNavLink active>RESUME</StyledNavLink>
-        </div>
-        <div className='flex-1 flex justify-between md:hidden'>
-            <button className=''>
-                <ASIcon className='w-8 h-8' />
-            </button>
-            <button className='flex justify-end'>
-                <MenuIcon className='w-8 h-8' />
-            </button>
-        </div>
-        <ASIcon className='hidden md:inline w-8 h-8' />
-    </div>
 }
