@@ -27,7 +27,7 @@ export default function Resume() {
                 </div>
             </div>
         </div>
-        <div className='mb-8 mb-16 sm:mb-8 md:mb-4 flex justify-center'>
+        <div className='mb-16 sm:mb-8 md:mb-4 flex justify-center'>
             <PDFDownloadLink document={<PDFResume />} fileName="resume.pdf">
                 {({ blob, url, loading, error }) => (loading ? 'Loading document...' : <button className={`badge ${highlightBadgeClasses} ${highlightClasses} px-4 py-4`}>
                     <DownloadIcon className='w-4 h-4 mr-2' />

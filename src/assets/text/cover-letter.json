@@ -1,0 +1,10 @@
+{
+    "coverLetter": "Cover Letter",
+    "downloadPDF": "Download PDF",
+    "company": "Stripe",
+    "greeting": "Hello, team at Stripe!",
+    "introduction": "I'm excited to apply for your open role as a front end engineer, due to my familiarity with Stripe's reputation and your dedication to great products and great documentation.",
+    "body": "If selected to have a discussion about joining your team, I would highlight my passion for front end development, especially with React, crafting seamless and fluid user interfaces. Also my versatility, having worked with many back end technologies including containers and databases. I am comfortable developing customer-facing products as well as internal tools, and love the chance to encourage a frictionless development environment.",
+    "conclusion": "Thank you for considering my application, and I hope to hear back soon!",
+    "signOff": "-Alex S"
+}
