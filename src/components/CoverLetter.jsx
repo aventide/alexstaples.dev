@@ -1,5 +1,45 @@
-export default function CoverLetter(){
-    return <div className="flex">
+import { PDFDownloadLink } from '@react-pdf/renderer';
 
-    </div>;
+import { ReactComponent as DownloadIcon } from '../assets/icons/download.svg';
+
+import text from '../assets/text/cover-letter.json';
+
+import PDFResume from './PDFResume';
+
+// feather icons https://feathericons.com/
+// graduation cap fromhttps://iconoir.com/
+
+export default function CoverLetter() {
+    return <div className=''>
+        <div className='mt-8 mb-4 flex items-center flex-col text-center'>
+            <h1 className='font-heading font-bold mt-4 inline-block'>{text.coverLetter}</h1>
+        </div>
+        <div className='mb-16 sm:mb-8 md:mb-4 flex justify-center'>
+            <PDFDownloadLink document={<PDFResume />} fileName="resume.pdf">
+                {({ blob, url, loading, error }) => (loading ? 'Loading document...' : <button className={`badge ${highlightBadgeClasses} ${highlightClasses} px-4 py-4`}>
+                    <DownloadIcon className='w-4 h-4 mr-2' />
+                    <span className='font-bold'>{text.downloadPDF}</span>
+                </button>)}
+            </PDFDownloadLink>
+        </div>
+        <div className='mt-16 border-2 border-white border-dashed'>
+            <div className='mt-12 mb-8 mx-16'>
+                <CoverLetterSection textContent={text.greeting}/>
+                <CoverLetterSection textContent={text.introduction}/>
+                <CoverLetterSection textContent={text.body}/>
+                <CoverLetterSection textContent={text.conclusion}/>
+                <CoverLetterSection textContent={text.signOff}/>
+            </div>
+        </div>
+    </div>
 }
+
+function CoverLetterSection({textContent}){
+    return <div className="mt-8">
+        {textContent}
+    </div> 
+}
+
+const highlightClasses = "text-indigo-600 hover:text-indigo-400 dark:text-indigo-400 dark:hover:text-indigo-300";
+const highlightBadgeClasses = "border-indigo-600 hover:border-indigo-400 dark:border-indigo-400 dark:hover:border-indigo-300";
+
