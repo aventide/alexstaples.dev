@@ -11,13 +11,13 @@ export default function NavHeader() {
         </div>
         <div className='flex-1 flex justify-between md:hidden'>
             <button className=''>
-                <ASIcon className='w-8 h-8' />
+                <ASIcon className='w-8 h-8 fill-black' />
             </button>
             <button className='flex justify-end'>
                 <MenuIcon className='w-8 h-8' />
             </button>
         </div>
-        <ASIcon className='hidden md:inline w-8 h-8' />
+        <ASIcon className='hidden md:inline w-8 h-8 '/>
     </div>
 }
 

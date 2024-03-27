@@ -16,13 +16,13 @@ export default function CoverLetter() {
         </div>
         <div className='mb-16 sm:mb-8 md:mb-4 flex justify-center'>
             <PDFDownloadLink document={<PDFResume />} fileName="resume.pdf">
-                {({ blob, url, loading, error }) => (loading ? 'Loading document...' : <button className={`badge ${highlightBadgeClasses} ${highlightClasses} px-4 py-4`}>
+                {({ blob, url, loading, error }) => (loading ? 'Loading document...' : <button className={`badge ${highlightBadgeClasses} ${highlightClasses} px-4 py-4 bg-transparent`}>
                     <DownloadIcon className='w-4 h-4 mr-2' />
                     <span className='font-bold'>{text.downloadPDF}</span>
                 </button>)}
             </PDFDownloadLink>
         </div>
-        <div className='mt-16 border-2 border-white border-dashed'>
+        <div className='mt-16 border-2 border-black dark:border-white border-dashed'>
             <div className='mt-12 mb-8 mx-16'>
                 <CoverLetterSection textContent={text.greeting}/>
                 <CoverLetterSection textContent={text.introduction}/>
