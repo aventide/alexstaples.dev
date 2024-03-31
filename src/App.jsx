@@ -1,20 +1,20 @@
-import React from 'react';
+import React from "react";
 
-import NavHeader from './components/NavHeader';
-import Resume from './components/Resume';
-import CoverLetter from './components/CoverLetter';
+import NavHeader from "./components/NavHeader";
+import Resume from "./components/Resume";
+import CoverLetter from "./components/CoverLetter";
 
-import './App.css'
+import "./App.css";
 
 function App() {
   return (
-    <div className=''>
+    <div className="">
       <NavHeader />
       {/* <Resume /> */}
       <CoverLetter />
       {/* <CompanyLogos /> */}
     </div>
-  )
+  );
 }
 
-export default App
+export default App;
