@@ -97,7 +97,7 @@ function TextSection({ textContent }) {
     <Text
       style={{
         fontSize: bodyFontSize,
-        marginBottom: "10pt",
+        marginBottom: "12pt",
         fontFamily: "Lato",
       }}
     >
@@ -129,31 +129,25 @@ export default function PDFResume() {
         <View style={{ margin: "12pt" }}>
           <View style={{ height: "12pt", backgroundColor: "#A82623" }}></View>
           <Header />
-          <View style={{ paddingLeft: "36pt", paddingRight: "72pt" }}>
-            <Text
-              style={{
-                fontSize: "10pt",
-                marginBottom: "12pt",
-                fontFamily: "Lato",
-                fontWeight: "bold",
-              }}
-            >
-              {formattedDate}
-            </Text>
-            <TextSection textContent={text.greeting} />
-            <TextSection textContent={text.introduction} />
-            <TextSection textContent={text.body} />
-            <TextSection textContent={text.conclusion} />
-            <Text
-              style={{
-                fontSize: "12pt",
-                marginBottom: "12pt",
-                fontFamily: "Lato",
-                fontWeight: "bold",
-              }}
-            >
-              {text.signOff}
-            </Text>
+          <View style={{ display: "flex", justifyContent: "center" }}>
+            <View style={{ paddingHorizontal: "36pt" }}>
+              <Text
+                style={{
+                  fontSize: "10pt",
+                  marginBottom: "12pt",
+                  fontFamily: "Lato",
+                  fontWeight: "bold",
+                }}
+              >
+                {formattedDate}
+              </Text>
+              <TextSection textContent={text.greeting} />
+              <TextSection textContent={text.introduction} />
+              <TextSection textContent={text.body} />
+              <TextSection textContent={text.conclusion} />
+              <TextSection textContent={text.signOffWordChoice} />
+              <TextSection textContent={text.signOff} />
+            </View>
           </View>
         </View>
       </Page>
