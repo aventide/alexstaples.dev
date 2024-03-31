@@ -43,8 +43,8 @@
             "clients": "Hologic, Samsung, Orbita, Lew's Fishing",
             "tech": "Javascript, React, CSS Modules, SVG, .NET Core, EpiServer"
         },
-        "tandemSeven": {
-            "label": "TandemSeven, Inc.",
+        "genpact": {
+            "label": "Genpact",
             "sublabel": "Senior Front End Developer",
             "time": "2018 - 2019",
             "longform": "Front end engineer for digital customer experience consulting firm. Worked with clients based in Boston and Chicago on web development for their eCommerce platforms. Projects centered on the React ecosystem and required special emphasis on internationalization and accessibility. Additionally, conducted internal research pertaining to vector graphics and the Elm language.",

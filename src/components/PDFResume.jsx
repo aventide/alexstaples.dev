@@ -172,7 +172,7 @@ export default function PDFResume() {
                             <ResumeSection title="professional experience">
                                 <Job company="wasabi" open />
                                 <Job company="motifSoftware" />
-                                <Job company="tandemSeven" />
+                                <Job company="genpact" />
                                 <Job company="ca" />
                                 <Job company="kemmcare" />
                             </ResumeSection>
