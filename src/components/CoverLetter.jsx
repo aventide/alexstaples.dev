@@ -4,7 +4,7 @@ import { ReactComponent as DownloadIcon } from '../assets/icons/download.svg';
 
 import text from '../assets/text/cover-letter.json';
 
-import PDFResume from './PDFResume';
+import PDFCoverLetter from './PDFCoverLetter';
 
 // feather icons https://feathericons.com/
 // graduation cap fromhttps://iconoir.com/
@@ -15,7 +15,7 @@ export default function CoverLetter() {
             <h1 className='font-heading font-bold mt-4 inline-block'>{text.coverLetter}</h1>
         </div>
         <div className='mb-16 sm:mb-8 md:mb-4 flex justify-center'>
-            <PDFDownloadLink document={<PDFResume />} fileName="resume.pdf">
+            <PDFDownloadLink document={<PDFCoverLetter />} fileName="cover_letter.pdf">
                 {({ blob, url, loading, error }) => (loading ? 'Loading document...' : <button className={`badge ${highlightBadgeClasses} ${highlightClasses} px-4 py-4 bg-transparent`}>
                     <DownloadIcon className='w-4 h-4 mr-2' />
                     <span className='font-bold'>{text.downloadPDF}</span>
