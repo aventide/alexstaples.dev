@@ -109,7 +109,8 @@
             "Microservices",
             "Accessibility",
             "Linux Administration",
-            "Open Source"
+            "Open Source",
+            "Relational Databases"
         ],
         "Tools": [
             "GPT-4",
@@ -117,7 +118,8 @@
             "Git",
             "Docker",
             "Kubernetes",
-            "ESLint"
+            "ESLint",
+            "MySQL"
         ],
         "Programming Languages": [
             "Javascript",
