@@ -10,8 +10,8 @@ function App() {
   return (
     <div className="">
       <NavHeader />
-      {/* <Resume /> */}
-      <CoverLetter />
+      <Resume />
+      {/* <CoverLetter /> */}
       {/* <CompanyLogos /> */}
     </div>
   );
