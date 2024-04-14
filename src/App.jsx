@@ -1,4 +1,5 @@
 import React from "react";
+import { Route, Switch } from "wouter";
 
 import NavHeader from "./components/NavHeader";
 import Resume from "./components/Resume";
@@ -10,9 +11,10 @@ function App() {
   return (
     <div className="">
       <NavHeader />
-      <Resume />
-      {/* <CoverLetter /> */}
-      {/* <CompanyLogos /> */}
+      <Switch>
+        <Route path="/resume" component={Resume} />
+        <Route path="/cover-letter" component={CoverLetter} />
+      </Switch>
     </div>
   );
 }
