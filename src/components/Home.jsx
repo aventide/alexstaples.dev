@@ -2,6 +2,23 @@ export default function Home({
 
 }){
     return <div>
-        <p>Hi I am home</p>
+        <div className="mt-48 mx-10 pb-48 text-center border-b-2">
+            <h1 className="font-heading">Hi. I'm Alex.</h1>
+            <p className="mt-6 font-body text-lg mx-32">I'm a software developer from Northborough, Massachusetts. I've been writing code professionally since 2015, with the majority of my career focused on full stack web technology. I'm especially fond of the React and NodeJS ecosystems, and I've worked on a range of different project types including eCommerce, data management, and biotechnology.</p>
+        </div>
+        <div className="mt-24">
+            <h2 className="mb-6 font-bold text-xl mx-8 font-heading">PROJECTS</h2>
+            <div className="flex">
+                <div className="border-black dark:border-white border-2 flex-1 mx-10 aspect-square"></div>
+                <div className="border-black dark:border-white border-2 flex-1 mx-10 aspect-square"></div>
+                <div className="border-black dark:border-white border-2 flex-1 mx-10 aspect-square"></div>
+            </div>
+        </div>
+        <div className="mt-24">
+            <h2 className="mb-6 font-bold text-xl mx-8 font-heading">RESUME</h2>
+            <div className="flex">
+                <div className="border-black dark:border-white border-2 h-72 w-full mx-10"></div>
+            </div>
+        </div>
     </div>
 }
