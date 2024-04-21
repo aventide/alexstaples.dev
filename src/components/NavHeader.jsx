@@ -16,7 +16,7 @@ export default function NavHeader() {
         <div className='items-center cursor-pointer hidden md:flex'>
             <StyledNavLink to={'/'} active={isHome}>HOME</StyledNavLink>
             <CircleIcon className='w-2 h-2 mx-2 fill-black dark:fill-white' />
-            <StyledNavLink to={'/projects'} active={isProjects}>Projects</StyledNavLink>
+            <StyledNavLink to={'/projects'} active={isProjects}>PROJECTS</StyledNavLink>
             <CircleIcon className='w-2 h-2 mx-2 fill-black dark:fill-white' />
             <StyledNavLink to={'/resume'} active={isResume}>RESUME</StyledNavLink>
         </div>
