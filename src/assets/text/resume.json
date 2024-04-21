@@ -1,142 +1,136 @@
 {
-    "title": "Alex Staples",
-    "subtitle": "Software Developer",
-    "summary": "Front-end software engineer driven by the crafting of seamless user interfaces and fostering the creation of frictionless development environments.",
-    "address": "Northborough, MA",
-    "email": "ajstaples@gmail.com",
-    "downloadPDF": "Download PDF",
-    "pdfFilename": "resume.pdf",
-    "clients": "Clients",
-    "keyTechnologies": "Key Technologies",
-    "college": "University of Massachusetts Lowell",
-    "degree": "B.S. in Information Technology",
-    "graduationYear": 2015,
-    "jobs": {
-        "wasabi": {
-            "label": "Wasabi Technologies",
-            "sublabel": "Senior Software Engineer",
-            "time": "2020 - Present",
-            "longform": "Senior engineer for the applications team at a cloud storage startup. Creates React-powered web tools for internal use by our operations teams, designing core architectural components in company codebases. Key contributor to the development of the customer-facing Wasabi Console application. Supervises the daily creation and deployment of service images for testing, working closely with the infrastructure team.",
-            "bullets": [
-                "Senior front end engineer for the applications team at a rapidly-growing cloud storage company",
-                "Designs and develops core UI architecture and features for tools that are used internally by the operations and support teams",
-                "Plans and delivers new features for the customer-facing Wasabi Console application",
-                "Supervises the daily creation and deployment of service artifacts for QA, serving as a liaison with the infrastructure team",
-                "Provides mentorship to junior engineers and guides them through learning development processes",
-                "Interviews candidates for newly-opened front end engineering roles"
-            ],
-            "optionalBullets": [
-                "Provides mentorship for junior developers and interviews prospective engineering candidates"
-            ],
-            "tech": "React, Redux, Node, Material-UI, Highcharts, Docker, Kubernetes, GitHub Actions"
-        },
-        "motifSoftware": {
-            "label": "Motif Software",
-            "sublabel": "Senior Software Engineer",
-            "time": "2019 - 2020",
-            "bullets": [
-                "Front end developer as a contractor working with Motif Software",
-                "Developed major features for React applications for a variety of clients",
-                "Interacted with .NET framework for backend, EpiServer, and AI chatbots",
-                "Wrote extensive technical documentation for digital cytology software"
-            ],
-            "clients": "Hologic, Samsung, Orbita, Lew's Fishing",
-            "tech": "Javascript, React, CSS Modules, SVG, .NET Core, EpiServer"
-        },
-        "genpact": {
-            "label": "Genpact",
-            "sublabel": "Senior Front End Developer",
-            "time": "2018 - 2019",
-            "longform": "Front end engineer for digital customer experience consulting firm. Worked with clients based in Boston and Chicago on web development for their eCommerce platforms. Projects centered on the React ecosystem and required special emphasis on internationalization and accessibility. Additionally, conducted internal research pertaining to vector graphics and the Elm language.",
-            "bullets": [
-                "Front end engineer for digital customer experience consulting firm",
-                "Worked with clients based in Boston and Chicago on web development for their eCommerce platforms",
-                "Projects centered on the React ecosystem and required special emphasis on internationalization and accessibility",
-                "Conducted internal research pertaining to vector graphics and the Elm language"
-            ],
-            "clients": "Redbox, United Airlines",
-            "tech": "Javascript, React, Custom CSS Utilities, Browser Geolocation API, Bing Maps API, Elm"
-        },
-        "ca": {
-            "label": "CA Technologies",
-            "sublabel": "Associate Software Engineer",
-            "time": "2015 - 2018",
-            "longform": "Supporting role for development of CA Performance Management - a network infrastructure analysis and management product. Focused on the construction of internal tooling, including a visual API query builder, as well as a vendor certification search tool. Also wrote a suite of network metrics calculation tests, and began the conversion of existing tools to React and Electron. Assisted the sustaining team with resolving issues reported by customers.",
-            "bullets": [
-                "Developer for CA Performance Management - a network infrastructure analysis and management product",
-                "Constructed internal tooling, including a visual API query builder, and a vendor certification search tool",
-                "Wrote extensive test suite for verifying network metrics calculations",
-                "Assisted the sustaining team with resolving issues reported by customers"
-            ],
-            "tech": "Java, Python, Javascript, React, Sencha Ext JS, OData, HP Vertica, RHEL"
-        },
-        "kemmcare": {
-            "label": "KEMM Care Medical Staffing",
-            "sublabel": "Contract Full Stack Developer",
-            "time": "2014 - 2020",
-            "longform": "",
-            "bullets": [
-                "Full stack contractor for a medical staffing firm, in a lead role of revamping and managing their main website and IT infrastructure",
-                "Developed a JQuery based web front end that interacted with a NodeJS web server and a MySQL database, along with creating a basic custom ORM",
-                "Managed a subcontract with a designer to help create new company branding and an entirely new single page app concept",
-                "Procured and managed company hardware and software, including employee laptops, web domains, software licenses, virtual infrastructure and Google Workspace"
-            ],
-            "tech": "Javascript, JQuery, NodeJS, Express, MySQL, Debian, Google Workspace"
-        }
-    },
-    "skills": {
-        "Web": [
-            "React ecosystem",
-            "Node",
-            "Canvas",
-            "CSS",
-            "AWS S3",
-            "Accessibility",
-            "Networking",
-            "TC39"
-        ],
-        "Libraries": [
-            "React",
-            "Redux",
-            "React Router",
-            "Material UI",
-            "Tailwind",
-            "Highcharts",
-            "Jest"
-        ],
-        "Concepts": [
-            "Agile",
-            "DevOps",
-            "Microservices",
-            "Linux Administration",
-            "Open Source",
-            "Relational Databases"
-        ],
-        "Tools": [
-            "GPT-4",
-            "Webpack",
-            "Git",
-            "Docker",
-            "Kubernetes",
-            "ESLint",
-            "MySQL"
-        ],
-        "Programming Languages": [
-            "Javascript",
-            "Elm",
-            "C",
-            "C#",
-            "Python"
-        ]
-    },
-    "portfolio": {
-        "github": {
-            "title": "aventide",
-            "link": "https://github.com/aventide"
-        },
-        "site": {
-            "title": "alexstaples.dev",
-            "link": "https://alexstaples.dev"
-        }
-    }
+	"title": "Alex Staples",
+	"subtitle": "Software Developer",
+	"summary": "Front-end software engineer driven by the crafting of seamless user interfaces and fostering the creation of frictionless development environments.",
+	"address": "Northborough, MA",
+	"email": "ajstaples@gmail.com",
+	"downloadPDF": "Download PDF",
+	"pdfFilename": "resume.pdf",
+	"clients": "Clients",
+	"keyTechnologies": "Key Technologies",
+	"college": "University of Massachusetts Lowell",
+	"degree": "B.S. in Information Technology",
+	"graduationYear": 2015,
+	"jobs": {
+		"wasabi": {
+			"label": "Wasabi Technologies",
+			"sublabel": "Senior Software Engineer",
+			"time": "2020 - Present",
+			"longform": "Senior engineer for the applications team at a cloud storage startup. Creates React-powered web tools for internal use by our operations teams, designing core architectural components in company codebases. Key contributor to the development of the customer-facing Wasabi Console application. Supervises the daily creation and deployment of service images for testing, working closely with the infrastructure team.",
+			"bullets": [
+				"Senior front end engineer for the applications team at a rapidly-growing cloud storage company",
+				"Designs and develops core UI architecture and features for tools that are used internally by the operations and support teams",
+				"Plans and delivers new features for the customer-facing Wasabi Console application",
+				"Supervises the daily creation and deployment of service artifacts for QA, serving as a liaison with the infrastructure team",
+				"Provides mentorship to junior engineers and guides them through learning development processes",
+				"Interviews candidates for newly-opened front end engineering roles"
+			],
+			"optionalBullets": [
+				"Provides mentorship for junior developers and interviews prospective engineering candidates"
+			],
+			"tech": "React, Redux, Node, Material-UI, Highcharts, Docker, Kubernetes, GitHub Actions"
+		},
+		"motifSoftware": {
+			"label": "Motif Software",
+			"sublabel": "Senior Software Engineer",
+			"time": "2019 - 2020",
+			"bullets": [
+				"Front end developer as a contractor working with Motif Software",
+				"Developed major features for React applications for a variety of clients",
+				"Interacted with .NET framework for backend, EpiServer, and AI chatbots",
+				"Wrote extensive technical documentation for digital cytology software"
+			],
+			"clients": "Hologic, Samsung, Orbita, Lew's Fishing",
+			"tech": "Javascript, React, CSS Modules, SVG, .NET Core, EpiServer"
+		},
+		"genpact": {
+			"label": "Genpact",
+			"sublabel": "Senior Front End Developer",
+			"time": "2018 - 2019",
+			"longform": "Front end engineer for digital customer experience consulting firm. Worked with clients based in Boston and Chicago on web development for their eCommerce platforms. Projects centered on the React ecosystem and required special emphasis on internationalization and accessibility. Additionally, conducted internal research pertaining to vector graphics and the Elm language.",
+			"bullets": [
+				"Front end engineer for digital customer experience consulting firm",
+				"Worked with clients based in Boston and Chicago on web development for their eCommerce platforms",
+				"Projects centered on the React ecosystem and required special emphasis on internationalization and accessibility",
+				"Conducted internal research pertaining to vector graphics and the Elm language"
+			],
+			"clients": "Redbox, United Airlines",
+			"tech": "Javascript, React, Custom CSS Utilities, Browser Geolocation API, Bing Maps API, Elm"
+		},
+		"ca": {
+			"label": "CA Technologies",
+			"sublabel": "Associate Software Engineer",
+			"time": "2015 - 2018",
+			"longform": "Supporting role for development of CA Performance Management - a network infrastructure analysis and management product. Focused on the construction of internal tooling, including a visual API query builder, as well as a vendor certification search tool. Also wrote a suite of network metrics calculation tests, and began the conversion of existing tools to React and Electron. Assisted the sustaining team with resolving issues reported by customers.",
+			"bullets": [
+				"Developer for CA Performance Management - a network infrastructure analysis and management product",
+				"Constructed internal tooling, including a visual API query builder, and a vendor certification search tool",
+				"Wrote extensive test suite for verifying network metrics calculations",
+				"Assisted the sustaining team with resolving issues reported by customers"
+			],
+			"tech": "Java, Python, Javascript, React, Sencha Ext JS, OData, HP Vertica, RHEL"
+		},
+		"kemmcare": {
+			"label": "KEMM Care Medical Staffing",
+			"sublabel": "Contract Full Stack Developer",
+			"time": "2014 - 2020",
+			"longform": "",
+			"bullets": [
+				"Full stack contractor for a medical staffing firm, in a lead role of revamping and managing their main website and IT infrastructure",
+				"Developed a JQuery based web front end that interacted with a NodeJS web server and a MySQL database, along with creating a basic custom ORM",
+				"Managed a subcontract with a designer to help create new company branding and an entirely new single page app concept",
+				"Procured and managed company hardware and software, including employee laptops, web domains, software licenses, virtual infrastructure and Google Workspace"
+			],
+			"tech": "Javascript, JQuery, NodeJS, Express, MySQL, Debian, Google Workspace"
+		}
+	},
+	"skills": {
+		"Web": [
+			"React ecosystem",
+			"Node",
+			"Canvas",
+			"CSS",
+			"AWS S3",
+			"Accessibility",
+			"Networking",
+			"TC39"
+		],
+		"Libraries": [
+			"React",
+			"Redux",
+			"React Router",
+			"Material UI",
+			"Tailwind",
+			"Highcharts",
+			"Jest"
+		],
+		"Concepts": [
+			"Agile",
+			"DevOps",
+			"Microservices",
+			"Linux Administration",
+			"Open Source",
+			"Relational Databases"
+		],
+		"Tools": [
+			"GPT-4",
+			"Webpack",
+			"Git",
+			"Docker",
+			"Kubernetes",
+			"ESLint",
+			"MySQL"
+		],
+		"Programming Languages": ["Javascript", "Elm", "C", "C#", "Python"]
+	},
+	"portfolio": {
+		"github": {
+			"title": "aventide",
+			"link": "https://github.com/aventide"
+		},
+		"site": {
+			"title": "alexstaples.dev",
+			"link": "https://alexstaples.dev"
+		}
+	}
 }
