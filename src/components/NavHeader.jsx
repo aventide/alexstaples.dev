@@ -9,7 +9,7 @@ export default function NavHeader() {
 
 	const isHome = location === "/";
 	const isProjects = location === "/projects";
-	const isResume = location === "/resume";
+	const isResume = location === "/resume" || location === "/experience";
 
 	return (
 		<div className="flex justify-between w-full">
@@ -23,7 +23,7 @@ export default function NavHeader() {
 				</StyledNavLink>
 				<CircleIcon className="w-2 h-2 mx-2 fill-black dark:fill-white" />
 				<StyledNavLink to={"/resume"} active={isResume}>
-					RESUME
+					EXPERIENCE
 				</StyledNavLink>
 			</div>
 			<div className="flex-1 flex justify-between md:hidden">
