@@ -5,11 +5,12 @@
 	"subtitle": "Software Developer",
 	"address": "Northborough, MA",
 	"email": "ajstaples@gmail.com",
-	"company": "Stripe",
-	"greeting": "Hello, team at Stripe!",
-	"introduction": "I'm excited to apply for your open role as a front end engineer, due to my familiarity with Stripe's reputation and your dedication to great products and great documentation.",
-	"body": "If selected to have a discussion about joining your team, I would highlight my passion for front end development, especially with React, crafting seamless and fluid user interfaces. Also my versatility, having worked with many back end technologies including containers and databases. I am comfortable developing customer-facing products as well as internal tools, and love the chance to encourage a frictionless development environment.",
-	"conclusion": "Thank you for considering my application, and I hope to hear back soon!",
+	"company": "Grammarly",
+	"greeting": "Hello, team over at Grammarly!",
+	"introduction": "I'm very excited to apply for your open role as a front end software engineer. I am both familiar with your product as well as a strong advocate of precise written communication, and I would love the opportunity to join in on that mission.",
+	"body1": "If selected to have a discussion about joining your team, I would highlight my passion for front end development, especially with React, crafting seamless and fluid user interfaces. Also my versatility, having worked with many back end technologies including containers and databases. I am comfortable developing customer-facing products as well as internal tools, and embrace the chance to create a frictionless development environment.",
+	"body2": "I am also a big believer in being part of an ethical environment, and being proactive towards my individual growth as well as the growth of my peers. I am driven by the prospect of long term success and iterative, sustainable development strategies. As part of your company, I would also like to both be a mentor for junior developers as well as be a student, learning from your collective experience and greatest minds.",
+	"conclusion": "Thank you for considering my application, and I hope to have the chance to meet you all!",
 	"signOffWordChoice": "Regards,",
 	"signOff": "Alex S."
 }
