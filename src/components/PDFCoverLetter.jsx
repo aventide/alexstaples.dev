@@ -143,7 +143,8 @@ export default function PDFResume() {
 							</Text>
 							<TextSection textContent={text.greeting} />
 							<TextSection textContent={text.introduction} />
-							<TextSection textContent={text.body} />
+							<TextSection textContent={text.body1} />
+							<TextSection textContent={text.body2} />
 							<TextSection textContent={text.conclusion} />
 							<TextSection textContent={text.signOffWordChoice} />
 							<TextSection textContent={text.signOff} />

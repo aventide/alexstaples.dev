@@ -40,7 +40,8 @@ export default function CoverLetter() {
 				<div className="mt-12 mb-8 mx-16">
 					<CoverLetterSection textContent={text.greeting} />
 					<CoverLetterSection textContent={text.introduction} />
-					<CoverLetterSection textContent={text.body} />
+					<CoverLetterSection textContent={text.body1} />
+					<CoverLetterSection textContent={text.body2} />
 					<CoverLetterSection textContent={text.conclusion} />
 					<CoverLetterSection textContent={text.signOff} />
 				</div>
