@@ -16,17 +16,14 @@
 			"label": "Wasabi Technologies",
 			"sublabel": "Senior Software Engineer",
 			"time": "2020 - 2024",
-			"longform": "Senior engineer for the applications team at a cloud storage startup. Creates React-powered web tools for internal use by our operations teams, designing core architectural components in company codebases. Key contributor to the development of the customer-facing Wasabi Console application. Supervises the daily creation and deployment of service images for testing, working closely with the infrastructure team.",
+			"longform": "Senior engineer for the applications team at a cloud storage startup. Created React-powered web tools for internal use by the operations teams, designing core architectural components in company codebases. Key contributor to the development of the customer-facing Wasabi Console application. Supervised the daily creation and deployment of service images for testing, working closely with the infrastructure team.",
 			"bullets": [
 				"Senior front end engineer for the applications team at a rapidly-growing cloud storage company",
-				"Designs and develops core UI architecture and features for tools that are used internally by the operations and support teams",
-				"Plans and delivers new features for the customer-facing Wasabi Console application",
-				"Supervises the daily creation and deployment of service artifacts for QA, serving as a liaison with the infrastructure team",
-				"Provides mentorship to junior engineers and guides them through learning development processes",
-				"Interviews candidates for newly-opened front end engineering roles"
-			],
-			"optionalBullets": [
-				"Provides mentorship for junior developers and interviews prospective engineering candidates"
+				"Designed and developed core UI architecture and features for tools that are used internally by the operations and support teams",
+				"Planned and delivered new features for the customer-facing Wasabi Console application",
+				"Supervised the daily creation and deployment of service artifacts for QA, serving as a liaison with the infrastructure team",
+				"Provided mentorship to junior engineers and guided them through learning development processes",
+				"Interviewed candidates for newly-opened front end engineering roles"
 			],
 			"tech": "React, Redux, Node, Material-UI, Highcharts, Docker, Kubernetes, GitHub Actions"
 		},
