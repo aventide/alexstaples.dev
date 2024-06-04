@@ -1,3 +1,5 @@
+import UnderConstruction from "./UnderConstruction";
+
 export default function Home({}) {
 	return (
 		<div>
@@ -14,15 +16,15 @@ export default function Home({}) {
 			<div className="mt-24">
 				<h2 className="mb-6 font-bold text-xl mx-8 font-heading">PROJECTS</h2>
 				<div className="grid grid-cols:1 md:grid-cols-2 lg:grid-cols-3 gap-20 mx-10">
-					<div className="border-black dark:border-white border-2 flex-1 aspect-square"></div>
-					<div className="border-black dark:border-white border-2 flex-1 aspect-square"></div>
-					<div className="border-black dark:border-white border-2 flex-1 aspect-square"></div>
+					<UnderConstruction small />
+					<UnderConstruction small />
+					<UnderConstruction small />
 				</div>
 			</div>
 			<div className="mt-24">
 				<h2 className="mb-6 font-bold text-xl mx-8 font-heading">EXPERIENCE</h2>
 				<div className="grid mx-10">
-					<div className="border-black dark:border-white border-2 flex-1 h-72"></div>
+					<div className="border-black dark:border-white border-2 flex-1 h-72 under-construction-small"></div>
 				</div>
 			</div>
 		</div>
