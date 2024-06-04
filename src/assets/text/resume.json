@@ -118,7 +118,7 @@
 			"ESLint",
 			"MySQL"
 		],
-		"Programming Languages": ["Javascript", "Elm", "C", "C#", "Python"]
+		"Programming Languages": ["JavaScript", "TypeScript", "Elm", "C", "C#", "Python"]
 	},
 	"portfolio": {
 		"github": {
