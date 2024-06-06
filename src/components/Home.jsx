@@ -24,7 +24,13 @@ export default function Home() {
 			<div className="mt-24">
 				<h2 className="mb-6 font-bold text-xl mx-8 font-heading">EXPERIENCE</h2>
 				<div className="grid mx-10">
-					<div className="border-black dark:border-white border-2 flex-1 h-72 under-construction-small" />
+					<div className="border-black dark:border-white border-2 flex-1 h-72 under-construction-small">
+						<div className="h-full flex justify-center items-center ">
+							<div className={"bg-yellow-300 text-black text-xl font-bold p-2"}>
+								UNDER CONSTRUCTION
+							</div>
+						</div>
+					</div>
 				</div>
 			</div>
 		</div>
