@@ -37,6 +37,7 @@ export default function Resume() {
 							"Loading document..."
 						) : (
 							<button
+								type="button"
 								className={`badge ${highlightBadgeClasses} ${highlightClasses} px-4 py-4 bg-transparent`}
 							>
 								<DownloadIcon className="w-4 h-4 mr-2" />
@@ -59,6 +60,7 @@ export default function Resume() {
 						<SkillsList
 							title={skillSection}
 							skills={text.skills[skillSection]}
+							key={skillSection}
 						/>
 					))}
 				</div>
@@ -120,15 +122,14 @@ function SkillsList({ title, skills }) {
 		<div className="mb-4">
 			<span className="font-bold">{title}</span>
 			<ul className="mt-4">
-				{skills &&
-					skills.map((skill) => (
-						<li
-							className="badge mr-2 border-black dark:text-white dark:border-white"
-							key={skill}
-						>
-							{skill}
-						</li>
-					))}
+				{skills?.map((skill) => (
+					<li
+						className="badge mr-2 border-black dark:text-white dark:border-white"
+						key={skill}
+					>
+						{skill}
+					</li>
+				))}
 			</ul>
 		</div>
 	);
@@ -166,7 +167,7 @@ function ResumeEntry({ children, label, sublabel, time, open = false }) {
 						{label}
 					</span>
 					<span className="mx-2 hidden sm:inline">|</span>
-					<span className={`inline-block ml-6 sm:ml-0`}>{sublabel}</span>
+					<span className={"inline-block ml-6 sm:ml-0"}>{sublabel}</span>
 				</div>
 				<span>{time}</span>
 			</div>
@@ -184,7 +185,9 @@ function Job({ company, ...rest }) {
 		<ResumeEntry label={label} sublabel={sublabel} time={time} {...rest}>
 			<ul className="list-disc">
 				{bullets.map((bullet) => (
-					<li className="mb-0">{bullet}</li>
+					<li className="mb-0" key={bullet}>
+						{bullet}
+					</li>
 				))}
 			</ul>
 			<br />

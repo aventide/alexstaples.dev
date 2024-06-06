@@ -1,6 +1,6 @@
 import UnderConstruction from "./UnderConstruction";
 
-export default function Home({}) {
+export default function Home() {
 	return (
 		<div>
 			<div className="mt-48 mx-10 pb-48 text-center border-b-2">
@@ -24,7 +24,7 @@ export default function Home({}) {
 			<div className="mt-24">
 				<h2 className="mb-6 font-bold text-xl mx-8 font-heading">EXPERIENCE</h2>
 				<div className="grid mx-10">
-					<div className="border-black dark:border-white border-2 flex-1 h-72 under-construction-small"></div>
+					<div className="border-black dark:border-white border-2 flex-1 h-72 under-construction-small" />
 				</div>
 			</div>
 		</div>
