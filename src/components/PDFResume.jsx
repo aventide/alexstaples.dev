@@ -90,10 +90,9 @@ function ResumeSection({ title, children }) {
 						marginTop: "2pt",
 						marginBottom: "4pt",
 					}}
-				></View>
+				/>
 				<View style={{ marginTop: "4pt" }}>{children}</View>
 			</View>
-			<View></View>
 		</View>
 	);
 }
@@ -125,8 +124,11 @@ function Job({ company, ...rest }) {
 	return (
 		<ResumeEntry label={label} sublabel={sublabel} time={time} {...rest}>
 			<View style={{ flexDirection: "column" }}>
-				{bullets.map((bullet, index) => (
-					<View style={{ flexDirection: "row", fontSize: bodyFontSize }}>
+				{bullets.map((bullet) => (
+					<View
+						style={{ flexDirection: "row", fontSize: bodyFontSize }}
+						key={bullet}
+					>
 						<Text style={{ marginHorizontal: 4, fontSize: bodyFontSize }}>
 							•
 						</Text>
@@ -137,7 +139,6 @@ function Job({ company, ...rest }) {
 								marginBottom: "3pt",
 								maxWidth: "97%",
 							}}
-							key={index}
 						>
 							{bullet}
 						</Text>
@@ -228,7 +229,7 @@ export default function PDFResume() {
 		<Document>
 			<Page size="LETTER">
 				<View style={{ margin: "12pt" }}>
-					<View style={{ height: "12pt", backgroundColor: "#A82623" }}></View>
+					<View style={{ height: "12pt", backgroundColor: "#A82623" }} />
 					<Header />
 					<View style={{ flexDirection: "row" }}>
 						<View style={{ width: "70%" }}>
@@ -334,7 +335,7 @@ export default function PDFResume() {
 							height: "12pt",
 							backgroundColor: "#A82623",
 						}}
-					></View>
+					/>
 				</View>
 			</Page>
 		</Document>

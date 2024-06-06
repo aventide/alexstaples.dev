@@ -27,10 +27,10 @@ export default function NavHeader() {
 				</StyledNavLink>
 			</div>
 			<div className="flex-1 flex justify-between md:hidden">
-				<button className="">
+				<button type="button" className="">
 					<ASIcon className="w-8 h-8 fill-black" />
 				</button>
-				<button className="flex justify-end">
+				<button type="button" className="flex justify-end">
 					<MenuIcon className="w-8 h-8" />
 				</button>
 			</div>

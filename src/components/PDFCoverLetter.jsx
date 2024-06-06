@@ -127,7 +127,7 @@ export default function PDFResume() {
 		<Document>
 			<Page size="LETTER">
 				<View style={{ margin: "12pt" }}>
-					<View style={{ height: "12pt", backgroundColor: "#A82623" }}></View>
+					<View style={{ height: "12pt", backgroundColor: "#A82623" }} />
 					<Header />
 					<View style={{ display: "flex", justifyContent: "center" }}>
 						<View style={{ paddingHorizontal: "36pt" }}>

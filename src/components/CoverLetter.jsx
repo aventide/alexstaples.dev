@@ -27,6 +27,7 @@ export default function CoverLetter() {
 							"Loading document..."
 						) : (
 							<button
+								type="button"
 								className={`badge ${highlightBadgeClasses} ${highlightClasses} px-4 py-4 bg-transparent`}
 							>
 								<DownloadIcon className="w-4 h-4 mr-2" />
