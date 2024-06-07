@@ -2,6 +2,7 @@ import React from "react";
 import { Route, Switch } from "wouter";
 
 import CoverLetter from "./components/CoverLetter";
+import Footer from "./components/Footer";
 import Home from "./components/Home";
 import NavHeader from "./components/NavHeader";
 import Projects from "./components/Projects";
@@ -20,6 +21,7 @@ function App() {
 				<Route path="/resume" component={Resume} />
 				<Route path="/cover-letter" component={CoverLetter} />
 			</Switch>
+			<Footer />
 		</div>
 	);
 }
