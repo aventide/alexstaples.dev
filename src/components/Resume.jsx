@@ -1,19 +1,10 @@
 import { PDFDownloadLink } from "@react-pdf/renderer";
-import { useState } from "react";
-import { useCollapse } from "react-collapsed";
 
+// feather icons https://feathericons.com/
 import { ReactComponent as DownloadIcon } from "../assets/icons/download.svg";
-import { ReactComponent as GithubIcon } from "../assets/icons/github.svg";
-import { ReactComponent as GradCapIcon } from "../assets/icons/graduation-cap.svg";
-import { ReactComponent as TriangleIcon } from "../assets/icons/triangle.svg";
-import { ReactComponent as UserIcon } from "../assets/icons/user.svg";
-
 import text from "../assets/text/resume.json";
 
 import PDFResume from "./PDFResume";
-
-// feather icons https://feathericons.com/
-// graduation cap fromhttps://iconoir.com/
 
 export default function Resume() {
 	return (
@@ -62,7 +53,6 @@ export default function Resume() {
 			</ResumeSection>
 			<ResumeSection title="portfolio">
 				<div className="mb-2">
-					<GithubIcon className="inline font-bold w-4 h-4 mr-2 stroke-black dark:stroke-white" />
 					<span className="font-bold inline">Github</span>
 					<span className="mx-2">|</span>
 					<StyledLink
@@ -74,7 +64,6 @@ export default function Resume() {
 					</StyledLink>
 				</div>
 				<div className="mb-2">
-					<UserIcon className="inline font-bold w-4 h-4 mr-2 stroke-black dark:stroke-white" />
 					<span className="font-bold inline">Site</span>
 					<span className="mx-2">|</span>
 					<StyledLink
@@ -87,16 +76,7 @@ export default function Resume() {
 				</div>
 			</ResumeSection>
 			<ResumeSection title="education">
-				<ResumeEntry
-					label={
-						<>
-							<GradCapIcon className="inline font-bold w-4 h-4 mr-2 stroke-black dark:stroke-white" />
-							<span>{text.college}</span>
-						</>
-					}
-					sublabel={text.degree}
-					time={text.graduationYear}
-				/>
+				<Education />
 			</ResumeSection>
 		</div>
 	);
@@ -130,13 +110,10 @@ function SkillsList({ title, skills }) {
 	);
 }
 
-function ResumeEntry({ children, jobTitle, employer, time, open = false }) {
-	const [isExpanded, setExpanded] = useState(open);
-	const { getCollapseProps, getToggleProps } = useCollapse({
-		duration: 200,
-		isExpanded,
-	});
-
+function Job({ company }) {
+	const companyKey = text.jobs[company];
+	const { employer, jobTitle, time, longform, clients, techSkills } =
+		companyKey;
 	return (
 		<div className="mb-12">
 			<p className="text-indigo-400 text-sm">{time}</p>
@@ -145,23 +122,26 @@ function ResumeEntry({ children, jobTitle, employer, time, open = false }) {
 				<span className="mx-2">|</span>
 				<span>{employer}</span>
 			</p>
-			{children}
+			<div className="mb-4">
+				<p className="mb-2 text-sm text-slate-400">{longform}</p>
+				<SkillsList skills={techSkills} />
+			</div>
 		</div>
 	);
 }
 
-function Job({ company, ...rest }) {
-	const companyKey = text.jobs[company];
-	const { employer, jobTitle, time, longform, clients, techSkills } =
-		companyKey;
+function Education() {
+	const { time, name, degree } = text.education;
+
 	return (
-		<ResumeEntry employer={employer} jobTitle={jobTitle} time={time} {...rest}>
-			<div className="mb-4">
-				<p className="mb-2 text-sm text-slate-400">{longform}</p>
-				{/* <div>{techSkills.map(skill => )}</div> */}
-				<SkillsList skills={techSkills} />
-			</div>
-		</ResumeEntry>
+		<div className="mb-12">
+			<p className="text-indigo-400 text-sm">{time}</p>
+			<p className="mb-4 text-lg">
+				<p className="font-bold">{degree}</p>
+				{/* <span className="mx-2">|</span> */}
+				<p>{name}</p>
+			</p>
+		</div>
 	);
 }
 
