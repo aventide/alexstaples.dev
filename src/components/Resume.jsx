@@ -18,19 +18,14 @@ import PDFResume from "./PDFResume";
 export default function Resume() {
 	return (
 		<div className="">
-			<div className="mt-8 mb-4 flex items-center flex-col text-center">
+			<div className="mt-8 mb-2 flex items-center flex-col text-center">
 				<div>
-					<h1 className="font-heading font-bold mt-4 inline-block">
-						{text.title}
+					<h1 className="font-heading font-bold my-4 inline-block text-2xl underline underline-offset-2">
+						WORK EXPERIENCE
 					</h1>
-					<div>
-						<span>{text.address}</span>
-						<span className="mx-2">|</span>
-						<StyledLink href={`mailto:${text.email}`}>{text.email}</StyledLink>
-					</div>
 				</div>
 			</div>
-			<div className="mb-16 sm:mb-8 md:mb-4 flex justify-center">
+			<div className="mb-8 sm:mb-8 md:mb-16 flex justify-center">
 				<PDFDownloadLink document={<PDFResume />} fileName="resume.pdf">
 					{({ blob, url, loading, error }) =>
 						loading ? (
@@ -47,14 +42,14 @@ export default function Resume() {
 					}
 				</PDFDownloadLink>
 			</div>
-			<ResumeSection title="professional experience">
+			<ResumeSection title="">
 				<Job company="wasabi" open />
 				<Job company="motifSoftware" />
 				<Job company="genpact" />
 				<Job company="ca" />
 				<Job company="kemmcare" />
 			</ResumeSection>
-			<ResumeSection title="technical expertise">
+			<ResumeSection title="skills">
 				<div className="grid grid-cols sm:grid-cols-2 md:grid-cols-3 gap-4">
 					{Object.keys(text.skills).map((skillSection) => (
 						<SkillsList
@@ -109,7 +104,7 @@ export default function Resume() {
 
 function ResumeSection({ children, title }) {
 	return (
-		<div className="mt-4 mb-8">
+		<div className="mt-4 mb-8 mx-4">
 			<h2 className="uppercase font-heading font-bold text-lg">{title}</h2>
 			<div className="divider brightness-200 mt-0 mb-4" />
 			<div className="ml-0 sm:ml-4">{children}</div>
@@ -124,7 +119,7 @@ function SkillsList({ title, skills }) {
 			<ul className="mt-4">
 				{skills?.map((skill) => (
 					<li
-						className="badge mr-2 border-black dark:text-white dark:border-white"
+						className="badge mr-2 my-1 px-3 py-2.5 bg-black dark:bg-indigo-500 dark:text-slate-200"
 						key={skill}
 					>
 						{skill}
@@ -135,7 +130,7 @@ function SkillsList({ title, skills }) {
 	);
 }
 
-function ResumeEntry({ children, label, sublabel, time, open = false }) {
+function ResumeEntry({ children, jobTitle, employer, time, open = false }) {
 	const [isExpanded, setExpanded] = useState(open);
 	const { getCollapseProps, getToggleProps } = useCollapse({
 		duration: 200,
@@ -143,64 +138,29 @@ function ResumeEntry({ children, label, sublabel, time, open = false }) {
 	});
 
 	return (
-		<div className="mb-4">
-			<div
-				className={`flex justify-between select-none ${
-					children ? "cursor-pointer" : "cursor-default"
-				}`}
-				{...getToggleProps({
-					disabled: !children,
-					onClick: () => setExpanded((prevExpanded) => !prevExpanded),
-				})}
-			>
-				<div className="sm:flex">
-					<span className="font-bold flex sm:inline-flex items-center">
-						{children ? (
-							<label
-								className={`cursor-pointer transition-all duration-200 ease-in-out mr-2 ${
-									isExpanded ? "rotate-90" : "rotate-0"
-								}`}
-							>
-								<TriangleIcon className="rotate-90 w-4 h-4 stroke-black dark:stroke-white" />
-							</label>
-						) : null}
-						{label}
-					</span>
-					<span className="mx-2 hidden sm:inline">|</span>
-					<span className={"inline-block ml-6 sm:ml-0"}>{sublabel}</span>
-				</div>
-				<span>{time}</span>
-			</div>
-			<div className={"ml-6 max-w-3xl text-sm"} {...getCollapseProps()}>
-				<div className="mt-4 pb-4">{children}</div>
-			</div>
+		<div className="mb-12">
+			<p className="text-indigo-400 text-sm">{time}</p>
+			<p className="mb-4 text-lg">
+				<span className="font-bold">{jobTitle}</span>
+				<span className="mx-2">|</span>
+				<span>{employer}</span>
+			</p>
+			{children}
 		</div>
 	);
 }
 
 function Job({ company, ...rest }) {
 	const companyKey = text.jobs[company];
-	const { label, sublabel, time, bullets, clients, tech } = companyKey;
+	const { employer, jobTitle, time, longform, clients, techSkills } =
+		companyKey;
 	return (
-		<ResumeEntry label={label} sublabel={sublabel} time={time} {...rest}>
-			<ul className="list-disc">
-				{bullets.map((bullet) => (
-					<li className="mb-0" key={bullet}>
-						{bullet}
-					</li>
-				))}
-			</ul>
-			<br />
-			{clients ? (
-				<p className="mb-0">
-					<span className="font-bold">{text.clients}: </span>
-					{clients}
-				</p>
-			) : null}
-			<p>
-				<span className="font-bold">{text.keyTechnologies}: </span>
-				{tech}
-			</p>
+		<ResumeEntry employer={employer} jobTitle={jobTitle} time={time} {...rest}>
+			<div className="mb-4">
+				<p className="mb-2 text-sm text-slate-400">{longform}</p>
+				{/* <div>{techSkills.map(skill => )}</div> */}
+				<SkillsList skills={techSkills} />
+			</div>
 		</ResumeEntry>
 	);
 }

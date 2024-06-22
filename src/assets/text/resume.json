@@ -4,7 +4,7 @@
 	"summary": "Front-end software engineer driven by the crafting of seamless user interfaces and fostering the creation of frictionless development environments.",
 	"address": "Northborough, MA",
 	"email": "ajstaples@gmail.com",
-	"downloadPDF": "Download PDF",
+	"downloadPDF": "Download Full Resume",
 	"pdfFilename": "resume.pdf",
 	"clients": "Clients",
 	"keyTechnologies": "Key Technologies",
@@ -13,8 +13,8 @@
 	"graduationYear": 2015,
 	"jobs": {
 		"wasabi": {
-			"label": "Wasabi Technologies",
-			"sublabel": "Senior Software Engineer",
+			"employer": "Wasabi Technologies",
+			"jobTitle": "Senior Software Engineer",
 			"time": "2020 - 2024",
 			"longform": "Senior engineer for the applications team at a cloud storage startup. Created React-powered web tools for internal use by the operations teams, designing core architectural components in company codebases. Key contributor to the development of the customer-facing Wasabi Console application. Supervised the daily creation and deployment of service images for testing, working closely with the infrastructure team.",
 			"bullets": [
@@ -25,11 +25,11 @@
 				"Provided mentorship to junior engineers and guided them through learning development processes",
 				"Interviewed candidates for newly-opened front end engineering roles"
 			],
-			"tech": "React, Redux, Node, Material-UI, Highcharts, Docker, Kubernetes, GitHub Actions"
+			"techSkills": ["React", "Redux", "Node.js", "Material-UI", "Highcharts", "Docker", "Kubernetes", "GitHub Actions"]
 		},
 		"motifSoftware": {
-			"label": "Motif Software",
-			"sublabel": "Senior Software Engineer",
+			"employer": "Motif Software",
+			"jobTitle": "Senior Software Engineer",
 			"time": "2019 - 2020",
 			"bullets": [
 				"Front end developer as a contractor working with Motif Software",
@@ -38,11 +38,11 @@
 				"Wrote extensive technical documentation for digital cytology software"
 			],
 			"clients": "Hologic, Samsung, Orbita, Lew's Fishing",
-			"tech": "Javascript, React, CSS Modules, SVG, .NET Core, EpiServer"
+			"techSkills": ["Javascript", "React", "CSS Modules", "SVG", ".NET Core", "EpiServer"]
 		},
 		"genpact": {
-			"label": "Genpact",
-			"sublabel": "Senior Front End Developer",
+			"employer": "Genpact",
+			"jobTitle": "Senior Front End Developer",
 			"time": "2018 - 2019",
 			"longform": "Front end engineer for digital customer experience consulting firm. Worked with clients based in Boston and Chicago on web development for their eCommerce platforms. Projects centered on the React ecosystem and required special emphasis on internationalization and accessibility. Additionally, conducted internal research pertaining to vector graphics and the Elm language.",
 			"bullets": [
@@ -52,11 +52,11 @@
 				"Conducted internal research pertaining to vector graphics and the Elm language"
 			],
 			"clients": "Redbox, United Airlines",
-			"tech": "Javascript, React, Custom CSS Utilities, Browser Geolocation API, Bing Maps API, Elm"
+			"techSkills": ["Javascript", "React", "Custom CSS Utilities", "Browser Geolocation API", "Bing Maps API", "Elm"]
 		},
 		"ca": {
-			"label": "CA Technologies",
-			"sublabel": "Associate Software Engineer",
+			"employer": "CA Technologies",
+			"jobTitle": "Associate Software Engineer",
 			"time": "2015 - 2018",
 			"longform": "Supporting role for development of CA Performance Management - a network infrastructure analysis and management product. Focused on the construction of internal tooling, including a visual API query builder, as well as a vendor certification search tool. Also wrote a suite of network metrics calculation tests, and began the conversion of existing tools to React and Electron. Assisted the sustaining team with resolving issues reported by customers.",
 			"bullets": [
@@ -65,11 +65,11 @@
 				"Wrote extensive test suite for verifying network metrics calculations",
 				"Assisted the sustaining team with resolving issues reported by customers"
 			],
-			"tech": "Java, Python, Javascript, React, Sencha Ext JS, OData, HP Vertica, RHEL"
+			"techSkills": ["Java","Python", "Javascript", "React", "Sencha Ext JS", "OData", "HP Vertica", "RHEL"]
 		},
 		"kemmcare": {
-			"label": "KEMM Care Medical Staffing",
-			"sublabel": "Contract Full Stack Developer",
+			"employer": "KEMM Care Medical Staffing",
+			"jobTitle": "Contract Full Stack Developer",
 			"time": "2014 - 2020",
 			"longform": "",
 			"bullets": [
@@ -78,7 +78,7 @@
 				"Managed a subcontract with a designer to help create new company branding and an entirely new single page app concept",
 				"Procured and managed company hardware and software, including employee laptops, web domains, software licenses, virtual infrastructure and Google Workspace"
 			],
-			"tech": "Javascript, JQuery, NodeJS, Express, MySQL, Debian, Google Workspace"
+			"techSkills": ["Javascript", "JQuery", "Node.js", "Express", "MySQL", "Debian", "Google Workspace"]
 		}
 	},
 	"skills": {

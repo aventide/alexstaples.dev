@@ -119,10 +119,10 @@ function HeaderDetail({ text, icon }) {
 
 function Job({ company, ...rest }) {
 	const companyKey = text.jobs[company];
-	const { label, sublabel, time, bullets } = companyKey;
+	const { employer, jobTitle, time, bullets } = companyKey;
 
 	return (
-		<ResumeEntry label={label} sublabel={sublabel} time={time} {...rest}>
+		<ResumeEntry label={employer} sublabel={jobTitle} time={time} {...rest}>
 			<View style={{ flexDirection: "column" }}>
 				{bullets.map((bullet) => (
 					<View
