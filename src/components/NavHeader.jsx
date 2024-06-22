@@ -89,9 +89,9 @@ function StyledNavLink({ active, children, to, onClick, ...rest }) {
 	return (
 		<Link to={to} asChild onClick={onClick}>
 			<span
-				className={`text-lg md:text-lg my-1 md:my-0 uppercase select-none font-heading font-bold inline-block cursor-pointer ${
+				className={`text-xl md:text-lg my-2 md:my-0 uppercase select-none font-heading font-bold inline-block cursor-pointer ${
 					active
-						? "underline decoration-2 underline-offset-4"
+						? "underline decoration-2 underline-offset-4 text-indigo-400 sm:text-white"
 						: "hover:opacity-70"
 				}`}
 				{...rest}
