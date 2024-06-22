@@ -320,10 +320,10 @@ export default function PDFResume() {
 											marginBottom: "4pt",
 										}}
 									>
-										{text.college}
+										{text.education.name}
 									</Text>
 									<Text style={{ fontSize: bodyFontSize, fontFamily: "Lato" }}>
-										{text.degree}
+										{text.education.degree}
 									</Text>
 								</View>
 							</ResumeSection>

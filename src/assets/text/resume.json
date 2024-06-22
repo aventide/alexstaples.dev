@@ -8,9 +8,11 @@
 	"pdfFilename": "resume.pdf",
 	"clients": "Clients",
 	"keyTechnologies": "Key Technologies",
-	"college": "University of Massachusetts Lowell",
-	"degree": "B.S. in Information Technology",
-	"graduationYear": 2015,
+	"education": {
+		"name": "University of Massachusetts Lowell",
+		"time": "2015",
+		"degree": "B.S. in Information Technology"
+	},
 	"jobs": {
 		"wasabi": {
 			"employer": "Wasabi Technologies",
@@ -31,6 +33,7 @@
 			"employer": "Motif Software",
 			"jobTitle": "Senior Software Engineer",
 			"time": "2019 - 2020",
+			"longform": "Front end developer as a contractor working with Motif Software. Developed major features for React applications for a variety of clients. Interacted with .NET framework for backend, EpiServer, and AI chatbots. Wrote extensive technical documentation for digital cytology software.",
 			"bullets": [
 				"Front end developer as a contractor working with Motif Software",
 				"Developed major features for React applications for a variety of clients",
@@ -133,8 +136,8 @@
 			"link": "https://github.com/aventide"
 		},
 		"site": {
-			"title": "alexstaples.dev",
-			"link": "https://alexstaples.dev"
+			"title": "alexstaples.me",
+			"link": "https://alexstaples.me"
 		}
 	}
 }
