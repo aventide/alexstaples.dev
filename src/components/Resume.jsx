@@ -5,6 +5,7 @@ import { ReactComponent as DownloadIcon } from "../assets/icons/download.svg";
 import text from "../assets/text/resume.json";
 
 import PDFResume from "./PDFResume";
+import SkillsList from "./SkillsList";
 
 export default function Resume() {
 	return (
@@ -16,7 +17,7 @@ export default function Resume() {
 					</h1>
 				</div>
 			</div>
-			<div className="mb-8 sm:mb-8 md:mb-16 flex justify-center">
+			<div className="mb-8 flex justify-center">
 				<PDFDownloadLink document={<PDFResume />} fileName="resume.pdf">
 					{({ blob, url, loading, error }) =>
 						loading ? (
@@ -86,26 +87,8 @@ function ResumeSection({ children, title }) {
 	return (
 		<div className="mt-4 mb-8 mx-4">
 			<h2 className="uppercase font-heading font-bold text-lg">{title}</h2>
-			<div className="divider brightness-200 mt-0 mb-4" />
+			<div className="divider brightness-200 mt-0 mb-4 md:mb-8" />
 			<div className="ml-0 sm:ml-4">{children}</div>
-		</div>
-	);
-}
-
-function SkillsList({ title, skills }) {
-	return (
-		<div className="mb-4">
-			<span className="font-bold">{title}</span>
-			<ul className="mt-4">
-				{skills?.map((skill) => (
-					<li
-						className="badge mr-2 my-1 px-3 py-2.5 border-transparent bg-indigo-500 text-slate-200"
-						key={skill}
-					>
-						{skill}
-					</li>
-				))}
-			</ul>
 		</div>
 	);
 }
