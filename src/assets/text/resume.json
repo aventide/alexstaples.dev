@@ -11,7 +11,8 @@
 	"education": {
 		"name": "University of Massachusetts Lowell",
 		"time": "2015",
-		"degree": "B.S. in Information Technology"
+		"degree": "Bachelor of Science",
+		"major": "Information Technology"
 	},
 	"jobs": {
 		"wasabi": {
