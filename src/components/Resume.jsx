@@ -119,8 +119,8 @@ function Job({ company }) {
 			<p className="text-indigo-400 text-sm">{time}</p>
 			<p className="mb-4 text-lg">
 				<span className="font-bold">{jobTitle}</span>
-				<span className="mx-2">|</span>
-				<span>{employer}</span>
+				<span className="mx-2 hidden md:inline">|</span>
+				<span className="block md:inline">{employer}</span>
 			</p>
 			<div className="mb-4">
 				<p className="mb-2 text-sm text-slate-400">{longform}</p>
