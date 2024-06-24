@@ -28,7 +28,7 @@ export default function Home() {
 					EXPERIENCE
 				</h2>
 				<div className="grid mx-4 md:mx-10">
-					<div className="border-black dark:border-white border-2 flex-1 h-72 under-construction-small">
+					<div className="border-white border-2 flex-1 h-72 under-construction-small">
 						<div className="h-full flex justify-center items-center ">
 							<div className={"bg-yellow-300 text-black text-xl font-bold p-2"}>
 								UNDER CONSTRUCTION
