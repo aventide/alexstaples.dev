@@ -323,7 +323,7 @@ export default function PDFResume() {
 										{text.education.name}
 									</Text>
 									<Text style={{ fontSize: bodyFontSize, fontFamily: "Lato" }}>
-										{text.education.degree}
+										{text.education.degree} in {text.education.major}
 									</Text>
 								</View>
 							</ResumeSection>

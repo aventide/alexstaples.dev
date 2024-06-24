@@ -131,15 +131,17 @@ function Job({ company }) {
 }
 
 function Education() {
-	const { time, name, degree } = text.education;
+	const { time, name, degree, major } = text.education;
 
 	return (
 		<div className="mb-12">
 			<p className="text-indigo-400 text-sm">{time}</p>
 			<p className="mb-4 text-lg">
-				<p className="font-bold">{degree}</p>
-				{/* <span className="mx-2">|</span> */}
-				<p>{name}</p>
+				<span className="font-bold">{degree}</span>
+				<span className="font-bold"> in </span>
+				<span className="font-bold block md:inline">{major}</span>
+				<span className="mx-2 hidden md:inline">|</span>
+				<span className="block md:inline">{name}</span>
 			</p>
 		</div>
 	);
