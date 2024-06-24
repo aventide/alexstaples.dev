@@ -22,11 +22,11 @@ export default function NavHeader() {
 					<StyledNavLink to={"/"} active={isHome}>
 						HOME
 					</StyledNavLink>
-					<CircleIcon className="w-2 h-2 mx-2 fill-black dark:fill-white" />
+					<CircleIcon className="w-2 h-2 mx-2 fill-white" />
 					<StyledNavLink to={"/projects"} active={isProjects}>
 						PROJECTS
 					</StyledNavLink>
-					<CircleIcon className="w-2 h-2 mx-2 fill-black dark:fill-white" />
+					<CircleIcon className="w-2 h-2 mx-2 fill-white" />
 					<StyledNavLink to={"/resume"} active={isResume}>
 						EXPERIENCE
 					</StyledNavLink>

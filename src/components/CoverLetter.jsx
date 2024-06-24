@@ -37,7 +37,7 @@ export default function CoverLetter() {
 					}
 				</PDFDownloadLink>
 			</div>
-			<div className="mt-16 border-2 border-black dark:border-white border-dashed">
+			<div className="mt-16 border-2 border-white border-dashed">
 				<div className="mt-12 mb-8 mx-16">
 					<CoverLetterSection textContent={text.greeting} />
 					<CoverLetterSection textContent={text.introduction} />
@@ -55,7 +55,5 @@ function CoverLetterSection({ textContent }) {
 	return <div className="mt-8">{textContent}</div>;
 }
 
-const highlightClasses =
-	"text-indigo-600 hover:text-indigo-400 dark:text-indigo-400 dark:hover:text-indigo-300";
-const highlightBadgeClasses =
-	"border-indigo-600 hover:border-indigo-400 dark:border-indigo-400 dark:hover:border-indigo-300";
+const highlightClasses = "text-indigo-400 hover:text-indigo-300";
+const highlightBadgeClasses = "border-indigo-400 hover:border-indigo-300";

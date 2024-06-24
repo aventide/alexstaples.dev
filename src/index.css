@@ -39,11 +39,11 @@ h1 {
   background-size: 250px 250px;
 }
 
-@media (prefers-color-scheme: light) {
+/* @media (prefers-color-scheme: light) {
   :root {
     color: #213547;
     background-color: #F5F5F5;
     --color-bg: #F5F5F5;
     --color-fg: #213547;
   }
-}
+} */

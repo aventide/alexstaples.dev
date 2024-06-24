@@ -99,7 +99,7 @@ function SkillsList({ title, skills }) {
 			<ul className="mt-4">
 				{skills?.map((skill) => (
 					<li
-						className="badge mr-2 my-1 px-3 py-2.5 bg-black dark:bg-indigo-500 dark:text-slate-200"
+						className="badge mr-2 my-1 px-3 py-2.5 border-transparent bg-indigo-500 text-slate-200"
 						key={skill}
 					>
 						{skill}
@@ -145,10 +145,8 @@ function Education() {
 	);
 }
 
-const highlightClasses =
-	"text-indigo-600 hover:text-indigo-400 dark:text-indigo-400 dark:hover:text-indigo-300";
-const highlightBadgeClasses =
-	"border-indigo-600 hover:border-indigo-400 dark:border-indigo-400 dark:hover:border-indigo-300";
+const highlightClasses = "text-indigo-400 hover:text-indigo-300";
+const highlightBadgeClasses = "border-indigo-400 hover:border-indigo-300";
 
 function StyledLink({ children, ...rest }) {
 	return (

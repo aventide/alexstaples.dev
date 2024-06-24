@@ -1,7 +1,7 @@
 export default function UnderConstruction({ small }) {
 	return (
 		<div
-			className={`border-black dark:border-white border-2 aspect-square ${
+			className={`border-white border-2 aspect-square ${
 				small ? "under-construction-small" : "under-construction-large"
 			}`}
 		>
