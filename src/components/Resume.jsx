@@ -122,7 +122,7 @@ function Education() {
 	const { time, name, degree, major } = text.education;
 
 	return (
-		<div className="mb-4 md:mb-8 bg-slate-800 px-4 py-6 rounded-xl">
+		<div className="mb-4 md:mb-8 bg-slate-800 px-4 py-6 rounded-xl md:mx-4">
 			<p className="text-indigo-400 text-sm">{time}</p>
 			<p className="mb-4 text-lg">
 				<span className="font-bold">{degree}</span>
