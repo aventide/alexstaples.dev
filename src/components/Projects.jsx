@@ -2,6 +2,7 @@ import SkillsList from "./SkillsList";
 import UnderConstruction from "./UnderConstruction";
 
 import GetSchooledScreenshot from "../assets/images/project-screenshots/get-schooled-screenshot.jpg";
+import KEMMCareScreenshot from "../assets/images/project-screenshots/kemmcare-screenshot.png";
 
 export default function Projects() {
 	return (
@@ -16,19 +17,7 @@ export default function Projects() {
 				<Project
 					name="Personal Website"
 					description="My personal development website, which displays my past experience and projects."
-					skills={["React", "Tailwind", "Docker"]}
-				/>
-				<Project
-					name="Get Schooled"
-					description="Digital board game inspired by Aqualin, built on web tech!"
-					skills={["HTML", "CSS", "JavaScript", "JQuery", "Node.js", "MySQL"]}
-					image={GetSchooledScreenshot}
-				/>
-				<Project
-					name="Get Schooled"
-					description="Digital board game inspired by Aqualin, built on web tech!"
-					skills={["HTML", "CSS", "JavaScript", "JQuery", "Node.js", "MySQL"]}
-					image={GetSchooledScreenshot}
+					skills={["React", "Tailwind", "Docker", "Digital Ocean"]}
 				/>
 				<Project
 					name="Get Schooled"
@@ -40,6 +29,7 @@ export default function Projects() {
 					name="KEMM Care Website"
 					description="Informational and intake website for travel and per diem medical professionals."
 					skills={["HTML", "CSS", "JavaScript", "JQuery", "Node.js", "MySQL"]}
+					image={KEMMCareScreenshot}
 				/>
 				{/* <UnderConstruction /> */}
 			</div>
