@@ -7,13 +7,12 @@ import KEMMCareScreenshot from "../assets/images/project-screenshots/kemmcare-sc
 export default function Projects() {
 	return (
 		<div className="">
-			<div className="mt-8 mb-4 flex items-center flex-col text-center">
-				<h1 className="font-heading font-bold my-4 inline-block text-2xl underline underline-offset-2">
+			<div className="divider brightness-200 my-8">
+				<h1 className="font-heading font-bold my-4 inline-block text-2xl ">
 					PROJECTS
 				</h1>
 			</div>
-			<div className="divider brightness-200 mt-0 mb-4 md:mb-8" />
-			<div className="grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-4 mx-4">
+			<div className="grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-8 md:mx-4">
 				<Project
 					name="Personal Website"
 					description="My personal development website, which displays my past experience and projects."
@@ -37,9 +36,10 @@ export default function Projects() {
 	);
 }
 
+// try bg-slate-800 for background
 function Project({ name, description, skills, image }) {
 	return (
-		<div className="flex mb-4 md:mb-16">
+		<div className="flex bg-slate-800 px-4 py-6 rounded-xl">
 			{image && (
 				<img src={image} alt={name} className="h-36 aspect-square mr-6" />
 			)}

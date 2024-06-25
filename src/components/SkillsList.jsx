@@ -1,7 +1,7 @@
 export default function SkillsList({ title, skills }) {
 	return (
 		<div className="mb-4">
-			<span className="font-bold">{title}</span>
+			<span className="font-bold text-lg">{title}</span>
 			<ul className="mt-4">
 				{skills?.map((skill) => (
 					<li
