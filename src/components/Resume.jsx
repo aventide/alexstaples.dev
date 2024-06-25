@@ -12,7 +12,7 @@ export default function Resume() {
 		<div className="">
 			<div className="divider before:bg-white after:bg-white before:opacity-10 after:opacity-10 my-8">
 				<h1 className="font-heading font-bold my-4 inline-block text-2xl ">
-					POSITIONS
+					EXPERIENCE
 				</h1>
 			</div>
 			<div className="mt-4 mb-8 md:mx-4">
