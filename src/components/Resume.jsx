@@ -10,12 +10,17 @@ import SkillsList from "./SkillsList";
 export default function Resume() {
 	return (
 		<div className="">
-			<div className="mt-8 mb-2 flex items-center flex-col text-center">
-				<div>
-					<h1 className="font-heading font-bold my-4 inline-block text-2xl underline underline-offset-2">
-						WORK EXPERIENCE
-					</h1>
-				</div>
+			<div className="divider brightness-200 my-8">
+				<h1 className="font-heading font-bold my-4 inline-block text-2xl ">
+					POSITIONS
+				</h1>
+			</div>
+			<div className="mt-4 mb-8 md:mx-4">
+				<Job company="wasabi" open />
+				<Job company="motifSoftware" />
+				<Job company="genpact" />
+				<Job company="ca" />
+				<Job company="kemmcare" />
 			</div>
 			<div className="mb-8 flex justify-center">
 				<PDFDownloadLink document={<PDFResume />} fileName="resume.pdf">
@@ -34,25 +39,20 @@ export default function Resume() {
 					}
 				</PDFDownloadLink>
 			</div>
-			<ResumeSection title="">
-				<Job company="wasabi" open />
-				<Job company="motifSoftware" />
-				<Job company="genpact" />
-				<Job company="ca" />
-				<Job company="kemmcare" />
-			</ResumeSection>
 			<ResumeSection title="skills">
-				<div className="grid grid-cols sm:grid-cols-2 md:grid-cols-3 gap-4">
-					{Object.keys(text.skills).map((skillSection) => (
-						<SkillsList
-							title={skillSection}
-							skills={text.skills[skillSection]}
-							key={skillSection}
-						/>
-					))}
+				<div className="mb-4 md:mb-8 bg-slate-800 px-4 py-6 rounded-xl md:mx-4">
+					<div className="grid grid-cols sm:grid-cols-2 md:grid-cols-3 gap-4">
+						{Object.keys(text.skills).map((skillSection) => (
+							<SkillsList
+								title={skillSection}
+								skills={text.skills[skillSection]}
+								key={skillSection}
+							/>
+						))}
+					</div>
 				</div>
 			</ResumeSection>
-			<ResumeSection title="portfolio">
+			{/* <ResumeSection title="portfolio">
 				<div className="mb-2">
 					<span className="font-bold inline">Github</span>
 					<span className="mx-2">|</span>
@@ -75,7 +75,7 @@ export default function Resume() {
 						{text.portfolio.site.title}
 					</StyledLink>
 				</div>
-			</ResumeSection>
+			</ResumeSection> */}
 			<ResumeSection title="education">
 				<Education />
 			</ResumeSection>
@@ -85,10 +85,15 @@ export default function Resume() {
 
 function ResumeSection({ children, title }) {
 	return (
-		<div className="mt-4 mb-8 mx-4">
-			<h2 className="uppercase font-heading font-bold text-lg">{title}</h2>
-			<div className="divider brightness-200 mt-0 mb-4 md:mb-8" />
-			<div className="ml-0 sm:ml-4">{children}</div>
+		<div className="mt-4 mb-8">
+			{title && (
+				<div className="divider brightness-200 my-16">
+					<h2 className="font-heading font-bold my-4 inline-block text-2xl uppercase">
+						{title}
+					</h2>
+				</div>
+			)}
+			{children}
 		</div>
 	);
 }
@@ -98,7 +103,7 @@ function Job({ company }) {
 	const { employer, jobTitle, time, longform, clients, techSkills } =
 		companyKey;
 	return (
-		<div className="mb-12">
+		<div className="mb-4 md:mb-8 bg-slate-800 px-4 py-6 rounded-xl">
 			<p className="text-indigo-400 text-sm">{time}</p>
 			<p className="mb-4 text-lg">
 				<span className="font-bold">{jobTitle}</span>
@@ -117,7 +122,7 @@ function Education() {
 	const { time, name, degree, major } = text.education;
 
 	return (
-		<div className="mb-12">
+		<div className="mb-4 md:mb-8 bg-slate-800 px-4 py-6 rounded-xl">
 			<p className="text-indigo-400 text-sm">{time}</p>
 			<p className="mb-4 text-lg">
 				<span className="font-bold">{degree}</span>

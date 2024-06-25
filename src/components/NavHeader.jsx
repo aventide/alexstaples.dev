@@ -1,9 +1,9 @@
 import { useState } from "react";
 import { Link, useLocation } from "wouter";
 
+import { ReactComponent as ASIcon } from "../assets/icons/as-logo-white.svg";
 import { ReactComponent as CircleIcon } from "../assets/icons/circle.svg";
 import { ReactComponent as MenuIcon } from "../assets/icons/menu.svg";
-import { ReactComponent as ASIcon } from "../assets/icons/taecon.svg";
 import { ReactComponent as CloseIcon } from "../assets/icons/x.svg";
 
 export default function NavHeader() {
