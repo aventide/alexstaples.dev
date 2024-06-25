@@ -10,7 +10,7 @@ import SkillsList from "./SkillsList";
 export default function Resume() {
 	return (
 		<div className="">
-			<div className="divider brightness-200 my-8">
+			<div className="divider before:bg-white after:bg-white before:opacity-10 after:opacity-10 my-8">
 				<h1 className="font-heading font-bold my-4 inline-block text-2xl ">
 					POSITIONS
 				</h1>
@@ -87,7 +87,7 @@ function ResumeSection({ children, title }) {
 	return (
 		<div className="mt-4 mb-8">
 			{title && (
-				<div className="divider brightness-200 my-16">
+				<div className="divider before:bg-white after:bg-white before:opacity-10 after:opacity-10 my-16">
 					<h2 className="font-heading font-bold my-4 inline-block text-2xl uppercase">
 						{title}
 					</h2>
