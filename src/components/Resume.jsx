@@ -22,23 +22,6 @@ export default function Resume() {
 				<Job company="ca" />
 				<Job company="kemmcare" />
 			</div>
-			<div className="mb-8 flex justify-center">
-				<PDFDownloadLink document={<PDFResume />} fileName="resume.pdf">
-					{({ blob, url, loading, error }) =>
-						loading ? (
-							"Loading document..."
-						) : (
-							<button
-								type="button"
-								className={`badge ${highlightBadgeClasses} ${highlightClasses} px-4 py-4 bg-transparent`}
-							>
-								<DownloadIcon className="w-4 h-4 mr-2" />
-								<span className="font-bold">{text.downloadPDF}</span>
-							</button>
-						)
-					}
-				</PDFDownloadLink>
-			</div>
 			<ResumeSection title="skills">
 				<div className="mb-4 md:mb-8 bg-slate-800 px-4 py-6 rounded-xl md:mx-4">
 					<div className="grid grid-cols sm:grid-cols-2 md:grid-cols-3 gap-4">
@@ -52,33 +35,30 @@ export default function Resume() {
 					</div>
 				</div>
 			</ResumeSection>
-			{/* <ResumeSection title="portfolio">
-				<div className="mb-2">
-					<span className="font-bold inline">Github</span>
-					<span className="mx-2">|</span>
-					<StyledLink
-						href={text.portfolio.github.link}
-						target="_blank"
-						rel="noopener noreferrer"
-					>
-						{text.portfolio.github.title}
-					</StyledLink>
-				</div>
-				<div className="mb-2">
-					<span className="font-bold inline">Site</span>
-					<span className="mx-2">|</span>
-					<StyledLink
-						href={text.portfolio.site.link}
-						target="_blank"
-						rel="noopener noreferrer"
-					>
-						{text.portfolio.site.title}
-					</StyledLink>
-				</div>
-			</ResumeSection> */}
 			<ResumeSection title="education">
 				<Education />
 			</ResumeSection>
+			<div className="my-16 py-24 flex justify-center border-white border-opacity-10 border-2">
+				<PDFDownloadLink document={<PDFResume />} fileName="resume.pdf">
+					{({ blob, url, loading, error }) =>
+						loading ? (
+							"Loading document..."
+						) : (
+							<button
+								type="button"
+								className={
+									"badge px-8 py-6 bg-indigo-500 text-slate-200 hover:brightness-110"
+								}
+							>
+								<DownloadIcon className="w-4 h-4 mr-2" />
+								<span className="font-bold font-heading">
+									{text.downloadPDF}
+								</span>
+							</button>
+						)
+					}
+				</PDFDownloadLink>
+			</div>
 		</div>
 	);
 }
