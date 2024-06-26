@@ -1,4 +1,4 @@
-import UnderConstruction from "./UnderConstruction";
+import UnderConstruction from "../components/UnderConstruction";
 
 export default function Home() {
 	return (

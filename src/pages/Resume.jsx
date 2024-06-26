@@ -4,8 +4,8 @@ import { PDFDownloadLink } from "@react-pdf/renderer";
 import { ReactComponent as DownloadIcon } from "../assets/icons/download.svg";
 import text from "../assets/text/resume.json";
 
+import SkillsList from "../components/SkillsList";
 import PDFResume from "./PDFResume";
-import SkillsList from "./SkillsList";
 
 export default function Resume() {
 	return (
@@ -112,16 +112,5 @@ function Education() {
 				<span className="block md:inline">{name}</span>
 			</p>
 		</div>
-	);
-}
-
-const highlightClasses = "text-indigo-400 hover:text-indigo-300";
-const highlightBadgeClasses = "border-indigo-400 hover:border-indigo-300";
-
-function StyledLink({ children, ...rest }) {
-	return (
-		<a className={`cursor-pointer ${highlightClasses}`} {...rest}>
-			{children}
-		</a>
 	);
 }

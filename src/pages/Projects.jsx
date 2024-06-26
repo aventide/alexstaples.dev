@@ -1,11 +1,11 @@
-import SkillsList from "./SkillsList";
+import SkillsList from "../components/SkillsList";
 
 import GetSchooledScreenshot from "../assets/images/project-screenshots/get-schooled-screenshot.jpg";
 import KEMMCareScreenshot from "../assets/images/project-screenshots/kemmcare-screenshot.png";
 
 export default function Projects() {
 	return (
-		<div className="">
+		<div>
 			<div className="divider before:bg-white after:bg-white before:opacity-10 after:opacity-10 my-8">
 				<h1 className="font-heading font-bold my-4 inline-block text-2xl ">
 					PROJECTS
@@ -29,7 +29,6 @@ export default function Projects() {
 					skills={["HTML", "CSS", "JavaScript", "JQuery", "Node.js", "MySQL"]}
 					image={KEMMCareScreenshot}
 				/>
-				{/* <UnderConstruction /> */}
 			</div>
 		</div>
 	);

@@ -7,7 +7,6 @@ import text from "../assets/text/cover-letter.json";
 import PDFCoverLetter from "./PDFCoverLetter";
 
 // feather icons https://feathericons.com/
-// graduation cap fromhttps://iconoir.com/
 
 export default function CoverLetter() {
 	return (

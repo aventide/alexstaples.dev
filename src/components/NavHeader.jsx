@@ -27,7 +27,7 @@ export default function NavHeader() {
 						PROJECTS
 					</StyledNavLink>
 					<CircleIcon className="w-2 h-2 mx-2 fill-white" />
-					<StyledNavLink to={"/resume"} active={isResume}>
+					<StyledNavLink to={"/experience"} active={isResume}>
 						EXPERIENCE
 					</StyledNavLink>
 				</div>
