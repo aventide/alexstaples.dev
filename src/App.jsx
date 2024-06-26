@@ -1,12 +1,12 @@
 import React from "react";
 import { Route, Switch } from "wouter";
 
-import CoverLetter from "./components/CoverLetter";
 import Footer from "./components/Footer";
-import Home from "./components/Home";
 import NavHeader from "./components/NavHeader";
-import Projects from "./components/Projects";
-import Resume from "./components/Resume";
+import CoverLetter from "./pages/CoverLetter";
+import Home from "./pages/Home";
+import Projects from "./pages/Projects";
+import Resume from "./pages/Resume";
 
 import "./App.css";
 
