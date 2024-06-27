@@ -6,8 +6,7 @@ import Project from "../components/Project";
 
 export default function Projects() {
 	return (
-		<div>
-			<DividerSection title="projects" />
+		<DividerSection title="projects">
 			<div className="grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-8 md:mx-4">
 				<Project
 					name="Personal Website"
@@ -34,6 +33,6 @@ export default function Projects() {
 					image={KEMMCareScreenshot}
 				/>
 			</div>
-		</div>
+		</DividerSection>
 	);
 }
