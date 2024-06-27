@@ -1,5 +1,6 @@
 import SkillsList from "../components/SkillsList";
 
+import DevSiteScreenshot from "../assets/images/project-screenshots/dev-site-screenshot-app.svg";
 import GetSchooledScreenshot from "../assets/images/project-screenshots/get-schooled-screenshot.jpg";
 import KEMMCareScreenshot from "../assets/images/project-screenshots/kemmcare-screenshot.png";
 
@@ -15,12 +16,19 @@ export default function Projects() {
 				<Project
 					name="Personal Website"
 					description="My personal development website, which displays my past experience and projects."
-					skills={["React", "Tailwind", "Docker", "Digital Ocean"]}
+					skills={[
+						"JavaScript",
+						"React",
+						"Tailwind CSS",
+						"Docker",
+						"Digital Ocean",
+					]}
+					image={DevSiteScreenshot}
 				/>
 				<Project
 					name="Get Schooled"
 					description="Digital board game inspired by Aqualin, built on web tech!"
-					skills={["HTML", "CSS", "JavaScript", "JQuery", "Node.js", "MySQL"]}
+					skills={["JavaScript", "React", "Tailwind CSS"]}
 					image={GetSchooledScreenshot}
 				/>
 				<Project
