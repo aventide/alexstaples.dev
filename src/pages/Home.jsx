@@ -6,7 +6,7 @@ import { Link } from "wouter";
 export default function Home() {
 	return (
 		<div>
-			<div className="mt-24 md:mt-48 mx-4 md:mx-10 pb-16 md:pb-48 text-center">
+			<div className="mt-24 md:mt-48 mx-4 md:mx-10 pb-16 md:pb-24 text-center">
 				<h1 className="font-heading">Hi. I'm Alex.</h1>
 				<p className="mt-6 font-body text-md md:text-lg lg:mx-32">
 					I'm a software developer from Northborough, Massachusetts. I've been
@@ -28,6 +28,11 @@ export default function Home() {
 					</Link>{" "}
 					pages while this page is getting built! 🚨
 				</p>
+			</div>
+			<div className="flex justify-center">
+				<div className="aspect-square h-96">
+					<UnderConstruction small />
+				</div>
 			</div>
 			{/* <DividerSection title="projects" />
 			<DividerSection title="experience" /> */}
