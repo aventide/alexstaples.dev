@@ -10,16 +10,17 @@ import PDFResume from "./PDFResume";
 
 export default function Resume() {
 	return (
-		<div className="">
-			<DividerSection title="experience" />
-			<div className="mt-4 mb-8 md:mx-4">
-				<Job company="wasabi" open />
-				<Job company="motifSoftware" />
-				<Job company="genpact" />
-				<Job company="ca" />
-				<Job company="kemmcare" />
-			</div>
-			<ResumeSection title="skills">
+		<div>
+			<DividerSection title="experience">
+				<div className="mt-4 mb-8 md:mx-4">
+					<Job company="wasabi" open />
+					<Job company="motifSoftware" />
+					<Job company="genpact" />
+					<Job company="ca" />
+					<Job company="kemmcare" />
+				</div>
+			</DividerSection>
+			<DividerSection title="skills" doubleSpaced>
 				<div className="mb-4 md:mb-8 bg-slate-800 px-4 py-6 rounded-xl md:mx-4">
 					<div className="grid grid-cols sm:grid-cols-2 md:grid-cols-3 gap-4">
 						{Object.keys(text.skills).map((skillSection) => (
@@ -31,10 +32,10 @@ export default function Resume() {
 						))}
 					</div>
 				</div>
-			</ResumeSection>
-			<ResumeSection title="education">
+			</DividerSection>
+			<DividerSection title="education" doubleSpaced>
 				<Education />
-			</ResumeSection>
+			</DividerSection>
 			<div className="my-16 py-24 flex justify-center border-white border-opacity-10 border-2">
 				<PDFDownloadLink document={<PDFResume />} fileName="resume.pdf">
 					{({ blob, url, loading, error }) =>
@@ -56,15 +57,6 @@ export default function Resume() {
 					}
 				</PDFDownloadLink>
 			</div>
-		</div>
-	);
-}
-
-function ResumeSection({ children, title }) {
-	return (
-		<div className="mt-4 mb-8">
-			{title && <DividerSection doubleSpaced title={title} />}
-			{children}
 		</div>
 	);
 }
