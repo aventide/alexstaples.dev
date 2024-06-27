@@ -28,7 +28,16 @@
 				"Provided mentorship to junior engineers and guided them through learning development processes",
 				"Interviewed candidates for newly-opened front end engineering roles"
 			],
-			"techSkills": ["React", "Redux", "Node.js", "Material-UI", "Highcharts", "Docker", "Kubernetes", "GitHub Actions"]
+			"techSkills": [
+				"React",
+				"Redux",
+				"Node.js",
+				"Material-UI",
+				"Highcharts",
+				"Docker",
+				"Kubernetes",
+				"GitHub Actions"
+			]
 		},
 		"motifSoftware": {
 			"employer": "Motif Software",
@@ -42,7 +51,14 @@
 				"Wrote extensive technical documentation for digital cytology software"
 			],
 			"clients": "Hologic, Samsung, Orbita, Lew's Fishing",
-			"techSkills": ["Javascript", "React", "CSS Modules", "SVG", ".NET Core", "EpiServer"]
+			"techSkills": [
+				"JavaScript",
+				"React",
+				"CSS Modules",
+				"SVG",
+				".NET Core",
+				"EpiServer"
+			]
 		},
 		"genpact": {
 			"employer": "Genpact",
@@ -56,7 +72,14 @@
 				"Conducted internal research pertaining to vector graphics and the Elm language"
 			],
 			"clients": "Redbox, United Airlines",
-			"techSkills": ["Javascript", "React", "Custom CSS Utilities", "Browser Geolocation API", "Bing Maps API", "Elm"]
+			"techSkills": [
+				"JavaScript",
+				"React",
+				"CSS Utilities",
+				"HTML Geolocation API",
+				"Bing Maps API",
+				"Elm"
+			]
 		},
 		"ca": {
 			"employer": "CA Technologies",
@@ -69,7 +92,16 @@
 				"Wrote extensive test suite for verifying network metrics calculations",
 				"Assisted the sustaining team with resolving issues reported by customers"
 			],
-			"techSkills": ["Java","Python", "Javascript", "React", "Sencha Ext JS", "OData", "HP Vertica", "RHEL"]
+			"techSkills": [
+				"Java",
+				"Python",
+				"JavaScript",
+				"React",
+				"Ext JS",
+				"OData",
+				"HP Vertica",
+				"RHEL"
+			]
 		},
 		"kemmcare": {
 			"employer": "KEMM Care Medical Staffing",
@@ -78,17 +110,25 @@
 			"longform": "",
 			"bullets": [
 				"Full stack contractor for a medical staffing firm, in a lead role of revamping and managing their main website and IT infrastructure",
-				"Developed a JQuery based web front end that interacted with a NodeJS web server and a MySQL database, along with creating a basic custom ORM",
+				"Developed a JQuery based web front end that interacted with a Node.js web server and a MySQL database, along with creating a basic custom ORM",
 				"Managed a subcontract with a designer to help create new company branding and an entirely new single page app concept",
 				"Procured and managed company hardware and software, including employee laptops, web domains, software licenses, virtual infrastructure and Google Workspace"
 			],
-			"techSkills": ["Javascript", "JQuery", "Node.js", "Express", "MySQL", "Debian", "Google Workspace"]
+			"techSkills": [
+				"JavaScript",
+				"JQuery",
+				"Node.js",
+				"Express",
+				"MySQL",
+				"Debian",
+				"Google Workspace"
+			]
 		}
 	},
 	"skills": {
 		"Web": [
 			"React ecosystem",
-			"Node",
+			"Node.js",
 			"Canvas",
 			"CSS",
 			"AWS S3",

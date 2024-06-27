@@ -47,7 +47,7 @@ export default function Resume() {
 							<button
 								type="button"
 								className={
-									"badge px-8 py-6 bg-indigo-500 text-slate-200 hover:brightness-110"
+									"badge px-8 py-6 bg-indigo-500 text-slate-200 border-transparent hover:brightness-110"
 								}
 							>
 								<DownloadIcon className="w-4 h-4 mr-2" />
