@@ -53,7 +53,7 @@ export default function Home() {
 							<button
 								type="button"
 								className={
-									"badge px-10 py-6 text-slate-200 border-white border-4 hover:brightness-110 w-16 w-64 mx-4 my-2"
+									"badge px-10 py-6 text-slate-200 border-white border-4 bg-transparent hover:brightness-110 w-64 mx-4 my-2"
 								}
 							>
 								<GithubIcon className="w-4 h-4 mr-2" />
