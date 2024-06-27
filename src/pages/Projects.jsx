@@ -7,11 +7,7 @@ import Project from "../components/Project";
 export default function Projects() {
 	return (
 		<div>
-			<DividerSection>
-				<h1 className="font-heading font-bold my-4 inline-block text-2xl ">
-					PROJECTS
-				</h1>
-			</DividerSection>
+			<DividerSection title="projects" />
 			<div className="grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-8 md:mx-4">
 				<Project
 					name="Personal Website"
