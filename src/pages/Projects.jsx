@@ -1,17 +1,17 @@
-import SkillsList from "../components/SkillsList";
-
 import DevSiteScreenshot from "../assets/images/project-screenshots/dev-site-screenshot-app.svg";
 import GetSchooledScreenshot from "../assets/images/project-screenshots/get-schooled-screenshot.jpg";
 import KEMMCareScreenshot from "../assets/images/project-screenshots/kemmcare-screenshot.png";
+import DividerSection from "../components/DividerSection";
+import Project from "../components/Project";
 
 export default function Projects() {
 	return (
 		<div>
-			<div className="divider before:bg-white after:bg-white before:opacity-10 after:opacity-10 my-8">
+			<DividerSection>
 				<h1 className="font-heading font-bold my-4 inline-block text-2xl ">
 					PROJECTS
 				</h1>
-			</div>
+			</DividerSection>
 			<div className="grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-8 md:mx-4">
 				<Project
 					name="Personal Website"
@@ -37,22 +37,6 @@ export default function Projects() {
 					skills={["HTML", "CSS", "JavaScript", "JQuery", "Node.js", "MySQL"]}
 					image={KEMMCareScreenshot}
 				/>
-			</div>
-		</div>
-	);
-}
-
-// try bg-slate-800 for background
-function Project({ name, description, skills, image }) {
-	return (
-		<div className="flex bg-slate-800 px-4 py-6 rounded-xl">
-			{image && (
-				<img src={image} alt={name} className="h-36 aspect-square mr-6" />
-			)}
-			<div className="md:mr-6">
-				<p className="text-lg font-bold mb-4">{name}</p>
-				<p className="mb-4 text-sm text-slate-400">{description}</p>
-				<SkillsList skills={skills} />
 			</div>
 		</div>
 	);

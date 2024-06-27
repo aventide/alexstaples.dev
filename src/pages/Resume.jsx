@@ -4,17 +4,18 @@ import { PDFDownloadLink } from "@react-pdf/renderer";
 import { ReactComponent as DownloadIcon } from "../assets/icons/download.svg";
 import text from "../assets/text/resume.json";
 
+import DividerSection from "../components/DividerSection";
 import SkillsList from "../components/SkillsList";
 import PDFResume from "./PDFResume";
 
 export default function Resume() {
 	return (
 		<div className="">
-			<div className="divider before:bg-white after:bg-white before:opacity-10 after:opacity-10 my-8">
+			<DividerSection>
 				<h1 className="font-heading font-bold my-4 inline-block text-2xl ">
 					EXPERIENCE
 				</h1>
-			</div>
+			</DividerSection>
 			<div className="mt-4 mb-8 md:mx-4">
 				<Job company="wasabi" open />
 				<Job company="motifSoftware" />
@@ -67,11 +68,11 @@ function ResumeSection({ children, title }) {
 	return (
 		<div className="mt-4 mb-8">
 			{title && (
-				<div className="divider before:bg-white after:bg-white before:opacity-10 after:opacity-10 my-16">
+				<DividerSection doubleSpaced>
 					<h2 className="font-heading font-bold my-4 inline-block text-2xl uppercase">
 						{title}
 					</h2>
-				</div>
+				</DividerSection>
 			)}
 			{children}
 		</div>
