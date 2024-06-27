@@ -11,11 +11,7 @@ import PDFResume from "./PDFResume";
 export default function Resume() {
 	return (
 		<div className="">
-			<DividerSection>
-				<h1 className="font-heading font-bold my-4 inline-block text-2xl ">
-					EXPERIENCE
-				</h1>
-			</DividerSection>
+			<DividerSection title="experience" />
 			<div className="mt-4 mb-8 md:mx-4">
 				<Job company="wasabi" open />
 				<Job company="motifSoftware" />
@@ -67,13 +63,7 @@ export default function Resume() {
 function ResumeSection({ children, title }) {
 	return (
 		<div className="mt-4 mb-8">
-			{title && (
-				<DividerSection doubleSpaced>
-					<h2 className="font-heading font-bold my-4 inline-block text-2xl uppercase">
-						{title}
-					</h2>
-				</DividerSection>
-			)}
+			{title && <DividerSection doubleSpaced title={title} />}
 			{children}
 		</div>
 	);
