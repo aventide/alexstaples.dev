@@ -19,6 +19,7 @@
 			"employer": "Wasabi Technologies",
 			"jobTitle": "Senior Software Engineer",
 			"time": "2020 - 2024",
+			"timeWithMonth": "Oct 2020 - May 2024",
 			"longform": "Senior engineer for the applications team at a cloud storage startup. Created React-powered web tools for internal use by the operations teams, designing core architectural components in company codebases. Key contributor to the development of the customer-facing Wasabi Console application. Supervised the daily creation and deployment of service images for testing, working closely with the infrastructure team.",
 			"bullets": [
 				"Senior front end engineer for the applications team at a rapidly-growing cloud storage company",
@@ -43,7 +44,8 @@
 			"employer": "Motif Software",
 			"jobTitle": "Senior Software Engineer",
 			"time": "2019 - 2020",
-			"longform": "Front end developer as a contractor working with Motif Software. Developed major features for React applications for a variety of clients. Interacted with .NET framework for backend, EpiServer, and AI chatbots. Wrote extensive technical documentation for digital cytology software.",
+			"timeWithMonth": "May 2019 - Oct 2020",
+			"longform": "Front-end focused developer and consultant for a variety of contract clients in the greater Boston area. Worked primarily within the React web ecosystem and interacted with RESTful services which were created using the .NET platform. ",
 			"bullets": [
 				"Front end developer as a contractor working with Motif Software",
 				"Developed major features for React applications for a variety of clients",
@@ -64,7 +66,8 @@
 			"employer": "Genpact",
 			"jobTitle": "Senior Front End Developer",
 			"time": "2018 - 2019",
-			"longform": "Front end engineer for digital customer experience consulting firm. Worked with clients based in Boston and Chicago on web development for their eCommerce platforms. Projects centered on the React ecosystem and required special emphasis on internationalization and accessibility. Additionally, conducted internal research pertaining to vector graphics and the Elm language.",
+			"timeWithMonth": "Feb 2018 - Apr 2019",
+			"longform": "Front end developer for a digital user experience consulting firm, doing work primarily within the React ecosystem. Projects were mainly focused on eCommerce and had a special emphasis on semantic HTML structure as well as accessibility. Participated in extensive internal research on best practices for web development as well as emerging technologies.",
 			"bullets": [
 				"Front end engineer for digital customer experience consulting firm",
 				"Worked with clients based in Boston and Chicago on web development for their eCommerce platforms",
@@ -85,6 +88,7 @@
 			"employer": "CA Technologies",
 			"jobTitle": "Associate Software Engineer",
 			"time": "2015 - 2018",
+			"timeWithMonth": "Jun 2015 - Jan 2018",
 			"longform": "Supporting role for development of CA Performance Management - a network infrastructure analysis and management product. Focused on the construction of internal tooling, including a visual API query builder, as well as a vendor certification search tool. Also wrote a suite of network metrics calculation tests, and began the conversion of existing tools to React and Electron. Assisted the sustaining team with resolving issues reported by customers.",
 			"bullets": [
 				"Developer for CA Performance Management - a network infrastructure analysis and management product",
@@ -107,7 +111,8 @@
 			"employer": "KEMM Care Medical Staffing",
 			"jobTitle": "Contract Full Stack Developer",
 			"time": "2014 - 2020",
-			"longform": "",
+			"timeWithMonth": "Aug 2014 - Jan 2020",
+			"longform": "Developed a new website for KEMM Care Medical Staffing using a full stack of web technologies, including HTML, CSS, JQuery, and Node.js. Alongside an illustrator, helped to design a modern layout using a single-page app approach to display information about the company and allow prospective employees to search and apply for positions. I also set up the company's server infrastructure and internal communications, and procured and set up company hardware.",
 			"bullets": [
 				"Full stack contractor for a medical staffing firm, in a lead role of revamping and managing their main website and IT infrastructure",
 				"Developed a JQuery based web front end that interacted with a Node.js web server and a MySQL database, along with creating a basic custom ORM",

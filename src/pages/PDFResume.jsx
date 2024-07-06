@@ -119,10 +119,15 @@ function HeaderDetail({ text, icon }) {
 
 function Job({ company, ...rest }) {
 	const companyKey = text.jobs[company];
-	const { employer, jobTitle, time, bullets } = companyKey;
+	const { employer, jobTitle, timeWithMonth, bullets } = companyKey;
 
 	return (
-		<ResumeEntry label={employer} sublabel={jobTitle} time={time} {...rest}>
+		<ResumeEntry
+			label={employer}
+			sublabel={jobTitle}
+			time={timeWithMonth}
+			{...rest}
+		>
 			<View style={{ flexDirection: "column" }}>
 				{bullets.map((bullet) => (
 					<View
@@ -157,7 +162,7 @@ function ResumeEntry({ children, label, sublabel, time }) {
 		headerContainer: {
 			flexDirection: "row",
 			justifyContent: "space-between",
-			marginBottom: 5,
+			marginBottom: "8pt",
 		},
 		labelContainer: {
 			flexDirection: "row",
@@ -331,7 +336,7 @@ export default function PDFResume() {
 					</View>
 					<View
 						style={{
-							marginTop: "42pt",
+							marginTop: "24pt",
 							height: "12pt",
 							backgroundColor: "#A82623",
 						}}
