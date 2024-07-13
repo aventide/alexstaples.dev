@@ -3,8 +3,7 @@ import SkillsList from "../components/SkillsList";
 
 export default function Job({ company }) {
 	const companyKey = text.jobs[company];
-	const { employer, jobTitle, time, longform, clients, techSkills } =
-		companyKey;
+	const { employer, jobTitle, time, longform, techSkills } = companyKey;
 	return (
 		<div className="mb-4 md:mb-8 bg-slate-800 px-4 py-6 rounded-xl">
 			<p className="text-indigo-400 text-sm">{time}</p>
