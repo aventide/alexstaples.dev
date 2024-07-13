@@ -18,7 +18,6 @@ export default function Resume() {
 					<Job company="motifSoftware" />
 					<Job company="genpact" />
 					<Job company="ca" />
-					<Job company="kemmcare" />
 				</div>
 			</DividerSection>
 			<DividerSection title="skills" doubleSpaced>

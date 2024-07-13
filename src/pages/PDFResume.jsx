@@ -141,7 +141,7 @@ function Job({ company, ...rest }) {
 							style={{
 								fontSize: bodyFontSize,
 								fontFamily: "Lato",
-								marginBottom: "3pt",
+								marginBottom: "4pt",
 								maxWidth: "97%",
 							}}
 						>
@@ -157,7 +157,7 @@ function Job({ company, ...rest }) {
 function ResumeEntry({ children, label, sublabel, time }) {
 	const resumeEntryStyles = StyleSheet.create({
 		entryContainer: {
-			marginBottom: 10,
+			marginBottom: 16,
 		},
 		headerContainer: {
 			flexDirection: "row",
@@ -196,7 +196,7 @@ function ResumeEntry({ children, label, sublabel, time }) {
 					</Text>
 					<Text style={resumeEntryStyles.subLabelText}>{sublabel}</Text>
 				</View>
-				<Text style={resumeEntryStyles.timeText}>{time}</Text>
+				<Text style={resumeEntryStyles.timeText}>({time})</Text>
 			</View>
 			<View style={resumeEntryStyles.childrenContainer}>{children}</View>
 		</View>
@@ -243,7 +243,6 @@ export default function PDFResume() {
 								<Job company="motifSoftware" />
 								<Job company="genpact" />
 								<Job company="ca" />
-								<Job company="kemmcare" />
 							</ResumeSection>
 						</View>
 						<View style={{ width: "30%" }}>
@@ -336,7 +335,7 @@ export default function PDFResume() {
 					</View>
 					<View
 						style={{
-							marginTop: "24pt",
+							marginTop: "72pt",
 							height: "12pt",
 							backgroundColor: "#A82623",
 						}}
