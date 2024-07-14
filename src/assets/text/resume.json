@@ -22,7 +22,7 @@
 			"timeWithMonth": "Oct 2020 - May 2024",
 			"longform": "Senior engineer for the applications team at a cloud storage startup. Created React-powered web tools for internal use by the operations teams, designing core architectural components in company codebases. Key contributor to the development of the customer-facing Wasabi Console application. Supervised the daily creation and deployment of service images for testing, working closely with the infrastructure team.",
 			"bullets": [
-				"Developed features for web applications that are used to manage cloud storage operations, using JavaScript, React and CSS",
+				"Developed features for web applications that are used to manage cloud storage operations, using JavaScript, React, and CSS",
 				"Designed core sections of front end architecture for projects, including both internal and customer-facing functions",
 				"Served as the primary maintainer of multiple Git repositories, and ensured constant delivery of builds to the QA team",
 				"Worked closely with the infrastructure team to maintain CI/CD pipelines with Docker and GitHub Actions",
@@ -47,9 +47,9 @@
 			"longform": "Front-end focused developer and consultant for a variety of contract clients in the greater Boston area. Worked primarily within the React web ecosystem and interacted with RESTful services which were created using the .NET platform. ",
 			"bullets": [
 				"Created websites and applications for multiple contracted clients using JavaScript, React, and CSS",
-				"Interacted with data through REST APIs which were written in the .NET framework, and used Node.js middleware",
+				"Interacted with data provided through the EpiServer CMS, using C# and .NET",
 				"Engaged in projects with subjects including digital cytology, eCommerce, and sales analytics",
-				"Wrote extensive technical documentation for project that required HIPAA compliance"
+				"Wrote extensive technical documentation for a project that required HIPAA compliance"
 			],
 			"clients": "Hologic, Samsung, Orbita, Lew's Fishing",
 			"techSkills": [
@@ -72,8 +72,8 @@
 			"bullets": [
 				"Worked on web projects that were managed by a digital user experience consulting firm, using JavaScript, React, and CSS",
 				"Constructed features for a new eCommerce website of a multimedia company, with a focus on cart, user settings, and geolocation",
-				"Created new forms and ensured accessibility compliance for the customer support entity of a major airline",
-				"Conducted frequent internal research on web development standards and best practices"
+				"Created new forms and ensured accessibility compliance for the customer support website of a major airline",
+				"Conducted frequent internal research into web development standards and best practices"
 			],
 			"clients": "Redbox, United Airlines",
 			"techSkills": [
