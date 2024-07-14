@@ -29,7 +29,7 @@ function Header() {
 	const styles = StyleSheet.create({
 		header: {
 			paddingTop: "16pt",
-			paddingBottom: "32pt",
+			paddingBottom: "24pt",
 			paddingHorizontal: "12pt",
 			flexDirection: "row",
 			display: "flex",
@@ -335,7 +335,7 @@ export default function PDFResume() {
 					</View>
 					<View
 						style={{
-							marginTop: "72pt",
+							marginTop: "92pt",
 							height: "12pt",
 							backgroundColor: "#A82623",
 						}}
