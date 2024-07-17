@@ -21,9 +21,6 @@ export default function Home() {
 					types including eCommerce, data management, and biotechnology.
 				</p>
 			</div>
-			{/* <DividerSection title="about me" doubleSpaced>
-				<p>Hi I am really cool</p>
-			</DividerSection> */}
 			<DividerSection title="projects" doubleSpaced>
 				<div className="grid grid-cols-1 md:grid-cols-1 gap-4 md:gap-8 md:mx-4">
 					<Project

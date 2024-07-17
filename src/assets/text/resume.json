@@ -20,7 +20,8 @@
 			"jobTitle": "Senior Software Engineer",
 			"time": "2020 - 2024",
 			"timeWithMonth": "Oct 2020 - May 2024",
-			"longform": "Senior engineer for the applications team at a cloud storage startup. Created React-powered web tools for internal use by the operations teams, designing core architectural components in company codebases. Key contributor to the development of the customer-facing Wasabi Console application. Supervised the daily creation and deployment of service images for testing, working closely with the infrastructure team.",
+			"jobLocation": "Boston, MA",
+			"longform": "Front end software developer on Wasabi's application development team, supporting the company's customer-facing cloud object storage product as well as internal support and operations. Primarily worked with web technologies within the React/Node.js ecosystem and deployed to an Ubuntu Server/Docker environment which was managed with Kubernetes. Interconnected browser-based applications with RESTful service endpoints to access customer and internal data sources.\n\nCreated a multitude of new features across company applications, including:\n\n• A customer data record search system for internal support use with an easily-extendable category of search presets.\n• An ansible playbook GUI for internal operations use which allows running automated tasks starting at any step.\n• A robust system for delivering product feature notifications to users.\n• A dashboard view for displaying high level customer data-use statistics.\n• Multiple views for applying new features during the object upload process for customers.\n• Supporting code and bugfixes for a large variety of smaller features on other views.\n\nSupervised the daily creation and deployment of service images across multiple release versions, and served as the primary maintainer of multiple git repositories. Managed a deep system of open source NPM dependencies and directed major Material-UI framework (as well as other library) upgrades. Expanded front end unit test coverage across major applications.",
 			"bullets": [
 				"Developed features for web applications that are used to manage cloud storage operations, using JavaScript, React, and CSS",
 				"Designed core sections of front end architecture for projects, including both internal and customer-facing functions",
@@ -44,6 +45,7 @@
 			"jobTitle": "Senior Software Engineer",
 			"time": "2019 - 2020",
 			"timeWithMonth": "May 2019 - Oct 2020",
+			"jobLocation": "Nashua, NH",
 			"longform": "Front-end focused developer and consultant for a variety of contract clients in the greater Boston area. Worked primarily within the React web ecosystem and interacted with RESTful services which were created using the .NET platform. ",
 			"bullets": [
 				"Created websites and applications for multiple contracted clients using JavaScript, React, and CSS",
@@ -68,6 +70,7 @@
 			"jobTitle": "Senior Front End Developer",
 			"time": "2018 - 2019",
 			"timeWithMonth": "Feb 2018 - Apr 2019",
+			"jobLocation": "Boston, MA",
 			"longform": "Front end developer for a digital user experience consulting firm, doing work primarily within the React ecosystem. Projects were mainly focused on eCommerce and had a special emphasis on semantic HTML structure as well as accessibility. Participated in extensive internal research on best practices for web development as well as emerging technologies.",
 			"bullets": [
 				"Worked on web projects that were managed by a digital user experience consulting firm, using JavaScript, React, and CSS",
@@ -90,6 +93,7 @@
 			"jobTitle": "Associate Software Engineer",
 			"time": "2015 - 2018",
 			"timeWithMonth": "Jun 2015 - Jan 2018",
+			"jobLocation": "Framingham, MA",
 			"longform": "Supporting role for development of CA Performance Management - a network infrastructure analysis and management product. Focused on the construction of internal tooling, including a visual API query builder, as well as a vendor certification search tool. Also wrote a suite of network metrics calculation tests, and began the conversion of existing tools to React and Electron. Assisted the sustaining team with resolving issues reported by customers.",
 			"bullets": [
 				"Developed features for an enterprise network performance management application, using Java and JavaScript",
