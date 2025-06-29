@@ -15,13 +15,36 @@
 		"major": "Information Technology"
 	},
 	"jobs": {
+		"multitudeInsights": {
+			"employer": "Multitude Insights",
+			"jobTitle": "Senior Front End Developer",
+			"time": "2024 - 2025",
+			"timeWithMonth": "Aug 2024 - June 2025",
+			"jobLocation": "Remote",
+			"longform": "Front end developer for BLTN, an AI-powered product that assists law enforcement agencies in linking crime patterns. Created new features for the product UI using the React ecosystem and NextJS with TypeScript.",
+			"bullets": [
+				"Developed features for a crime pattern analysis web app using React and NextJS with TypeScript",
+				"Created components and hooks using a minimal set of external dependencies, promoting an easily adaptable codebase",
+				"Acquired CJIS compliance certification to work with protected crime related data",
+				"Worked within a rapidly-changing startup environment, requiring adept communication and flexibility"
+			],
+			"techSkills": [
+				"React",
+				"NextJS",
+				"Vercel",
+				"Redux Toolkit",
+				"RTK Query",
+				"HeadlessUI",
+				"Custom React hooks"
+			]
+		},
 		"wasabi": {
 			"employer": "Wasabi Technologies",
 			"jobTitle": "Senior Software Engineer",
 			"time": "2020 - 2024",
 			"timeWithMonth": "Oct 2020 - May 2024",
 			"jobLocation": "Boston, MA",
-			"longform": "Front end software developer on Wasabi's application development team, supporting the company's customer-facing cloud object storage product as well as internal support and operations. Primarily worked with web technologies within the React/Node.js ecosystem and deployed to an Ubuntu Server/Docker environment which was managed with Kubernetes. Interconnected browser-based applications with RESTful service endpoints to access customer and internal data sources.\n\nCreated a multitude of new features across company applications, including:\n\n• A customer data record search system for internal support use with an easily-extendable category of search presets.\n• An ansible playbook GUI for internal operations use which allows running automated tasks starting at any step.\n• A robust system for delivering product feature notifications to users.\n• A dashboard view for displaying high level customer data-use statistics.\n• Multiple views for applying new features during the object upload process for customers.\n• Supporting code and bugfixes for a large variety of smaller features on other views.\n\nSupervised the daily creation and deployment of service images across multiple release versions, and served as the primary maintainer of multiple git repositories. Managed a deep system of open source NPM dependencies and directed major Material-UI framework (as well as other library) upgrades. Expanded front end unit test coverage across major applications.",
+			"longform": "Front end software developer on Wasabi's application development team, supporting the company's customer-facing cloud object storage product as well as internal support and operations. Primarily worked with web technologies within the React/Node.js ecosystem and deployed to an Ubuntu Server/Docker environment which was managed with Kubernetes. Interconnected browser-based applications with RESTful service endpoints to access customer and internal data sources.",
 			"bullets": [
 				"Developed features for web applications that are used to manage cloud storage operations, using JavaScript, React, and CSS",
 				"Designed core sections of front end architecture for projects, including both internal and customer-facing functions",
@@ -127,14 +150,16 @@
 		"Libraries": [
 			"React",
 			"Redux",
+			"Redux Toolkit",
 			"React Router",
 			"Material UI",
+			"HeadlessUI",
 			"Tailwind",
-			"Highcharts",
-			"Jest"
+			"Highcharts"
 		],
 		"Concepts": [
 			"Agile",
+			"AI Prompts",
 			"DevOps",
 			"Microservices",
 			"Linux Administration",
@@ -142,8 +167,8 @@
 			"Relational Databases"
 		],
 		"Tools": [
-			"GPT-4",
 			"Webpack",
+			"NextJS",
 			"Git",
 			"Docker",
 			"Kubernetes",
