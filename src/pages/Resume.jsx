@@ -14,7 +14,8 @@ export default function Resume() {
 		<div>
 			<DividerSection title="experience">
 				<div className="mt-4 mb-8 md:mx-4">
-					<Job company="wasabi" open />
+					<Job company="multitudeInsights" open />
+					<Job company="wasabi" />
 					<Job company="motifSoftware" />
 					<Job company="genpact" />
 					<Job company="ca" />

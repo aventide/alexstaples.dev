@@ -29,7 +29,7 @@ function Header() {
 	const styles = StyleSheet.create({
 		header: {
 			paddingTop: "16pt",
-			paddingBottom: "24pt",
+			paddingBottom: "8pt",
 			paddingHorizontal: "12pt",
 			flexDirection: "row",
 			display: "flex",
@@ -239,7 +239,8 @@ export default function PDFResume() {
 					<View style={{ flexDirection: "row" }}>
 						<View style={{ width: "70%" }}>
 							<ResumeSection title="professional experience">
-								<Job company="wasabi" open />
+								<Job company="multitudeInsights" />
+								<Job company="wasabi" />
 								<Job company="motifSoftware" />
 								<Job company="genpact" />
 								<Job company="ca" />
@@ -333,13 +334,13 @@ export default function PDFResume() {
 							</ResumeSection>
 						</View>
 					</View>
-					<View
+					{/* <View
 						style={{
 							marginTop: "92pt",
 							height: "12pt",
 							backgroundColor: "#A82623",
 						}}
-					/>
+					/> */}
 				</View>
 			</Page>
 		</Document>
