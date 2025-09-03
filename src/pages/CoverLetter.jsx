@@ -17,6 +17,7 @@ export default function CoverLetter() {
 						<CoverLetterSection textContent={text.introduction} />
 						<CoverLetterSection textContent={text.body1} />
 						<CoverLetterSection textContent={text.body2} />
+						<CoverLetterSection textContent={text.body3} />
 						<CoverLetterSection textContent={text.conclusion} />
 						<CoverLetterSection textContent={text.signOff} />
 					</div>
@@ -51,5 +52,5 @@ export default function CoverLetter() {
 }
 
 function CoverLetterSection({ textContent }) {
-	return <div className="mt-8">{textContent}</div>;
+	return <div className="mt-4">{textContent}</div>;
 }

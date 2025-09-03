@@ -3,6 +3,7 @@
 	"subtitle": "Software Developer",
 	"summary": "Front-end software engineer driven by the crafting of seamless user interfaces and fostering the creation of frictionless development environments.",
 	"address": "Massachusetts, USA",
+    "themeColor": "#A82623",
 	"email": "ajstaples@gmail.com",
 	"downloadPDF": "Download Full Resume",
 	"pdfFilename": "resume.pdf",
@@ -24,7 +25,7 @@
 			"longform": "Front end developer for BLTN, an AI-powered product that assists law enforcement agencies in linking crime patterns. Created new features for the product UI using the React ecosystem and NextJS with TypeScript.",
 			"bullets": [
 				"Developed features for a crime pattern analysis web app using React and NextJS with TypeScript",
-				"Created components and hooks using a minimal set of external dependencies, promoting an easily adaptable codebase",
+				"Created a contact management UI that enabled law enforcement personnel to control data access with higher granularity",
 				"Acquired CJIS compliance certification to work with protected crime related data",
 				"Worked within a rapidly-changing startup environment, requiring adept communication and flexibility"
 			],
@@ -148,6 +149,7 @@
 			"TC39"
 		],
 		"Libraries": [
+			"JQuery",
 			"React",
 			"Redux",
 			"Redux Toolkit",
