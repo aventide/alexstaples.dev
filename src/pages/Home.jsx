@@ -25,7 +25,7 @@ export default function Home() {
         <div className="grid grid-cols-1 md:grid-cols-1 gap-4 md:gap-8 md:mx-4">
           <Project
             name="Personal Website"
-            description="My personal development website, which displays my past experience and projects."
+            description="My personal website, which displays my recent projects and past experiences as a developer."
             skills={[
               "JavaScript",
               "React",
@@ -38,8 +38,8 @@ export default function Home() {
           />
           <Project
             name="Get Schooled"
-            description="Digital board game inspired by Aqualin, built on web tech!"
-            skills={["JavaScript", "React", "Tailwind CSS"]}
+            description="Digital board game inspired by Aqualin, with multiple game modes. Built on web technologies!"
+            skills={["JavaScript", "React", "Tailwind CSS", "DaisyUI", "Surge"]}
             image={GetSchooledScreenshot}
             demoLink={"https://get-schooled.surge.sh"}
           />
@@ -52,11 +52,11 @@ export default function Home() {
               <button
                 type="button"
                 className={
-                  "badge px-10 py-6 text-slate-200 border-white border-4 bg-transparent hover:brightness-110 w-64 mx-4 my-2"
+                  "badge px-10 py-6 bg-slate-100 text-black hover:brightness-110 w-64 mx-4 my-2"
                 }
               >
                 <GithubIcon className="w-4 h-4 mr-2" />
-                <span className="font-bold font-heading">View on Github</span>
+                <span className="font-bold font-heading">Github</span>
                 <RightArrowIcon className="w-4 h-4 ml-2" />
               </button>
             </a>
