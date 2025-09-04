@@ -36,7 +36,7 @@ export default function Project({
             onClick={(e) => e.stopPropagation()}
           >
             <span className="flex items-center">
-              View Demo <LinkIcon className="ml-2" />
+              View demo <LinkIcon className="ml-2" />
             </span>
           </a>
         )}
