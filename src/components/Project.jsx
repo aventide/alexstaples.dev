@@ -17,7 +17,7 @@ export default function Project({
 
   return (
     <li
-      className="flex bg-slate-800 px-4 py-6 rounded-xl cursor-pointer md:hover:bg-slate-700 select-none pointer-events-none md:pointer-events-auto"
+      className="flex bg-slate-800 px-4 py-6 rounded-xl cursor-pointer md:hover:brightness-125 select-none pointer-events-none md:pointer-events-auto"
       onClick={() => handleNavigate(demoLink)}
     >
       {image && (
@@ -32,7 +32,7 @@ export default function Project({
             href={demoLink}
             target="_blank"
             rel="noreferrer noopener"
-            className="text-indigo-300 text-sm pointer-events-auto md:pointer-events-none"
+            className="text-indigo-300 hover:md:text-indigo-100 text-sm pointer-events-auto"
             onClick={(e) => e.stopPropagation()}
           >
             <span className="flex items-center">
