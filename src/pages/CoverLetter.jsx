@@ -24,8 +24,8 @@ export default function CoverLetter() {
 				</div>
 				<div className="mt-8 flex justify-center">
 					<PDFDownloadLink
-						document={<PDFCoverLetter />}
-						fileName="cover_letter.pdf"
+            document={<PDFCoverLetter />}
+            fileName={`cover_letter_${text.company}.pdf`}
 					>
 						{({ blob, url, loading, error }) =>
 							loading ? (

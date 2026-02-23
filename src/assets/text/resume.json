@@ -1,199 +1,201 @@
 {
-	"title": "Alex Staples",
-	"subtitle": "Software Developer",
-	"summary": "Front-end software engineer driven by the crafting of seamless user interfaces and fostering the creation of frictionless development environments.",
-	"address": "Massachusetts, USA",
-    "themeColor": "#A82623",
-	"email": "ajstaples@gmail.com",
-	"downloadPDF": "Download Full Resume",
-	"pdfFilename": "resume.pdf",
-	"clients": "Clients",
-	"keyTechnologies": "Key Technologies",
-	"education": {
-		"name": "University of Massachusetts Lowell",
-		"time": "2015",
-		"degree": "Bachelor of Science",
-		"major": "Information Technology"
-	},
-	"jobs": {
-		"multitudeInsights": {
-			"employer": "Multitude Insights",
-			"jobTitle": "Senior Front End Developer",
-			"time": "2024 - 2025",
-			"timeWithMonth": "Aug 2024 - June 2025",
-			"jobLocation": "Remote",
-			"longform": "Front end developer for BLTN, an AI-powered product that assists law enforcement agencies in linking crime patterns. Created new features for the product UI using the React ecosystem and NextJS with TypeScript.",
-			"bullets": [
-				"Developed features for a crime pattern analysis web app using React and NextJS with TypeScript",
-				"Created a contact management UI that enabled law enforcement personnel to control data access with higher granularity",
-				"Acquired CJIS compliance certification to work with protected crime related data",
-				"Worked within a rapidly-changing startup environment, requiring adept communication and flexibility"
-			],
-			"techSkills": [
-				"React",
-				"NextJS",
-				"Vercel",
-				"Redux Toolkit",
-				"RTK Query",
-				"HeadlessUI",
-				"Custom React hooks"
-			]
-		},
-		"wasabi": {
-			"employer": "Wasabi Technologies",
-			"jobTitle": "Senior Software Engineer",
-			"time": "2020 - 2024",
-			"timeWithMonth": "Oct 2020 - May 2024",
-			"jobLocation": "Boston, MA",
-			"longform": "Front end software developer on Wasabi's application development team, supporting the company's customer-facing cloud object storage product as well as internal support and operations. Primarily worked with web technologies within the React/Node.js ecosystem and deployed to an Ubuntu Server/Docker environment which was managed with Kubernetes. Interconnected browser-based applications with RESTful service endpoints to access customer and internal data sources.",
-			"bullets": [
-				"Developed features for web applications that are used to manage cloud storage operations, using JavaScript, React, and CSS",
-				"Designed core sections of front end architecture for projects, including both internal and customer-facing functions",
-				"Served as the primary maintainer of multiple Git repositories, and ensured constant delivery of builds to the QA team",
-				"Worked closely with the infrastructure team to maintain CI/CD pipelines with Docker and GitHub Actions",
-				"Provided mentorship to junior engineers and guided them through learning development processes"
-			],
-			"techSkills": [
-				"React",
-				"Redux",
-				"Node.js",
-				"Material-UI",
-				"Highcharts",
-				"Docker",
-				"Kubernetes",
-				"GitHub Actions"
-			]
-		},
-		"motifSoftware": {
-			"employer": "Motif Software",
-			"jobTitle": "Senior Software Engineer",
-			"time": "2019 - 2020",
-			"timeWithMonth": "May 2019 - Oct 2020",
-			"jobLocation": "Nashua, NH",
-			"longform": "Front-end focused developer and consultant for a variety of contract clients in the greater Boston area. Worked primarily within the React web ecosystem and interacted with RESTful services which were created using the .NET platform. ",
-			"bullets": [
-				"Created websites and applications for multiple contracted clients using JavaScript, React, and CSS",
-				"Interacted with data provided through the EpiServer CMS, using C# and .NET",
-				"Engaged in projects with subjects including digital cytology, eCommerce, and sales analytics",
-				"Wrote extensive technical documentation for a project that required HIPAA compliance"
-			],
-			"clients": "Hologic, Samsung, Orbita, Lew's Fishing",
-			"techSkills": [
-				"JavaScript",
-				"React",
-				"Redux",
-				"Node.js",
-				"CSS Modules",
-				"SVG",
-				".NET Core",
-				"EpiServer"
-			]
-		},
-		"genpact": {
-			"employer": "Genpact",
-			"jobTitle": "Senior Front End Developer",
-			"time": "2018 - 2019",
-			"timeWithMonth": "Feb 2018 - Apr 2019",
-			"jobLocation": "Boston, MA",
-			"longform": "Front end developer for a digital user experience consulting firm, doing work primarily within the React ecosystem. Projects were mainly focused on eCommerce and had a special emphasis on semantic HTML structure as well as accessibility. Participated in extensive internal research on best practices for web development as well as emerging technologies.",
-			"bullets": [
-				"Worked on web projects that were managed by a digital user experience consulting firm, using JavaScript, React, and CSS",
-				"Constructed features for a new eCommerce website of a multimedia company, with a focus on cart, user settings, and geolocation",
-				"Created new forms and ensured accessibility compliance for the customer support website of a major airline",
-				"Conducted frequent internal research into web development standards and best practices"
-			],
-			"clients": "Redbox, United Airlines",
-			"techSkills": [
-				"JavaScript",
-				"React",
-				"CSS Utilities",
-				"HTML Geolocation API",
-				"Bing Maps API",
-				"Elm"
-			]
-		},
-		"ca": {
-			"employer": "CA Technologies",
-			"jobTitle": "Associate Software Engineer",
-			"time": "2015 - 2018",
-			"timeWithMonth": "Jun 2015 - Jan 2018",
-			"jobLocation": "Framingham, MA",
-			"longform": "Supporting role for development of CA Performance Management - a network infrastructure analysis and management product. Focused on the construction of internal tooling, including a visual API query builder, as well as a vendor certification search tool. Also wrote a suite of network metrics calculation tests, and began the conversion of existing tools to React and Electron. Assisted the sustaining team with resolving issues reported by customers.",
-			"bullets": [
-				"Developed features for an enterprise network performance management application, using Java and JavaScript",
-				"Created a test suite and a search tool for hardware metrics calculations using Python",
-				"Supported the front end development of an OData query builder tool using Ext JS",
-				"Assisted the sustaining team with diagnosing and resolving issues reported by customers"
-			],
-			"techSkills": [
-				"Java",
-				"Python",
-				"JavaScript",
-				"React",
-				"Ext JS",
-				"OData",
-				"HP Vertica",
-				"RHEL"
-			]
-		}
-	},
-	"skills": {
-		"Web": [
-			"React ecosystem",
-			"Node.js",
-			"Canvas",
-			"CSS",
-			"AWS S3",
-			"Accessibility",
-			"Networking",
-			"TC39"
-		],
-		"Libraries": [
-			"JQuery",
-			"React",
-			"Redux",
-			"Redux Toolkit",
-			"React Router",
-			"Material UI",
-			"HeadlessUI",
-			"Tailwind",
-			"Highcharts"
-		],
-		"Concepts": [
-			"Agile",
-			"AI Prompts",
-			"DevOps",
-			"Microservices",
-			"Linux Administration",
-			"Open Source",
-			"Relational Databases"
-		],
-		"Tools": [
-			"Webpack",
-			"NextJS",
-			"Git",
-			"Docker",
-			"Kubernetes",
-			"ESLint",
-			"MySQL"
-		],
-		"Programming Languages": [
-			"JavaScript",
-			"TypeScript",
-			"Elm",
-			"C",
-			"C#",
-			"Python"
-		]
-	},
-	"portfolio": {
-		"github": {
-			"title": "aventide",
-			"link": "https://github.com/aventide"
-		},
-		"site": {
-			"title": "alexstaples.dev",
-			"link": "https://alexstaples.dev"
-		}
-	}
+  "title": "Alex Staples",
+  "subtitle": "Software Developer",
+  "summary": "Front-end software engineer driven by the crafting of seamless user interfaces and fostering the creation of frictionless development environments.",
+  "address": "Massachusetts, USA",
+  "themeColor": "#A82623",
+  "email": "ajstaples@gmail.com",
+  "downloadPDF": "Download Full Resume",
+  "pdfFilename": "resume.pdf",
+  "clients": "Clients",
+  "keyTechnologies": "Key Technologies",
+  "education": {
+    "name": "University of Massachusetts Lowell",
+    "time": "2015",
+    "degree": "Bachelor of Science",
+    "major": "Information Technology"
+  },
+  "jobs": {
+    "trivelta": {
+      "employer": "Trivelta",
+      "jobTitle": "Senior Software Engineer",
+      "time": "2025 - Present",
+      "timeWithMonth": "Dec 2025 - Present",
+      "jobLocation": "Boston, MA",
+      "longform": "Senior software engineer for a web-based sports-betting and casino company. Took a client management application from prototype to production, while delivering sportsbook experiences like live odds updates and betting workflows. Built user-facing features with React and Redux Toolkit as core pieces of the stack, integrating real-time and RESTful data flows into the UI. Led company-wide improvements to code quality and architecture, establishing stronger development standards across multiple web applications.",
+      "bullets": [
+        "Transitioned a client management application from a prototype to a production ready state",
+        "Built-out betting and live odds update features on sportsbook web client",
+        "Led improvements to code quality, architecture, and development standards across company web apps"
+      ],
+      "techSkills": ["React", "Redux Toolkit", "Ant Design", "Cursor", "AWS"]
+    },
+    "multitudeInsights": {
+      "employer": "Multitude Insights",
+      "jobTitle": "Senior Front End Developer",
+      "time": "2024 - 2025",
+      "timeWithMonth": "Aug 2024 - June 2025",
+      "jobLocation": "Remote",
+      "longform": "Front end developer for BLTN, an AI-powered product that assists law enforcement agencies in linking crime patterns. Created new features for the product UI using the React ecosystem and NextJS with TypeScript.",
+      "bullets": [
+        "Developed features for a crime pattern analysis web app using React and NextJS with TypeScript",
+        "Created a contact management UI that enabled law enforcement personnel to control data access with higher granularity",
+        "Acquired CJIS compliance certification to work with protected crime related data"
+      ],
+      "techSkills": [
+        "React",
+        "NextJS",
+        "Vercel",
+        "Redux Toolkit",
+        "RTK Query",
+        "HeadlessUI",
+        "Custom React hooks"
+      ]
+    },
+    "wasabi": {
+      "employer": "Wasabi Technologies",
+      "jobTitle": "Senior Software Engineer",
+      "time": "2020 - 2024",
+      "timeWithMonth": "Oct 2020 - May 2024",
+      "jobLocation": "Boston, MA",
+      "longform": "Front end software developer on Wasabi's application development team, supporting the company's customer-facing cloud object storage product as well as internal support and operations. Primarily worked with web technologies within the React/Node.js ecosystem and deployed to an Ubuntu Server/Docker environment which was managed with Kubernetes. Interconnected browser-based applications with RESTful service endpoints to access customer and internal data sources.",
+      "bullets": [
+        "Developed features for web applications that are used to manage cloud storage operations, using JavaScript, React, and CSS",
+        "Developed dashboard interfaces for internal datacenter management tools, using Material-UI and HighCharts",
+        "Served as the primary maintainer of multiple Git repositories, and ensured constant delivery of builds to the QA team",
+        "Worked closely with the infrastructure team to maintain CI/CD pipelines with Docker and GitHub Actions"
+      ],
+      "techSkills": [
+        "React",
+        "Redux",
+        "Node.js",
+        "Material-UI",
+        "Highcharts",
+        "Docker",
+        "Kubernetes",
+        "GitHub Actions"
+      ]
+    },
+    "motifSoftware": {
+      "employer": "Motif Software",
+      "jobTitle": "Senior Software Engineer",
+      "time": "2019 - 2020",
+      "timeWithMonth": "May 2019 - Oct 2020",
+      "jobLocation": "Nashua, NH",
+      "longform": "Front-end focused developer and consultant for a variety of contract clients in the greater Boston area. Worked primarily within the React web ecosystem and interacted with RESTful services which were created using the .NET platform. ",
+      "bullets": [
+        "Created websites and applications for multiple contracted clients using JavaScript, React, and CSS",
+        "Engaged in projects involving digital cytology, eCommerce, and sales analytics",
+        "Wrote extensive technical documentation for a project that required HIPAA compliance"
+      ],
+      "clients": "Hologic, Samsung, Orbita, Lew's Fishing",
+      "techSkills": [
+        "JavaScript",
+        "React",
+        "Redux",
+        "Node.js",
+        "CSS Modules",
+        "SVG",
+        ".NET Core",
+        "EpiServer"
+      ]
+    },
+    "genpact": {
+      "employer": "Genpact",
+      "jobTitle": "Senior Front End Developer",
+      "time": "2018 - 2019",
+      "timeWithMonth": "Feb 2018 - Apr 2019",
+      "jobLocation": "Boston, MA",
+      "longform": "Front end developer for a digital user experience consulting firm, doing work primarily within the React ecosystem. Projects were mainly focused on eCommerce and had a special emphasis on semantic HTML structure as well as accessibility. Participated in extensive internal research on best practices for web development as well as emerging technologies.",
+      "bullets": [
+        "Worked on web UX enhancement projects using JavaScript, React, and CSS",
+        "Constructed features for a new eCommerce website of a multimedia company, with a focus on cart, user settings, and geolocation APIs",
+        "Created new forms and ensured accessibility compliance for the customer support website of a major airline"
+      ],
+      "clients": "Redbox, United Airlines",
+      "techSkills": [
+        "JavaScript",
+        "React",
+        "CSS Utilities",
+        "HTML Geolocation API",
+        "Bing Maps API",
+        "Elm"
+      ]
+    },
+    "ca": {
+      "employer": "CA Technologies",
+      "jobTitle": "Associate Software Engineer",
+      "time": "2015 - 2018",
+      "timeWithMonth": "Jun 2015 - Jan 2018",
+      "jobLocation": "Framingham, MA",
+      "longform": "Supporting role for development of CA Performance Management - a network infrastructure analysis and management product. Focused on the construction of internal tooling, including a visual API query builder, as well as a vendor certification search tool. Also wrote a suite of network metrics calculation tests, and began the conversion of existing tools to React and Electron. Assisted the sustaining team with resolving issues reported by customers.",
+      "bullets": [
+        "Developed features for an enterprise network performance management application, using Java and JavaScript",
+        "Created a test suite and a search tool for hardware metrics calculations using Python"
+      ],
+      "techSkills": [
+        "Java",
+        "Python",
+        "JavaScript",
+        "React",
+        "Ext JS",
+        "OData",
+        "HP Vertica",
+        "Red Hat Enterprise Linux"
+      ]
+    }
+  },
+  "skills": {
+    "Web": [
+      "React ecosystem",
+      "Node.js",
+      "Canvas",
+      "CSS",
+      "AWS S3",
+      "Accessibility",
+      "Networking",
+      "TC39"
+    ],
+    "Libraries": [
+      "JQuery",
+      "React",
+      "Redux",
+      "Redux Toolkit",
+      "React Router",
+      "Material UI",
+      "HeadlessUI",
+      "Tailwind",
+      "Highcharts",
+      "Bing Maps"
+    ],
+    "Concepts": [
+      "Agile",
+      "AI-Assisted Development",
+      "DevOps",
+      "Microservices",
+      "Linux Administration",
+      "Open Source",
+      "2D Game Development"
+    ],
+    "Tools": [
+      "Webpack",
+      "NextJS",
+      "Git",
+      "Docker",
+      "Kubernetes",
+      "ESLint",
+      "MySQL"
+    ],
+    "Programming Languages": ["JavaScript", "TypeScript", "Elm", "Python"]
+  },
+  "portfolio": {
+    "github": {
+      "title": "aventide",
+      "link": "https://github.com/aventide"
+    },
+    "site": {
+      "title": "alexstaples.dev",
+      "link": "https://alexstaples.dev"
+    }
+  }
 }
