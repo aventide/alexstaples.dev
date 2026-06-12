@@ -24,11 +24,19 @@
       "jobLocation": "Boston, MA",
       "longform": "Senior software engineer for a web-based sports-betting and casino company. Took a client management application from prototype to production, while delivering sportsbook experiences like live odds updates and betting workflows. Built user-facing features with React and Redux Toolkit as core pieces of the stack, integrating real-time and RESTful data flows into the UI. Led company-wide improvements to code quality and architecture, establishing stronger development standards across multiple web applications.",
       "bullets": [
-        "Transitioned a client management application from a prototype to a production ready state",
-        "Built-out betting and live odds update features on sportsbook web client",
-        "Led improvements to code quality, architecture, and development standards across company web apps"
+        "Successfully transitioned a prototype client management interface to production readiness",
+        "Constructed numerous UX workflows for the Trivelta sportsbook, including bet placement and live odds updates",
+        "Led key improvements to front end architecture and development standards across company web platforms",
+        "Fully immersed in an engineering-wide effort to adopt AI-forward development strategies"
       ],
-      "techSkills": ["React", "Redux Toolkit", "Ant Design", "Cursor", "AWS"]
+      "techSkills": [
+        "React",
+        "TypeScript",
+        "NextJS",
+        "Redux Toolkit",
+        "Generative AI",
+        "AWS"
+      ]
     },
     "multitudeInsights": {
       "employer": "Multitude Insights",
@@ -44,10 +52,9 @@
       ],
       "techSkills": [
         "React",
+        "TypeScript",
         "NextJS",
-        "Vercel",
         "Redux Toolkit",
-        "RTK Query",
         "HeadlessUI",
         "Custom React hooks"
       ]
