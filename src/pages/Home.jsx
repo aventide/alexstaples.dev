@@ -34,14 +34,16 @@ export default function Home() {
               "Digital Ocean",
             ]}
             image={DevSiteScreenshot}
-            demoLink={"https://alexstaples.dev"}
+            actions={[{ label: "View demo", href: "https://alexstaples.dev" }]}
           />
           <Project
             name="Get Schooled"
             description="Digital board game inspired by Aqualin, with multiple game modes. Built on web technologies!"
             skills={["JavaScript", "React", "Tailwind CSS", "DaisyUI", "Surge"]}
             image={GetSchooledScreenshot}
-            demoLink={"https://get-schooled.surge.sh"}
+            actions={[
+              { label: "View demo", href: "https://get-schooled.surge.sh" },
+            ]}
           />
           <div className="my-4 flex flex-col md:flex-row justify-center items-center">
             <a

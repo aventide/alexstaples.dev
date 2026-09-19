@@ -7,6 +7,7 @@ import CoverLetter from "./pages/CoverLetter";
 import Home from "./pages/Home";
 import Projects from "./pages/Projects";
 import Resume from "./pages/Resume";
+import ResumeTailor from "./pages/ResumeTailor";
 
 import "./App.css";
 
@@ -23,6 +24,7 @@ function App() {
       <Switch>
         <Route path="/" component={Home} />
         <Route path="/projects" component={Projects} />
+        <Route path="/resume-tailor" component={ResumeTailor} />
         <Route path="/experience" component={Resume} />
         <Route path="/resume" component={Resume} />
         <Route path="/cover-letter" component={CoverLetter} />

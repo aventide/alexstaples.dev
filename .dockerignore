@@ -1,2 +1,5 @@
 /node_modules
 .env
+
+# Release artifacts are served from DigitalOcean Spaces.
+/public/downloads/releases/*/

@@ -1,4 +1,7 @@
 node_modules
 dist
 
+# Release artifacts are uploaded to DigitalOcean Spaces.
+public/downloads/releases/*/
+
 .DS_Store
