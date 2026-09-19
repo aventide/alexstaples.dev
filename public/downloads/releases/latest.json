@@ -1,0 +1,22 @@
+{
+  "schemaVersion": 1,
+  "version": "0.1.0",
+  "downloads": {
+    "macosAppleSilicon": {
+      "filename": "Resume-Tailor-0.1.0-macos-apple-silicon.zip",
+      "url": "0.1.0/Resume-Tailor-0.1.0-macos-apple-silicon.zip",
+      "sha256": "2278fdea93b4a830f558987f21351cfc330d4e3c37581d17a7a165a32aa991d3",
+      "size": 57786516
+    },
+    "windowsX64": {
+      "filename": "Resume-Tailor-0.1.0-windows-x64-setup.exe",
+      "url": "0.1.0/Resume-Tailor-0.1.0-windows-x64-setup.exe",
+      "sha256": "088ee5f327e1977744c7afce2acbc421426ecbd9a9885981fd926bda6f8f13e7",
+      "size": 50739515
+    }
+  },
+  "checksums": {
+    "filename": "Resume-Tailor-0.1.0-checksums.txt",
+    "url": "0.1.0/Resume-Tailor-0.1.0-checksums.txt"
+  }
+}

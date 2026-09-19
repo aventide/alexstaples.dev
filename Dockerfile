@@ -9,6 +9,7 @@ COPY package-lock.json .
 RUN npm install
 COPY . .
 
+ARG VITE_RESUME_TAILOR_MANIFEST_URL=/downloads/releases/latest.json
 RUN npm run build
 
 # serve
