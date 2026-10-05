@@ -32,24 +32,26 @@ export default function NavHeader() {
 					</StyledNavLink>
 				</div>
 				<div className="flex-1 flex justify-between md:hidden">
-					<ASIcon className="w-8 h-8 fill-black" />
+					<LogoLink />
 					<button
 						type="button"
 						className="flex justify-end"
+						aria-label="Open menu"
 						onClick={() => setMenuOpen(true)}
 					>
 						<MenuIcon className="w-8 h-8" />
 					</button>
 				</div>
-				<ASIcon className="hidden md:inline w-8 h-8 " />
+				<LogoLink className="hidden md:block" />
 			</div>
 			{menuOpen && (
 				<div className="fixed md:hidden top-0 left-0 bg-black w-screen h-screen z-50 p-4 opacity-90">
 					<div className="flex justify-between">
-						<ASIcon className="w-8 h-8 fill-black" />
+						<LogoLink onClick={() => setMenuOpen(false)} />
 						<button
 							type="button"
 							className="flex justify-end"
+							aria-label="Close menu"
 							onClick={() => setMenuOpen(false)}
 						>
 							<CloseIcon className="w-8 h-8" />
@@ -71,17 +73,29 @@ export default function NavHeader() {
 							PROJECTS
 						</StyledNavLink>
 						<StyledNavLink
-							to={"/resume"}
+							to={"/experience"}
 							active={isResume}
 							onClick={() => setMenuOpen(false)}
 						>
 							EXPERIENCE
 						</StyledNavLink>
-						<div className="border-white border-2 my-16 w-full" />
 					</div>
 				</div>
 			)}
 		</div>
+	);
+}
+
+function LogoLink({ className = "", onClick }) {
+	return (
+		<Link
+			to="/"
+			aria-label="Home"
+			onClick={onClick}
+			className={`hover:opacity-70 ${className}`}
+		>
+			<ASIcon className="w-8 h-8" />
+		</Link>
 	);
 }
 

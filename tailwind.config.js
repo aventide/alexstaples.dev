@@ -4,6 +4,7 @@ export default {
 	theme: {
 		extend: {},
 		fontFamily: {
+			sans: ["Lato", "sans-serif"],
 			body: ["Lato", "sans-serif"],
 			heading: ["Figtree", "sans-serif"],
 		},

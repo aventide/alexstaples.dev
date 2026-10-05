@@ -2,8 +2,39 @@
 @tailwind components;
 @tailwind utilities;
 
+@font-face {
+  font-family: "Lato";
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+  src: url("./assets/fonts/Lato-Regular.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Lato";
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+  src: url("./assets/fonts/Lato-Bold.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Lato";
+  font-weight: 400;
+  font-style: italic;
+  font-display: swap;
+  src: url("./assets/fonts/Lato-Italic.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Figtree";
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+  src: url("./assets/fonts/Figtree-Bold.ttf") format("truetype");
+}
+
 :root {
-  /* font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif; */
   line-height: 1.5;
   font-weight: 400;
 
@@ -35,23 +66,3 @@ h1 {
   text-wrap: balance;
   text-wrap: pretty;
 }
-
-/* https://jsfiddle.net/caut8h63/33/  */
-.under-construction-small {
-  background-image: linear-gradient(135deg, #fff 25%, transparent 25%, transparent 50%, #fff 50%, #fff 75%, transparent 75%, #fff, transparent 75%);
-  background-size: 150px 150px;
-}
-
-.under-construction-large {
-  background-image: linear-gradient(135deg, #fff 25%, transparent 25%, transparent 50%, #fff 50%, #fff 75%, transparent 75%, #fff, transparent 75%);
-  background-size: 250px 250px;
-}
-
-/* @media (prefers-color-scheme: light) {
-  :root {
-    color: #213547;
-    background-color: #F5F5F5;
-    --color-bg: #F5F5F5;
-    --color-fg: #213547;
-  }
-} */
