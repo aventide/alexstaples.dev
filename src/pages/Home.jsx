@@ -2,6 +2,7 @@ import { Link } from "wouter";
 import Headshot from "../assets/images/headshot.jpg";
 import DevSiteScreenshot from "../assets/images/project-screenshots/dev-site-screenshot-app.svg";
 import GetSchooledScreenshot from "../assets/images/project-screenshots/get-schooled-screenshot.jpg";
+import text from "../assets/text/resume.json";
 import DividerSection from "../components/DividerSection";
 import Job from "../components/Job";
 import Project from "../components/Project";
@@ -10,6 +11,9 @@ import { ReactComponent as RightArrowIcon } from "../assets/icons/arrow-right.sv
 import { ReactComponent as GithubIcon } from "../assets/icons/github.svg";
 import { ReactComponent as MailIcon } from "../assets/icons/mail.svg";
 import { ReactComponent as UserIcon } from "../assets/icons/user.svg";
+
+// jobs in resume.json are listed newest first
+const latestJobs = Object.keys(text.jobs).slice(0, 3);
 
 export default function Home() {
   return (
@@ -147,8 +151,9 @@ export default function Home() {
       </DividerSection>
       <DividerSection title="experience" doubleSpaced className="mt-24">
         <div className="mt-4 mb-8 md:mx-4">
-          <Job company="wasabi" open />
-          <Job company="motifSoftware" />
+          {latestJobs.map((company) => (
+            <Job key={company} company={company} />
+          ))}
         </div>
         <div className="mt-8 mb-8 flex flex-col md:flex-row justify-center items-center">
           <Link to="/experience">
