@@ -1,4 +1,5 @@
 import { Link } from "wouter";
+import Headshot from "../assets/images/headshot.jpg";
 import DevSiteScreenshot from "../assets/images/project-screenshots/dev-site-screenshot-app.svg";
 import GetSchooledScreenshot from "../assets/images/project-screenshots/get-schooled-screenshot.jpg";
 import DividerSection from "../components/DividerSection";
@@ -7,19 +8,63 @@ import Project from "../components/Project";
 
 import { ReactComponent as RightArrowIcon } from "../assets/icons/arrow-right.svg";
 import { ReactComponent as GithubIcon } from "../assets/icons/github.svg";
+import { ReactComponent as MailIcon } from "../assets/icons/mail.svg";
+import { ReactComponent as UserIcon } from "../assets/icons/user.svg";
 
 export default function Home() {
   return (
     <div>
-      <div className="mt-24 md:mt-24 mx-4 md:mx-10 pb-16 md:pb-24 text-center">
-        <h1 className="font-heading">Hi. I'm Alex.</h1>
-        <p className="mt-6 font-body text-md md:text-lg lg:mx-32">
-          I'm a software developer from Northborough, Massachusetts. I've been
-          writing code professionally since 2015, with the majority of my career
-          focused on full stack web technology. I'm especially fond of the React
-          and NodeJS ecosystems, and I've worked on a range of different project
-          types including eCommerce, data management, and biotechnology.
+      <div className="mt-16 md:mt-20 mx-4 md:mx-10 pb-16 md:pb-24 text-center">
+        <img
+          src={Headshot}
+          alt="Alex Staples"
+          className="mx-auto mb-8 w-32 h-32 md:w-40 md:h-40 rounded-full object-cover ring-4 ring-indigo-500 ring-offset-4 ring-offset-[#0f172a]"
+        />
+        <h1 className="font-heading">Alex Staples</h1>
+        <p className="mt-3 font-heading font-bold text-sm md:text-base uppercase tracking-widest text-indigo-300">
+          Senior Front End Engineer · Greater Boston Area
         </p>
+        <div className="mt-8 max-w-2xl mx-auto font-body text-md md:text-lg text-slate-300 space-y-4 text-pretty text-left">
+          <p>
+            I've been building for the web professionally since 2015, mostly in
+            React and TypeScript. These days I'm at Trivelta, building the
+            sportsbook for their white-label iGaming platform. Before that I
+            built cloud storage operations tools at Wasabi, spent a few years in
+            UX consulting, and got my start in enterprise network performance
+            management.
+          </p>
+          <p>
+            Developer experience is my favorite kind of problem. I love making
+            codebases faster and friendlier to work in. Outside of work I make
+            2D games with PixiJS, and I'm into hockey, cooking, and nature
+            walks.
+          </p>
+        </div>
+        <div className="mt-8 flex flex-wrap justify-center gap-3">
+          <a
+            href="https://github.com/aventide"
+            target="_blank"
+            rel="noreferrer noopener"
+            className="badge px-5 py-4 bg-slate-800 border-slate-700 text-slate-200 hover:brightness-125"
+          >
+            <GithubIcon className="w-4 h-4 mr-2" />
+            <span className="font-bold font-heading">GitHub</span>
+          </a>
+          <Link
+            to="/resume"
+            className="badge px-5 py-4 bg-slate-800 border-slate-700 text-slate-200 hover:brightness-125"
+          >
+            <UserIcon className="w-4 h-4 mr-2" />
+            <span className="font-bold font-heading">Resume</span>
+          </Link>
+          <a
+            href="mailto:ajstaples@gmail.com"
+            className="badge px-5 py-4 bg-slate-800 border-slate-700 text-slate-200 hover:brightness-125"
+          >
+            <MailIcon className="w-4 h-4 mr-2" />
+            <span className="font-bold font-heading">Email</span>
+          </a>
+        </div>
       </div>
       <DividerSection title="projects" doubleSpaced>
         <div className="grid grid-cols-1 md:grid-cols-1 gap-4 md:gap-8 md:mx-4">

@@ -9,7 +9,7 @@
 
   color-scheme: light dark;
   color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
+  background-color: #0f172a;
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
@@ -21,11 +21,19 @@
 body {
   display: flex;
   justify-content: center;
+  background-image: radial-gradient(ellipse at top, rgb(99 102 241 / 0.12), transparent 60%);
+  background-attachment: fixed;
 }
 
 h1 {
   font-size: 3rem;
   line-height: 1.1;
+}
+
+/* avoid orphaned words; browsers without `pretty` fall back to `balance` */
+.text-pretty {
+  text-wrap: balance;
+  text-wrap: pretty;
 }
 
 /* https://jsfiddle.net/caut8h63/33/  */
