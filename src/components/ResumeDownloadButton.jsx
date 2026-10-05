@@ -1,12 +1,14 @@
-import { pdf } from "@react-pdf/renderer";
 import { useState } from "react";
 
 import { ReactComponent as DownloadIcon } from "../assets/icons/download.svg";
 import text from "../assets/text/resume.json";
-import PDFResume from "../pages/PDFResume";
 
-// builds the PDF on click rather than on page load
+// loads the PDF library and builds the PDF only on click, keeping it out of the main bundle
 async function downloadResume() {
+	const [{ pdf }, { default: PDFResume }] = await Promise.all([
+		import("@react-pdf/renderer"),
+		import("../pages/PDFResume"),
+	]);
 	const blob = await pdf(<PDFResume />).toBlob();
 	const url = URL.createObjectURL(blob);
 	const link = document.createElement("a");
