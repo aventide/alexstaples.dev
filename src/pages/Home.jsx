@@ -106,7 +106,7 @@ export default function Home() {
 				</div>
 			</DividerSection>
 			<DividerSection title="experience" doubleSpaced className="mt-24">
-				<div className="mt-4 mb-8 md:mx-4 grid grid-cols-1 gap-4 md:gap-8">
+				<div className="mt-4 mb-8 md:mx-4 divide-y divide-white/10">
 					{latestJobs.map((company) => (
 						<Job key={company} company={company} />
 					))}

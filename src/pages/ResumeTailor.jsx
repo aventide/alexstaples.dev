@@ -79,10 +79,7 @@ export default function ResumeTailor() {
 				)}
 
 				{error && (
-					<div
-						className="mt-6 max-w-2xl rounded-xl bg-slate-800 p-6"
-						role="alert"
-					>
+					<div className="mt-6 max-w-2xl py-6" role="alert">
 						<p className="font-bold">Downloads are temporarily unavailable.</p>
 						<p className="mt-2 text-sm text-slate-400">{error}</p>
 						<button
@@ -127,7 +124,7 @@ export default function ResumeTailor() {
 
 function ReleaseCard({ platform, details, download, note }) {
 	return (
-		<section className="rounded-xl bg-slate-800 p-6">
+		<section className="py-6">
 			<h2 className="font-heading text-xl font-bold">{platform}</h2>
 			<p className="mt-2 text-sm text-slate-400">{details}</p>
 			<a

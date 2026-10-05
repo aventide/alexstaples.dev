@@ -15,7 +15,7 @@ export default function Job({ company }) {
 	} = text.jobs[company];
 
 	return (
-		<div className="grid content-start gap-x-6 sm:grid-cols-[1fr_auto] xl:grid-cols-[9rem_1fr] xl:gap-x-8 rounded-xl bg-slate-800 p-5 md:p-6">
+		<div className="grid content-start gap-x-6 sm:grid-cols-[1fr_auto] xl:grid-cols-[9rem_1fr] xl:gap-x-8 px-5 md:px-6 py-6 md:py-8">
 			<div className="sm:col-start-1 sm:row-start-1 xl:col-start-2">
 				<p className="text-lg font-bold">{jobTitle}</p>
 				<p className="text-indigo-300">{employer}</p>
