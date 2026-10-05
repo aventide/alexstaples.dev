@@ -30,7 +30,7 @@ export default function Home() {
             Greater Boston Area
           </span>
         </p>
-        <div className="mt-8 max-w-2xl mx-auto font-body text-md md:text-lg text-slate-300 space-y-4 text-pretty text-left">
+        <div className="mt-8 max-w-2xl mx-auto font-body text-base md:text-lg leading-relaxed text-slate-300 space-y-5 text-pretty text-left">
           <p>
             I've been building for the web professionally since 2015, mostly in
             React and TypeScript. These days I'm at{" "}
