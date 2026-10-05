@@ -22,16 +22,38 @@ export default function Home() {
         />
         <h1 className="font-heading">Alex Staples</h1>
         <p className="mt-3 font-heading font-bold text-sm md:text-base uppercase tracking-widest text-indigo-300">
-          Senior Front End Engineer · Greater Boston Area
+          <span className="block sm:inline whitespace-nowrap">
+            Senior Front End Engineer
+          </span>
+          <span className="hidden sm:inline"> · </span>
+          <span className="block sm:inline mt-1 sm:mt-0 whitespace-nowrap">
+            Greater Boston Area
+          </span>
         </p>
         <div className="mt-8 max-w-2xl mx-auto font-body text-md md:text-lg text-slate-300 space-y-4 text-pretty text-left">
           <p>
             I've been building for the web professionally since 2015, mostly in
-            React and TypeScript. These days I'm at Trivelta, building the
-            sportsbook for their white-label iGaming platform. Before that I
-            built cloud storage operations tools at Wasabi, spent a few years in
-            UX consulting, and got my start in enterprise network performance
-            management.
+            React and TypeScript. These days I'm at{" "}
+            <a
+              href="https://trivelta.com"
+              target="_blank"
+              rel="noreferrer noopener"
+              className="text-indigo-300 underline underline-offset-4 hover:text-indigo-100"
+            >
+              Trivelta
+            </a>
+            , building the sportsbook for their white-label iGaming platform.
+            Before that I built cloud storage operations tools at{" "}
+            <a
+              href="https://wasabi.com"
+              target="_blank"
+              rel="noreferrer noopener"
+              className="text-indigo-300 underline underline-offset-4 hover:text-indigo-100"
+            >
+              Wasabi
+            </a>
+            , spent a few years in UX consulting, and got my start in enterprise
+            network performance management.
           </p>
           <p>
             Developer experience is my favorite kind of problem. I love making
@@ -40,26 +62,26 @@ export default function Home() {
             walks.
           </p>
         </div>
-        <div className="mt-8 flex flex-wrap justify-center gap-3">
+        <div className="mt-8 mx-auto max-w-md grid grid-cols-3 gap-2 sm:gap-3">
           <a
             href="https://github.com/aventide"
             target="_blank"
             rel="noreferrer noopener"
-            className="badge px-5 py-4 bg-slate-800 border-slate-700 text-slate-200 hover:brightness-125"
+            className="badge w-full px-2 py-4 whitespace-nowrap bg-slate-800 border-slate-700 text-slate-200 hover:brightness-125"
           >
             <GithubIcon className="w-4 h-4 mr-2" />
             <span className="font-bold font-heading">GitHub</span>
           </a>
           <Link
             to="/resume"
-            className="badge px-5 py-4 bg-slate-800 border-slate-700 text-slate-200 hover:brightness-125"
+            className="badge w-full px-2 py-4 whitespace-nowrap bg-slate-800 border-slate-700 text-slate-200 hover:brightness-125"
           >
             <UserIcon className="w-4 h-4 mr-2" />
             <span className="font-bold font-heading">Resume</span>
           </Link>
           <a
             href="mailto:ajstaples@gmail.com"
-            className="badge px-5 py-4 bg-slate-800 border-slate-700 text-slate-200 hover:brightness-125"
+            className="badge w-full px-2 py-4 whitespace-nowrap bg-slate-800 border-slate-700 text-slate-200 hover:brightness-125"
           >
             <MailIcon className="w-4 h-4 mr-2" />
             <span className="font-bold font-heading">Email</span>
