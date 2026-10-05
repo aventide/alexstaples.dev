@@ -24,16 +24,16 @@ export default function Project({
 	actions = [],
 }) {
 	const primaryAction = actions[0];
-	// on sm+ the image fills the left column; on mobile it shrinks to an icon beside the title
-	const textColumn = image ? "col-span-2 sm:col-span-1 sm:col-start-2" : "";
+	// on sm+ the image fills the left column; on mobile it sits above the text
+	const textColumn = image ? "sm:col-start-2" : "";
 
 	return (
 		<li
-			className={`relative grid content-start gap-x-4 sm:gap-x-6 p-5 md:p-6 rounded-xl bg-slate-800 transition-colors ${
+			className={`relative grid content-start gap-x-4 sm:gap-x-6 p-5 md:p-6 rounded-xl transition-colors ${
 				image
-					? "grid-cols-[4rem_1fr] sm:grid-cols-[9rem_1fr] md:grid-cols-[11rem_1fr]"
+					? "grid-cols-1 sm:grid-cols-[14rem_1fr] sm:grid-rows-[auto_auto_auto_1fr] md:grid-cols-[20rem_1fr]"
 					: "grid-cols-1"
-			} xl:gap-x-8 ${primaryAction ? "hover:bg-slate-700/80" : ""}`}
+			} xl:gap-x-8 ${primaryAction ? "hover:bg-slate-800/70" : ""}`}
 		>
 			{primaryAction && (
 				<a
@@ -50,14 +50,12 @@ export default function Project({
 				<img
 					src={image}
 					alt=""
-					className={`${layer} w-full aspect-square rounded-lg object-cover sm:row-span-4`}
+					className={`${layer} w-full aspect-[16/10] rounded-lg object-cover mb-4 sm:mb-0 sm:row-span-4`}
 				/>
 			)}
-			<p className={`${layer} self-center sm:self-start text-lg font-bold`}>
-				{name}
-			</p>
+			<p className={`${layer} ${textColumn} text-lg font-bold`}>{name}</p>
 			<p
-				className={`${layer} ${textColumn} mt-3 sm:mt-2 xl:max-w-3xl text-sm text-slate-300`}
+				className={`${layer} ${textColumn} mt-2 xl:max-w-3xl text-sm text-slate-300`}
 			>
 				{description}
 			</p>
