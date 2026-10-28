@@ -3,6 +3,15 @@ import { useState } from "react";
 import { ReactComponent as DownloadIcon } from "../assets/icons/download.svg";
 import text from "../assets/text/resume.json";
 
+// "Alex-Staples-Resume.pdf" -> "Alex-Staples-Resume-10272026.pdf", dated today as MMDDYYYY
+function datedFilename(filename) {
+	const now = new Date();
+	const pad = (n) => String(n).padStart(2, "0");
+	const month = pad(now.getMonth() + 1);
+	const day = pad(now.getDate());
+	return filename.replace(/\.pdf$/, `-${month}${day}${now.getFullYear()}.pdf`);
+}
+
 // loads the PDF library and builds the PDF only on click, keeping it out of the main bundle
 async function downloadResume() {
 	const [{ pdf }, { default: PDFResume }] = await Promise.all([
@@ -13,7 +22,7 @@ async function downloadResume() {
 	const url = URL.createObjectURL(blob);
 	const link = document.createElement("a");
 	link.href = url;
-	link.download = text.pdfFilename;
+	link.download = datedFilename(text.pdfFilename);
 	link.click();
 	setTimeout(() => URL.revokeObjectURL(url), 1000);
 }
