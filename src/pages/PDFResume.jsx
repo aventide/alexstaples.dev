@@ -248,7 +248,6 @@ export default function PDFResume() {
 							</ResumeSection>
 						</View>
 						<View style={{ width: "30%" }}>
-							\
 							<ResumeSection title="Skills">
 								<SkillCategory title="Web" skillList={text.skills.Web} />
 								<SkillCategory
