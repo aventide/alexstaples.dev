@@ -243,7 +243,7 @@ export default function PDFResume() {
 								<Job company="multitudeInsights" />
 								<Job company="wasabi" />
 								<Job company="motifSoftware" />
-								<Job company="genpact" />
+								<Job company="tandemSeven" />
 								<Job company="ca" />
 							</ResumeSection>
 						</View>

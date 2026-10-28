@@ -1,6 +1,6 @@
 {
 	"title": "Alex Staples",
-	"summary": "Front-end software engineer driven by the crafting of seamless user interfaces and fostering the creation of frictionless development environments.",
+	"summary": "Senior front-end engineer with over 10 years of experience building fast, real-time web apps in React and TypeScript, and AI-assisted tooling for developers.",
 	"address": "Massachusetts, USA",
 	"email": "ajstaples@gmail.com",
 	"downloadPDF": "Download Full Resume",
@@ -18,20 +18,25 @@
 			"time": "2025 - Present",
 			"timeWithMonth": "Dec 2025 - Present",
 			"jobLocation": "Boston, MA",
-			"summary": "I build the sportsbook for Trivelta's white-label iGaming platform, including live odds, bet placement, and a client management app I took from prototype to production. I've also led a push to improve front-end architecture and code standards across the company's web apps.",
+			"summary": "Senior front-end web engineer on a white-label iGaming platform. Core front-end contributor to the next-generation sportsbook, and led front-end localization that opened the web app to Spanish-only clients. Led performance work that cut initial load by about 30% and smoothed rendering on lower-end devices, and reduced AWS costs by optimizing data loading and caching. The team's go-to engineer for AI-assisted development, from introducing subagent delegation to reworking the company's shared agent configuration.",
 			"bullets": [
-				"Successfully transitioned a prototype client management interface to production readiness",
-				"Constructed numerous UX workflows for the Trivelta sportsbook, including bet placement and live odds updates",
-				"Led key improvements to front end architecture and development standards across company web platforms",
-				"Fully immersed in an engineering-wide effort to adopt AI-forward development strategies"
+				"Core front-end contributor to the next-generation sportsbook, built in Next.js, React and TypeScript",
+				"Led a performance effort that cut initial load by about 30% and smoothed rendering",
+				"Led AWS cost reduction across the web app, especially the sportsbook, by optimizing data loading and caching",
+				"Led front-end localization for the web app, opening it to Spanish-only clients",
+				"Go-to engineer for AI-assisted development; championed subagent delegation and parallel agents"
 			],
 			"techSkills": [
+				"Next.js",
 				"React",
 				"TypeScript",
-				"NextJS",
 				"Redux Toolkit",
-				"Generative AI",
-				"AWS"
+				"RTK Query",
+				"WebSockets",
+				"Playwright",
+				"Sentry",
+				"AWS Amplify",
+				"Claude Code"
 			]
 		},
 		"multitudeInsights": {
@@ -40,17 +45,20 @@
 			"time": "2024 - 2025",
 			"timeWithMonth": "Aug 2024 - June 2025",
 			"jobLocation": "Remote",
-			"summary": "I built features for BLTN, an AI-powered tool that helps law enforcement agencies connect crime patterns. That included a contact management UI that gave agencies finer control over who can access their data, and I earned CJIS certification to work with protected crime data.",
+			"summary": "Senior front-end developer for BLTN, a crime pattern analysis platform for law enforcement agencies, built with React and Next.js in TypeScript. Developed the complete UI for the contact management feature, giving agencies control over who could access their posts, and built the notification settings dashboard agencies needed in time for the Boston Marathon. Also added schema validation to contact management and other features, and kept the app responsive for officers in the field on limited bandwidth.",
 			"bullets": [
-				"Developed features for a crime pattern analysis web app using React and NextJS with TypeScript",
-				"Created a contact management UI that enabled law enforcement personnel to control data access with higher granularity",
-				"Acquired CJIS compliance certification to work with protected crime related data"
+				"Developed features for BLTN, a crime pattern analysis platform for law enforcement agencies",
+				"Built the complete UI for contact management, which controls access to agency posts",
+				"Added schema validation to contact management and other features",
+				"Built the notification settings dashboard agencies needed in time for the Boston Marathon",
+				"Held CJIS certification to work with protected crime data"
 			],
 			"techSkills": [
 				"React",
 				"TypeScript",
-				"NextJS",
+				"Next.js",
 				"Tailwind",
+				"Valibot",
 				"Redux Toolkit",
 				"HeadlessUI",
 				"Custom React hooks"
@@ -62,12 +70,13 @@
 			"time": "2020 - 2024",
 			"timeWithMonth": "Oct 2020 - May 2024",
 			"jobLocation": "Boston, MA",
-			"summary": "I built web apps for managing Wasabi's cloud object storage, for customers as well as internal support and operations teams, plus dashboards for datacenter tooling. I also maintained several of the team's repos and worked with infrastructure on CI/CD.",
+			"summary": "Senior engineer on Wasabi's application development team, building the customer-facing Wasabi Console for cloud object storage and the internal tools used to run its datacenters. Designed core front-end architecture across both, and was a major contributor to the shared UI library behind at least five of the company's apps, from tables and dashboards to app initialization and error handling. Managed release lifecycles and CI/CD for the team, led efforts to modernize older codebases, and mentored junior developers.",
 			"bullets": [
-				"Developed features for web applications that are used to manage cloud storage operations, using JavaScript, React, and CSS",
-				"Developed dashboard interfaces for internal datacenter management tools, using Material-UI and HighCharts",
-				"Served as the primary maintainer of multiple Git repositories, and ensured constant delivery of builds to the QA team",
-				"Worked closely with the infrastructure team to maintain CI/CD pipelines with Docker and GitHub Actions"
+				"Designed front-end architecture for the customer-facing Wasabi Console and ops tools",
+				"Major contributor to a shared UI library used across 5+ of the company's apps",
+				"Managed release lifecycles and CI/CD for the team with Docker and GitHub Actions",
+				"Led efforts to modernize older codebases with open source libraries",
+				"Mentored junior developers and interviewed candidates for the applications team"
 			],
 			"techSkills": [
 				"React",
@@ -86,11 +95,11 @@
 			"time": "2019 - 2020",
 			"timeWithMonth": "May 2019 - Oct 2020",
 			"jobLocation": "Nashua, NH",
-			"summary": "As a consultant, I built React sites and apps for clients including Hologic, Samsung, Orbita, and Lew's Fishing, across digital cytology, eCommerce, and sales analytics.",
+			"summary": "Independent contractor building React front ends for clients in the greater Boston area, across digital cytology, eCommerce, and sales analytics. Built the front end for a digital cytology product on a .NET backend, and wrote the technical documentation it needed for HIPAA compliance. Also built front-end features for a sporting goods eCommerce site on EPiServer CMS.",
 			"bullets": [
-				"Created websites and applications for multiple contracted clients using JavaScript, React, and CSS",
-				"Engaged in projects involving digital cytology, eCommerce, and sales analytics",
-				"Wrote extensive technical documentation for a project that required HIPAA compliance"
+				"Built React front ends for contract clients in cytology, eCommerce and sales analytics",
+				"Wrote the technical documentation a cytology product needed to meet HIPAA requirements",
+				"Built front-end features for a sporting goods eCommerce site on EPiServer CMS and .NET"
 			],
 			"techSkills": [
 				"JavaScript",
@@ -103,17 +112,17 @@
 				"EpiServer"
 			]
 		},
-		"genpact": {
-			"employer": "Genpact",
+		"tandemSeven": {
+			"employer": "TandemSeven",
 			"jobTitle": "Senior Front End Developer",
 			"time": "2018 - 2019",
 			"timeWithMonth": "Feb 2018 - Apr 2019",
 			"jobLocation": "Boston, MA",
-			"summary": "At a UX consulting firm, I worked on eCommerce and customer support sites for clients like Redbox and United Airlines, with a focus on semantic HTML and accessibility.",
+			"summary": "Front-end developer at a UX consulting firm, doing React and Node.js development on client projects. Built new forms and ensured accessibility compliance for a major U.S. airline's customer support site, and built cart, user settings, and geolocation features for a multimedia company's new eCommerce site, including work with internationalization APIs. Also researched web development standards and best practices for the team, and demoed functional reactive programming with Elm.",
 			"bullets": [
-				"Worked on web UX enhancement projects using JavaScript, React, and CSS",
-				"Constructed features for a new eCommerce website of a multimedia company, with a focus on cart, user settings, and geolocation APIs",
-				"Created new forms and ensured accessibility compliance for the customer support website of a major airline"
+				"Built cart, user settings and geolocation features for a multimedia company's eCommerce site",
+				"Built accessible new forms for a major U.S. airline's customer support site",
+				"Researched web development standards and best practices for the team"
 			],
 			"techSkills": [
 				"JavaScript",
@@ -130,10 +139,12 @@
 			"time": "2015 - 2018",
 			"timeWithMonth": "Jun 2015 - Jan 2018",
 			"jobLocation": "Framingham, MA",
-			"summary": "My first engineering job: building internal tools for CA Performance Management, a network monitoring product, including a visual API query builder, a vendor certification search tool, and a Python test suite for network metrics. I also started moving older tools over to React and Electron.",
+			"summary": "Joined as an intern and grew into a full-stack role on CA Performance Management, an enterprise network performance monitoring product. Wrote a Python test suite and search tool for the logic behind its device metrics, was a key front-end contributor to an OData query builder, then moved on to the product's main Java web interface and backend services, patching customer-reported issues on the sustaining team. Also modernized internal tooling with React and Electron, and led a hackathon team that built a natural language chat interface for querying network metrics.",
 			"bullets": [
-				"Developed features for an enterprise network performance management application, using Java and JavaScript",
-				"Created a test suite and a search tool for hardware metrics calculations using Python"
+				"Built a Python test suite and search tool for the logic behind network device metrics",
+				"Key front-end contributor to an OData query builder in JavaScript and Ext JS",
+				"Worked on the product's Java web interface and backend, patching customer-reported issues",
+				"Led a hackathon team that built a natural language chat interface for querying network metrics"
 			],
 			"techSkills": [
 				"Java",
@@ -149,46 +160,54 @@
 	},
 	"skills": {
 		"Web": [
-			"React ecosystem",
+			"React",
+			"Next.js",
 			"Node.js",
-			"Canvas",
-			"CSS",
-			"AWS S3",
+			"WebSockets",
+			"REST APIs",
+			"HTML Canvas",
+			"Web Audio API",
 			"Accessibility",
-			"Networking",
-			"TC39"
+			"Internationalization"
 		],
 		"Libraries": [
-			"JQuery",
-			"React",
-			"Redux",
 			"Redux Toolkit",
+			"RTK Query",
 			"React Router",
+			"PixiJS",
+			"Tailwind CSS",
 			"Material UI",
-			"HeadlessUI",
-			"Tailwind",
-			"Highcharts",
-			"Bing Maps"
+			"Ant Design",
+			"Highcharts"
 		],
 		"Concepts": [
-			"Agile",
 			"AI-Assisted Development",
-			"DevOps",
-			"Microservices",
-			"Linux Administration",
-			"Open Source",
-			"2D Game Development"
+			"Web Performance",
+			"Technical Leadership",
+			"CI/CD",
+			"Agile",
+			"2D Game Development",
+			"Open Source"
 		],
 		"Tools": [
-			"Webpack",
-			"NextJS",
+			"Claude Code",
+			"Vite",
 			"Git",
 			"Docker",
 			"Kubernetes",
-			"ESLint",
-			"MySQL"
+			"AWS",
+			"Playwright",
+			"Vitest",
+			"Sentry",
+			"ESLint"
 		],
-		"Programming Languages": ["JavaScript", "TypeScript", "Elm", "Python"]
+		"Programming Languages": [
+			"TypeScript",
+			"JavaScript",
+			"HTML",
+			"CSS",
+			"Python"
+		]
 	},
 	"portfolio": {
 		"github": {
