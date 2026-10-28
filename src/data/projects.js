@@ -11,7 +11,7 @@ const projects = [
 	{
 		name: "Meteor Blocks",
 		description:
-			"A falling-block puzzle game on an engine I wrote by hand in PixiJS and TypeScript: block descent, selection, swapping, and launching are all mine. For the demo, I used AI to build the interface and five themed worlds on top of it, each with its own art, gravity, and launch goal, while changing the engine as little as possible.",
+			"A falling-block puzzle game on an engine I wrote by hand in PixiJS and TypeScript, which handles block descent, selection, swapping, and launching. For the demo, I used AI to build the interface and five themed worlds on top of it, each with its own art, gravity, and launch goal.",
 		skills: ["TypeScript", "PixiJS", "HTML Canvas", "Vite", "Surge"],
 		image: MeteorBlocksImage,
 		actions: [
@@ -36,7 +36,7 @@ const projects = [
 	{
 		name: "Resume Tailor for Raycast",
 		description:
-			"A Raycast extension that tailors my resume and cover letter to the job post open in my browser. It drives the Claude Code and Codex CLIs over a markdown knowledge base of my career, with grounding checks that reject any employer, date, metric, or skill the knowledge base can't back up, then scores the PDF against the post's ATS keywords. Covered by about 480 tests.",
+			"A Raycast extension that tailors my resume and cover letter to the job post open in my browser. It drives the Claude Code and Codex CLIs over a markdown knowledge base of my career, with grounding checks that reject any employer, date, metric, or skill the knowledge base can't back up, then scores the PDF against the post's ATS keywords.",
 		skills: ["TypeScript", "React", "Raycast", "Claude Code", "Vitest"],
 		image: ResumeTailorRaycastImage,
 	},
