@@ -4,7 +4,7 @@
 
 **Why:** A clear, current place to send recruiters and hiring managers, with a resume that always matches the site.
 
-**Status:** The October 2026 content refresh (new projects, rewritten job descriptions and resume) is on `main`. Next: 01 (a spike on whether to revamp the site's look), 02 (make the site's resume match the Raycast extension's), 03 (a performance pass) 04 (deciding whether to label projects by how they were built) and 05 (making the copy sound personal rather than AI-written).
+**Status:** The October 2026 content refresh (new projects, rewritten job descriptions and resume) is on `main`. Next: 01 (a spike on whether to revamp the site's look), 02 (make the site's resume match the Raycast extension's), 03 (a performance pass), 04 (deciding whether to label projects by how they were built), 05 (making the copy sound personal rather than AI-written) and 06 (finishing the git cleanup, for the user to run).
 
 **Where things live:** Tickets are here in `tickets/`, which is their only home. Shared background is in [00-context.md](00-context.md). The user's career knowledge base lives outside the repo and never gets committed.
 
@@ -21,3 +21,4 @@ Agents only work tickets the user names, and stop and report after each one. Wor
 | 03 | [Performance pass](03-performance-pass.md) | agent | M | | todo |
 | 04 | [Consider labeling projects as hand-crafted, AI-coded, or hybrid](04-project-authorship-labels.md) | pair | S | | todo |
 | 05 | [Make the copy sound like the user, not like AI](05-personal-voice-pass.md) | pair | M | | todo |
+| 06 | [Finish the git cleanup](06-finish-git-cleanup.md) | user | S | | todo |
