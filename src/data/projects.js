@@ -11,7 +11,7 @@ const projects = [
 	{
 		name: "Meteor Blocks",
 		description:
-			"A falling-block puzzle game on an engine I wrote by hand in PixiJS and TypeScript, which handles block descent, selection, swapping, and launching. For the demo, I used AI to build the interface and five themed worlds on top of it, each with its own art, gravity, and launch goal.",
+			"A falling-block puzzle game inspired by Meteos, a Nintendo DS game I greatly enjoyed. I wanted to see how far I could take my own version in graphics and framerate, so I wrote the engine by hand in PixiJS and TypeScript. For the demo, I used AI to build the interface and five themed worlds on top of it, and I plan to build the full game by hand.",
 		skills: ["TypeScript", "PixiJS", "HTML Canvas", "Vite", "Surge"],
 		image: MeteorBlocksImage,
 		actions: [

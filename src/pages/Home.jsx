@@ -60,8 +60,8 @@ export default function Home() {
 						network performance management.
 					</p>
 					<p>
-						Developer experience is my favorite kind of problem. I love making
-						codebases faster and friendlier to work in. Outside of work I make
+						Developer experience is the part of the job I enjoy most. I love
+						making a codebase faster and easier to work in. Outside of work I make
 						2D games with PixiJS, and I'm into hockey, cooking, and nature
 						walks.
 					</p>
