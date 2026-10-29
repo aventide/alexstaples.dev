@@ -29,7 +29,7 @@ export default function Job({ company }) {
 					</p>
 				)}
 			</div>
-			<p className="mt-3 sm:col-span-2 xl:col-span-1 xl:col-start-2 xl:max-w-3xl text-sm text-slate-300">
+			<p className="mt-3 sm:col-span-2 xl:col-span-1 xl:col-start-2 xl:max-w-3xl text-base text-slate-300">
 				{summary}
 			</p>
 			<div className="mt-4 sm:col-span-2 xl:col-span-1 xl:col-start-2">

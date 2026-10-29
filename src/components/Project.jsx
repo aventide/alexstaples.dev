@@ -55,7 +55,7 @@ export default function Project({
 			)}
 			<p className={`${layer} ${textColumn} text-lg font-bold`}>{name}</p>
 			<p
-				className={`${layer} ${textColumn} mt-2 xl:max-w-3xl text-sm text-slate-300`}
+				className={`${layer} ${textColumn} mt-2 xl:max-w-3xl text-base text-slate-300`}
 			>
 				{description}
 			</p>
