@@ -18,7 +18,7 @@
 			"time": "2025 - Present",
 			"timeWithMonth": "Dec 2025 - Present",
 			"jobLocation": "Boston, MA",
-			"summary": "Front-end engineer on a white-label iGaming platform and a core contributor to its next-generation sportsbook. Drove the front-end localization that opened the web app to Spanish-only clients. Led performance work that cut initial load by about 30% and smoothed rendering on lower-end devices, and reduced AWS costs by optimizing data loading and caching. The team's go-to engineer for AI-assisted development, including introducing subagent delegation and reworking the company's shared agent configuration.",
+			"summary": "Front-end engineer on a white-label iGaming platform and a core contributor to its next-generation sportsbook. Drove the front-end localization that opened the web app to Spanish-only clients. Led performance work that cut initial load by about 30% and smoothed rendering on lower-end devices, and reduced AWS costs by optimizing data loading and caching. The team's go-to engineer for AI-assisted development, including refining subagent delegation and reworking the company's shared agent configuration.",
 			"bullets": [
 				"Core front-end contributor to the next-generation sportsbook, built in Next.js, React and TypeScript",
 				"Led a performance effort that cut initial load by about 30% and smoothed rendering",
