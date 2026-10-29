@@ -53,7 +53,7 @@ const projects = [
 	{
 		name: "Personal Website",
 		description:
-			"The site you're on right now. My work history lives in a single JSON file that feeds both these pages and the downloadable PDF resume, so the two never drift apart. It's built with React, Vite, and Tailwind, and ships as a Docker container served by nginx on DigitalOcean.",
+			"The site you're on right now. My work history lives in a single JSON file that feeds both these pages and the downloadable PDF resume. It ships as a Docker container on DigitalOcean.",
 		skills: ["JavaScript", "React", "Tailwind CSS", "Docker", "Digital Ocean"],
 		image: PersonalWebsiteImage,
 		actions: [{ label: "View demo", href: "https://alexstaples.dev" }],

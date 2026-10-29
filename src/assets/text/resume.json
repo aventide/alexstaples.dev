@@ -18,7 +18,7 @@
 			"time": "2025 - Present",
 			"timeWithMonth": "Dec 2025 - Present",
 			"jobLocation": "Boston, MA",
-			"summary": "Senior front-end web engineer on a white-label iGaming platform. Core front-end contributor to the next-generation sportsbook, and led front-end localization that opened the web app to Spanish-only clients. Led performance work that cut initial load by about 30% and smoothed rendering on lower-end devices, and reduced AWS costs by optimizing data loading and caching. The team's go-to engineer for AI-assisted development, from introducing subagent delegation to reworking the company's shared agent configuration.",
+			"summary": "Front-end engineer on a white-label iGaming platform and a core contributor to its next-generation sportsbook. Drove the front-end localization that opened the web app to Spanish-only clients. Led performance work that cut initial load by about 30% and smoothed rendering on lower-end devices, and reduced AWS costs by optimizing data loading and caching. The team's go-to engineer for AI-assisted development, including introducing subagent delegation and reworking the company's shared agent configuration.",
 			"bullets": [
 				"Core front-end contributor to the next-generation sportsbook, built in Next.js, React and TypeScript",
 				"Led a performance effort that cut initial load by about 30% and smoothed rendering",
@@ -70,7 +70,7 @@
 			"time": "2020 - 2024",
 			"timeWithMonth": "Oct 2020 - May 2024",
 			"jobLocation": "Boston, MA",
-			"summary": "Senior engineer on Wasabi's application development team, building the customer-facing Wasabi Console for cloud object storage and the internal tools used to run its datacenters. Designed core front-end architecture across both, and was a major contributor to the shared UI library behind at least five of the company's apps, from tables and dashboards to app initialization and error handling. Managed release lifecycles and CI/CD for the team, led efforts to modernize older codebases, and mentored junior developers.",
+			"summary": "Senior engineer on Wasabi's application development team, building the customer-facing Wasabi Console for cloud object storage and the internal tools used to run its datacenters. Designed core front-end architecture across both, and was a major contributor to the shared UI library used by at least five of the company's apps, including the Wasabi Console and internal tools maintained by other teams. Managed release lifecycles and CI/CD for the team, led efforts to modernize older codebases, and mentored junior developers.",
 			"bullets": [
 				"Designed front-end architecture for the customer-facing Wasabi Console and ops tools",
 				"Major contributor to a shared UI library used across 5+ of the company's apps",
